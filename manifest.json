@@ -5,10 +5,26 @@
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#3eaf7c",
+  "prefer_related_applications": true,
   "icons": [
     {
-      "src": "/zj.jpg",
+      "src": "img/icons/40x40.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/80x80.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/120x120.png",
       "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/144x144.png",
+      "sizes": "144x144",
       "type": "image/png"
     }
   ]

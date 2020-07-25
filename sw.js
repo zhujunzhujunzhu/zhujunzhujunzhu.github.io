@@ -3,12 +3,12 @@
  * @Autor 朱俊
  * @Date 2020-07-25 15:31:55
  * @LastEditors 朱俊
- * @LastEditTime 2020-07-25 15:59:44
+ * @LastEditTime 2020-07-25 19:58:38
  */
 importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js'
 );
-var cacheStorageKey = 'minimal-pwa-2';
+var cacheStorageKey = 'minimal-pwa-1';
 var cacheList = ['/', 'index.html', 'main.css', 'zj.png'];
 self.addEventListener('install', (e) => {
   // 这个waitUntil 基本的作用是设置需要缓存的文件的 这里可以看到的两个api 一个是cache.addAll 另一个是 self.skipWaiting  跳过等待
