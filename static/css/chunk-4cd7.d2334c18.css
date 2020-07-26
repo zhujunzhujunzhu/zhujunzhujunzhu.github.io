@@ -1,0 +1,22 @@
+.realNameListDiv .iconshanchu {
+  font-size: 16px !important;
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.realNameListDiv .dataTable {
+  margin-top: 10px;
+}
+.realNameListDiv .redBg td {
+  background: #e26c6c !important;
+}
+.realNameListDiv .item3 {
+  width: 320px;
+}
+.realNameListDiv .item3 .el-select {
+    width: 320px;
+}
+.realNameListDiv .item3 .el-select .el-input {
+      width: 320px;
+}
+

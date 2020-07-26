@@ -1,0 +1,128 @@
+.imageListWrapper .listTitle {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.imageListWrapper .imgWapper {
+  width: 50%;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imageListWrapper .imgWapper .el-image {
+    width: 100%;
+    height: 300px;
+    margin-right: 15px;
+}
+.imageListWrapper .imgWapper .imgTitle {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.dailyReportDailog .el-dialog {
+  margin-top: 4vh !important;
+  width: 1200px !important;
+}
+.dailyReportDailog .headTitle {
+  font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.dailyReportDailog .subTitle {
+  font-size: 24px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.dailyReportDailog .codeDiv {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.dailyReportDailog .cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  margin-right: 16px;
+}
+.dailyReportDailog .btns {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dailyReportDailog .workDays .el-input,
+.dailyReportDailog .workDays .el-input__inner {
+  width: 80px;
+}
+.dailyReportDailog .workDays .el-input {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.dailyReportDailog .selectWrapper {
+  width: 150px;
+}
+.dailyReportDailog .selectWrapper .el-input__inner {
+    border: 0 none;
+    border-bottom: 1px #c0c4cc solid;
+    border-radius: 0;
+    text-align: center;
+}
+.dailyReportDailog .inputWrapper {
+  width: 150px;
+}
+.dailyReportDailog .cardItemHead {
+  margin-top: 10px;
+  height: 36px;
+}
+.dailyReportDailog .cardSubTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.dailyReportDailog .relative {
+  position: relative;
+}
+.dailyReportDailog .uploadWrapper {
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+.dailyReportDailog .uploadWrapper .upload {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.dailyReportDailog .imageListWrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dailyReportDailog .textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 2em;
+  line-height: 23px;
+}
+.dailyReportDailog .iconshuaxin1 {
+  font-size: 20px;
+}
+.dailyReportDailog .iconshuaxin1:hover {
+    color: #409eff;
+}
+.dailyReportDailog .btns .el-icon-delete {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.dailyReportDailog .btns .el-icon-delete:hover {
+    color: #db2a24;
+}
+.dailyReportDailog .btns .el-icon-plus {
+  cursor: pointer;
+}
+.dailyReportDailog .btns .el-icon-plus:hover {
+    color: #409eff;
+}
+

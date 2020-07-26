@@ -1,0 +1,22 @@
+.receivingAndIssuingDiv .searchBar .left .item {
+  margin-right: 10px;
+}
+.receivingAndIssuingDiv .searchBar .left .item:first-child {
+    margin-right: 25px;
+}
+.receivingAndIssuingDiv .searchBar .left label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 5px;
+}
+.receivingAndIssuingDiv .selectOrg {
+  width: 300px;
+}
+.receivingAndIssuingDiv .titleIcon {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+  color: #a4ec31;
+}
+

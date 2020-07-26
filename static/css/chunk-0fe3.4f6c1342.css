@@ -1,0 +1,34 @@
+.el-tree[data-v-43a89c16] {
+  overflow: auto;
+}
+
+.scheduleDiv .searchClass[data-v-aef3ff42] {
+  margin: 15px 0px 13px 0px;
+}
+.scheduleDiv .formStyle[data-v-aef3ff42] {
+  width: 160px;
+  margin-right: 15px;
+}
+.scheduleDiv h3[data-v-aef3ff42] {
+  margin: 0;
+  padding: 0;
+}
+.scheduleDiv .box-card-wrapper[data-v-aef3ff42] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.scheduleDiv .box-card-wrapper .leftCard[data-v-aef3ff42] {
+    width: 20%;
+    /*flex: 1;*/
+}
+.scheduleDiv .box-card-wrapper .rightCard[data-v-aef3ff42] {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 10px;
+}
+.scheduleDiv .box-card-wrapper .rightCard .el-table .el-table__body-wrapper[data-v-aef3ff42] {
+      overflow: auto;
+}
+

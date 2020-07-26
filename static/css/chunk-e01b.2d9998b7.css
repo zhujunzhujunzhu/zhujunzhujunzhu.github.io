@@ -1,0 +1,62 @@
+.homeInfoDiv .iconxinwen {
+  color: #1cade4;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.homeInfoDiv .header {
+  height: 40px;
+  margin-top: 30px;
+  border-bottom: 1px #ececec solid;
+}
+.homeInfoDiv .header .more {
+    font-size: 12px;
+    color: #1cade4;
+}
+.homeInfoDiv .header .title {
+    color: #1cade4;
+    font-size: 20px;
+    font-weight: bold;
+}
+.homeInfoDiv .active {
+  color: #1cade4;
+  font-size: 20px;
+}
+.homeInfoDiv .no-data {
+  text-align: center;
+  margin-top: 20vh;
+  color: #ccc;
+}
+.homeInfoDiv .menuTab {
+  font-size: 16px;
+}
+.homeInfoDiv .menuTab span {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ccc;
+}
+.homeInfoDiv .card-content-item {
+  cursor: pointer;
+  margin-top: 30px;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeInfoDiv .card-content-item .nameDiv {
+    cursor: pointer;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.homeInfoDiv .card-content-item .nameDiv:hover {
+    color: #1cade4 !important;
+}
+.homeInfoDiv .card-content-item .time {
+    width: 120px;
+    text-align: right;
+}
+.homeInfoDiv .card-content-item:hover {
+    color: #1cade4 !important;
+}
+

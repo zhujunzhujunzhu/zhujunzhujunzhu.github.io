@@ -1,0 +1,12 @@
+.changeViewDiv {
+  position: relative;
+  z-index: 100;
+}
+
+.wbsView .iconshuaxin1 {
+  font-size: 24px;
+}
+.wbsView .btns {
+  height: 64px;
+}
+

@@ -1,0 +1,97 @@
+.videoMonitorDiv .el-card__header {
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+}
+.videoMonitorDiv .box-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard {
+    width: 20%;
+    position: relative;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard .header-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2aa7fb;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard .el-card__body {
+      overflow: auto !important;
+      height: calc(100% - 60px) !important;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard .tree-label {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #666666;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard .is-current > .el-tree-node__content .tree-label {
+      color: #2aa7fb !important;
+}
+.videoMonitorDiv .box-card-wrapper .rightCard {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 10px;
+}
+.videoMonitorDiv .box-card-wrapper .rightCard .el-row {
+      height: 100%;
+}
+.videoMonitorDiv .box-card-wrapper .rightCard .video-js {
+      width: 100%;
+      height: 100%;
+}
+.videoMonitorDiv .box-card-wrapper .rightCard .video-wrapper {
+      width: 100%;
+      height: 100%;
+      border: 6px #fff solid;
+      background: black;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      overflow: hidden;
+}
+.videoMonitorDiv .left-box {
+  float: left;
+}
+.videoMonitorDiv .right-box {
+  margin-right: 20px;
+  float: right;
+}
+.videoMonitorDiv .btn-active {
+  color: #3a8ee6;
+  border-color: #3a8ee6;
+  outline: 0;
+  background-color: #ecf5ff;
+}
+.videoMonitorDiv .vjs-has-started .vjs-big-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+.videoMonitorDiv .tendersIcon-img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.videoMonitorDiv .el-loading-spinner i {
+  color: #409eff;
+  font-size: 45px;
+}
+.videoMonitorDiv .videoFrame {
+  position: relative;
+}
+.videoMonitorDiv .empty-text-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #cecece;
+}
+

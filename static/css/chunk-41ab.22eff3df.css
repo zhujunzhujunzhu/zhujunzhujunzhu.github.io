@@ -1,0 +1,35 @@
+.meetingNoticeDialog .el-dialog {
+  width: 952px;
+}
+.meetingNoticeDialog .el-input__inner {
+  width: 270px;
+}
+.meetingNoticeDialog .el-textarea__inner {
+  width: 102%;
+}
+.meetingNoticeDialog .my-form-item {
+  position: relative;
+  left: -52px;
+  height: 60px;
+}
+.meetingNoticeDialog .my-form-item1 {
+  position: relative;
+  left: -52px;
+}
+.meetingNoticeDialog .el-range-separator {
+  z-index: 5;
+}
+.meetingNoticeDialog .vue-treeselect__control {
+  width: 102%;
+}
+.meetingNoticeDialog .el-range-editor {
+  width: 102% !important;
+}
+.meetingNoticeDialog .sponsorDateItem .el-date-editor--datetime,
+.meetingNoticeDialog .sponsorDateItem .el-input__inner {
+  width: 101% !important;
+}
+.meetingNoticeDialog .outerAttenderWrapper .el-input__inner {
+  width: 101% !important;
+}
+

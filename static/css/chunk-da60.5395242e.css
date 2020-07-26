@@ -1,0 +1,12 @@
+.editGoodsDiv .iconshanchu {
+  font-size: 20px !important;
+}
+.editGoodsDiv .el-table th,
+.editGoodsDiv .el-table tr {
+  opacity: 1 !important;
+}
+.editGoodsDiv .inlineBlock {
+  width: 200px;
+  margin: 0px 10px 20px;
+}
+

@@ -1,0 +1,106 @@
+.trackBpmn {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.trackBpmn .canvas {
+    width: 100%;
+    height: 100%;
+}
+.trackBpmn .highlight:not(.djs-connection) .djs-visual circle {
+    fill: #39bb39 !important;
+    /* color elements as green */
+}
+.trackBpmn .highlight:not(.djs-connection) .djs-visual .djs-label {
+    fill: #fff !important;
+}
+.trackBpmn .highlight:not(.djs-connection) .djs-visual rect {
+    fill: #39bb39 !important;
+    /* color elements as green */
+}
+.trackBpmn .highlight .djs-visual path {
+    stroke-opacity: 1 !important;
+    stroke: blue !important;
+    stroke-width: 1px !important;
+}
+
+.processTrack {
+  padding: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.processTrack .mxCard .table {
+    position: relative;
+    z-index: 1000;
+}
+.processTrack .drag-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.processTrack .el-card,
+  .processTrack .el-card__body {
+    width: 100%;
+    height: 100% !important;
+}
+.processTrack .bpmn-wrapper {
+    padding: 20px;
+}
+.processTrack .bpmn-containers {
+    position: static;
+    border: 0 none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.processTrack .MyCard {
+    position: relative;
+}
+.processTrack .mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+}
+.processTrack .dragtest {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.processTrack .wrapper {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.processTrack .cur-light:not(.djs-connection) .djs-visual circle {
+    fill: yellowgreen !important;
+    /* color elements as green */
+}
+.processTrack .cur-light:not(.djs-connection) .djs-visual rect {
+    fill: yellowgreen !important;
+    /* color elements as green */
+}
+.processTrack .cur-light .djs-label {
+    fill: #fff !important;
+}
+.processTrack .line-light .djs-visual path {
+    stroke-opacity: 1 !important;
+    stroke: #f1d062 !important;
+    stroke-width: 1px !important;
+}
+.processTrack .moveCard {
+    position: absolute;
+    padding: 20px;
+    background: #fcfcfc;
+    border: 1px #ccc solid;
+    z-index: 10000;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+

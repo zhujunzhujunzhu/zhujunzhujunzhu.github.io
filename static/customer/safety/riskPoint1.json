@@ -1,0 +1,333 @@
+{
+  "list": [
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "标段",
+      "param": "tendersName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "工点",
+      "param": "workPointNames",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "风险源名称",
+      "param": "",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "风险源类型",
+      "prop": "riskSourceType",
+      "isQuery": "1",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "risk_type"
+    },
+    {
+      "label": "风险分析附件",
+      "prop": "riskAnalysisDocId",
+      "isQuery": "2",
+      "displayType": "qt",
+      "param": "attach1",
+      "displayName": "风险分析"
+    },
+    {
+      "label": "风险应对附件",
+      "prop": "riskResponseDocId",
+      "isQuery": "2",
+      "displayType": "qt",
+      "param": "attach2",
+      "displayName": "风险应对"
+    },
+    {
+      "label": "风险等级",
+      "prop": "riskGrade",
+      "isQuery": "1",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "risk_grade"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入名称",
+                  "remoteFunc": "func_1574650877000_61767"
+                },
+                "key": "1574650877000_61767",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "工点",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574665456000_20079"
+                },
+                "key": "1574660731000_12543",
+                "model": "workPointIds",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "风险源类型",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择风险源类型",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "risk_type",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "id",
+                    "label": "name"
+                  },
+                  "remoteFunc": "func_1574651138000_21594"
+                },
+                "key": "1574651141000_93521",
+                "model": "riskSourceType",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574665453000_57530"
+                },
+                "key": "1574660729000_59850",
+                "model": "tendersId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "所属作业",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574650882000_61309"
+                },
+                "key": "1574650882000_61309",
+                "model": "wbsIds",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "风险等级",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择风险等级",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "risk_grade",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "id",
+                    "label": "name"
+                  },
+                  "remoteFunc": "func_1574651143000_7107"
+                },
+                "key": "1574651138000_21594",
+                "model": "riskGrade",
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1574650874000_34523",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1574650874000_34523",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "imgupload",
+        "name": "风险分析",
+        "options": {
+          "length": 3,
+          "fileName": "",
+          "isFile": true,
+          "defaultValue": "",
+          "remoteFunc": "func_1574651155000_34077",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1574651155000_34077",
+        "model": "riskAnalysisDocId",
+        "rules": []
+      },
+      {
+        "type": "imgupload",
+        "name": "风险应对",
+        "options": {
+          "length": 3,
+          "fileName": "",
+          "isFile": true,
+          "defaultValue": "",
+          "remoteFunc": "func_1574651159000_26578",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1574651159000_26578",
+        "model": "riskResponseDocId",
+        "rules": []
+      },
+      {
+        "type": "blank",
+        "name": "MBS",
+        "options": {
+          "defaultType": "String",
+          "isShowLabel": true,
+          "remoteFunc": "func_1574736117000_50813",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1574736117000_50813",
+        "model": "mbsId",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

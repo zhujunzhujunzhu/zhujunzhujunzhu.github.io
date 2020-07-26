@@ -1,0 +1,152 @@
+.maright {
+  margin-right: 20px;
+}
+.editTitleDialog .el-dialog {
+  margin-top: 8vh !important;
+}
+
+.pdf-dialog-container .el-dialog {
+  margin-top: 20px !important;
+  width: 96%;
+}
+
+.projectScheduling .divClass {
+  height: 100%;
+  background-color: #ecf1fd;
+}
+.projectScheduling .newCenter {
+  margin-left: 2%;
+}
+.projectScheduling .carousel {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.projectScheduling .el-carousel__container {
+  height: 380px;
+}
+.projectScheduling .fs-24 {
+  font-size: 24px;
+}
+.projectScheduling .fs-14 {
+  font-size: 14px;
+}
+.projectScheduling .fs-16 {
+  font-size: 16px;
+}
+.projectScheduling .mt-25 {
+  margin-top: 25px;
+}
+.projectScheduling .card {
+  height: 98%;
+}
+.projectScheduling .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3c6cae;
+}
+.projectScheduling .flex-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projectScheduling .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projectScheduling .flex-middle, .projectScheduling .card-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projectScheduling .text-btn {
+  color: #598ddb;
+  cursor: pointer;
+}
+.projectScheduling .no-data {
+  height: 151px;
+  line-height: 150px;
+  text-align: center;
+  color: #cecece;
+}
+.projectScheduling .card-content {
+  min-height: 280px;
+}
+.projectScheduling .card-head {
+  margin-top: 2%;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projectScheduling .iclass {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #3c6cae;
+  margin-right: 10px;
+}
+.projectScheduling .striping {
+  margin-top: 0.25%;
+  width: 100%;
+  height: 2px;
+  border-left: 75px solid #3c6cae;
+  background: #eee;
+}
+.projectScheduling .addButtonColor {
+  width: 74px;
+  color: white;
+  background-color: #1cade4;
+}
+.projectScheduling .moreButton {
+  width: 74px;
+}
+.projectScheduling .card-content-item {
+  cursor: pointer;
+  height: 48px;
+}
+.projectScheduling .card-content-item .nameDiv {
+    cursor: pointer;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.projectScheduling .card-content-item .nameDiv:hover {
+    color: #1cade4 !important;
+}
+.projectScheduling .card-content-item .iconfujian {
+    margin-right: 2px;
+}
+.projectScheduling .card-content-item .iconfujian:hover {
+      color: #af1818;
+}
+.projectScheduling .card-content-item .time {
+    width: 85px;
+    text-align: right;
+    margin-right: 20px;
+}
+.projectScheduling .card-content-item:hover .color-888 {
+    color: #245fab !important;
+}
+.projectScheduling .zoomImage {
+  width: 100%;
+  padding-bottom: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.projectScheduling .el-button--medium {
+  padding: 8px, 11px;
+  font-size: 10px;
+}
+

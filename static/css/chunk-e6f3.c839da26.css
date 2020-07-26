@@ -1,0 +1,22 @@
+.dispatchingNoticeDialog .el-dialog {
+  width: 952px;
+}
+.dispatchingNoticeDialog .el-input__inner {
+  width: 312px;
+}
+.dispatchingNoticeDialog .vue-treeselect__control {
+  width: 101% !important;
+}
+.dispatchingNoticeDialog .el-textarea__inner {
+  width: 101% !important;
+}
+.dispatchingNoticeDialog .my-form-item {
+  position: relative;
+  left: -52px;
+  height: 60px;
+}
+.dispatchingNoticeDialog .my-form-item1 {
+  position: relative;
+  left: -52px;
+}
+

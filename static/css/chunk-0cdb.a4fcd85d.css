@@ -1,0 +1,33 @@
+.receivingAndIssuingDialogDiv .el-dialog {
+  width: 1200px;
+}
+.receivingAndIssuingDialogDiv .el-input__inner {
+  width: 395px;
+}
+.receivingAndIssuingDialogDiv .el-textarea__inner {
+  width: 102%;
+}
+.receivingAndIssuingDialogDiv .my-form-item {
+  position: relative;
+  left: -52px;
+  height: 60px;
+}
+.receivingAndIssuingDialogDiv .my-form-item1 {
+  position: relative;
+  left: -52px;
+}
+.receivingAndIssuingDialogDiv .vue-treeselect__control {
+  min-height: 150px;
+}
+.receivingAndIssuingDialogDiv .selectOrg {
+  width: 395px;
+}
+.receivingAndIssuingDialogDiv .el-table {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.receivingAndIssuingDialogDiv .bottomTable .el-table--border {
+  border: 0 none;
+}
+

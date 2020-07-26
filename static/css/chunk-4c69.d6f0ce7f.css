@@ -1,0 +1,151 @@
+.measureDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*background: rgba(26, 26, 26, 0.8);*/
+  /*border-left: 1px solid #e8eaec;*/
+  /*box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);*/
+}
+.measureDiv .el-select {
+    width: calc(100% - 100px);
+}
+.measureDiv .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+}
+.measureDiv .el-row {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.measureDiv .el-row .leftlabel {
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.5);
+      width: 80px;
+}
+.measureDiv .is-focus input {
+    /*border-color: #f56840!important;*/
+}
+.measureDiv .el-select .el-input__inner:focus {
+    /*border-color: #f56840!important;*/
+}
+.measureDiv .btLabel {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.measureDiv .btnDiv {
+    margin-top: 9px;
+    text-align: right;
+    padding-right: 15px;
+}
+.measureDiv .btnDiv .btn {
+      color: #fff;
+      background-color: #f56840;
+      border: 1px solid #f56840;
+}
+.measureDiv .btnDiv .btn:hover {
+      opacity: 0.9;
+}
+
+.attributeDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*background: rgba(26, 26, 26, 0.8);*/
+  /*border-left: 1px solid #e8eaec;*/
+  /*box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);*/
+}
+.attributeDiv .el-collapse-item .is-active {
+    color: #1CADE4 !important;
+}
+.attributeDiv .el-collapse-item__header {
+    background: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+}
+.attributeDiv .el-collapse-item__wrap {
+    background: rgba(0, 0, 0, 0);
+    padding: 0px 10px;
+}
+.attributeDiv .el-collapse-item__wrap .el-collapse-item__content {
+      color: rgba(0, 0, 0, 0.5);
+}
+.attributeDiv .noLabel {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+.detailedModelComponetDiv {
+  margin: 0px;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  border-left: 1px solid #e8eaec;
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.detailedModelComponetDiv .planAttributeDiv {
+    background: #fff;
+}
+.detailedModelComponetDiv .topDiv {
+    position: absolute;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    top: 50px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    color: #d0d0d0;
+    /*background-color: rgba(30, 30, 30, .8);*/
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.detailedModelComponetDiv .bottomDiv {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    bottom: 50px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    color: #d0d0d0;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.detailedModelComponetDiv .bottomDiv .isActive {
+      border-bottom: 3px solid #f75223;
+}
+.detailedModelComponetDiv .bottomDiv .isActive .icon {
+        color: #f75223;
+}
+.detailedModelComponetDiv .bottomDiv .toolBoxItem {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      font-size: 24px;
+      cursor: pointer;
+}
+.detailedModelComponetDiv .bottomDiv .toolBoxItem .icon {
+        font-size: 28px;
+}
+

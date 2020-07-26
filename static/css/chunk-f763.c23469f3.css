@@ -1,0 +1,10 @@
+.temperatureList .iconshanchu {
+  font-size: 16px !important;
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.temperatureList .dataTable {
+  margin-top: 10px;
+}
+

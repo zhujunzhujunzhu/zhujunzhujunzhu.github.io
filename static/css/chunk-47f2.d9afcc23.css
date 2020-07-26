@@ -1,0 +1,30 @@
+.pieDiv {
+  margin-top: 15px;
+}
+.pieDiv .bidChartWrapper,
+  .pieDiv .workPointsChartWrapper,
+  .pieDiv .bidChart,
+  .pieDiv .workPointsChart {
+    width: 350px;
+    height: 350px;
+}
+.pieDiv .head {
+    height: 34px;
+    font-size: 14px;
+}
+.pieDiv .head .boldLine {
+      width: 2px;
+      height: 15px;
+      background: #3a8ee6;
+      margin-right: 4px;
+}
+.pieDiv .head .line {
+      width: 1px;
+      height: 15px;
+      background: #3a8ee6;
+      margin-right: 4px;
+}
+.pieDiv .color-gray {
+    color: #ccc;
+}
+

@@ -1,0 +1,38 @@
+.batchEditDialog .content {
+  padding: 0px 112px;
+}
+.batchEditDialog .el-form-item--mini.el-form-item,
+.batchEditDialog .el-form-item--small.el-form-item {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.batchEditDialog .el-form-item__label {
+  margin-right: 20px;
+}
+.batchEditDialog .el-radio-group {
+  font-size: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.batchEditDialog .el-radio__inner {
+  width: 20px;
+  height: 20px;
+}
+.batchEditDialog .el-switch {
+  margin-right: 20px;
+}
+.batchEditDialog .el-dialog {
+  border-radius: 5px;
+  width: 700px;
+}
+.batchEditDialog .mydate .el-input__inner {
+  width: 305px;
+}
+

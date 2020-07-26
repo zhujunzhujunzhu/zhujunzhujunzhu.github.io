@@ -1,0 +1,361 @@
+{
+  "list": [
+    {
+      "label": "证照阶段",
+      "prop": "licensePhase",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "",
+      "param": "license_phase",
+      "isQuery": "1"
+    },
+    {
+      "label": "名称",
+      "prop": "name",
+      "isQuery": "2"
+    },
+    {
+      "label": "办证部门",
+      "prop": "handleGov",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "办证部门",
+      "param": "",
+      "isQuery": "1"
+    },
+    {
+      "label": "办证联系人",
+      "prop": "contactPerson",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "办证联系人",
+      "param": "",
+      "isQuery": "2"
+    },
+    {
+      "label": "办证流程",
+      "prop": "handleProcess"
+    },
+    {
+      "label": "备注",
+      "prop": "remark",
+      "isQuery": "2",
+      "displayName": "需要提交的文件"
+    },
+    {
+      "label": "操作",
+      "prop": "button",
+      "isQuery": "1",
+      "displayName": "证照阶段",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "license_phase"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "证件名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "",
+                  "remoteFunc": "func_1573455644000_50181",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566191458000_69970",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "证件名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "证件名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "需提交的文件",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "",
+                  "remoteFunc": "func_1573455649000_17405",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566192846000_5547",
+                "model": "remark",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "需提交的文件格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "办证联系人",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "",
+                  "remoteFunc": "func_1573455652000_45802",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566192923000_48863",
+                "model": "contactPerson",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "办证联系人格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "是否排序",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1573459677000_96174"
+                },
+                "key": "1573459677000_96174",
+                "model": "sort",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "select",
+                "name": "证照阶段",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择证照阶段",
+                  "isRelated": false,
+                  "required": true,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "dictionaryCode": "license_phase",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  },
+                  "remoteFunc": "func_1573455647000_65979"
+                },
+                "key": "1566191540000_16876",
+                "model": "licensePhase",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "证照阶段必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "办证部门",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "",
+                  "remoteFunc": "func_1573455651000_86162",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566192909000_96788",
+                "model": "handleGov",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "办证部门格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "联系电话",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": " /^((0\\d{2,3}-\\d{7,8})|(1[3584]\\d{9}))$/",
+                  "placeholder": "",
+                  "remoteFunc": "func_1573455653000_69012",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566191592000_69746",
+                "model": "contactTelephone",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "联系电话格式不正确"
+                  },
+                  {
+                    "pattern": " /^((0\\d{2,3}-\\d{7,8})|(1[3584]\\d{9}))$/",
+                    "message": "联系电话格式不匹配"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "排序",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1573459502000_87434"
+                },
+                "key": "1573459502000_87434",
+                "model": "orderNo",
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1573455642000_56868",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1573455642000_56868",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "textarea",
+        "name": "办证流程",
+        "options": {
+          "width": "100%",
+          "defaultValue": "",
+          "required": false,
+          "disabled": false,
+          "pattern": "",
+          "placeholder": "",
+          "remoteFunc": "func_1566461511000_3944",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1566461511000_3944",
+        "model": "handleProcess",
+        "rules": []
+      },
+      {
+        "type": "imgupload",
+        "name": "附件",
+        "options": {
+          "length": 8,
+          "fileName": "",
+          "isFile": true,
+          "defaultValue": "",
+          "remoteFunc": "func_1570611965000_76609",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1570611965000_76609",
+        "model": "docId",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

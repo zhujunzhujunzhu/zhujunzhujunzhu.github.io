@@ -1,0 +1,11 @@
+.detialDialog .attach-head {
+  height: 40px;
+  font-weight: bold;
+}
+.detialDialog .attach-item {
+  padding: 10px 190px;
+}
+.detialDialog .attach-item:hover {
+    color: #245fab;
+}
+

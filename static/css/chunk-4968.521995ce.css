@@ -1,0 +1,9 @@
+.logDialog .el-row {
+  padding: 10px;
+}
+.logDiv .filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+

@@ -1,0 +1,75 @@
+.investPlanDiv[data-v-f410ec3c] {
+  padding: 0px;
+}
+.investPlanDiv .leftDiv[data-v-f410ec3c] {
+    position: relative;
+    width: 300px;
+    overflow: auto;
+}
+.investPlanDiv .leftDiv .topDiv .bidButtom[data-v-f410ec3c] {
+      margin: 10px 0 10px 30px;
+}
+.investPlanDiv .leftDiv .el-button--medium[data-v-f410ec3c] {
+      margin-right: 5px;
+}
+.investPlanDiv .leftDiv .addButtonTow[data-v-f410ec3c] {
+      background: #dcdcdc !important;
+      border: 1px solid #dcdcdc !important;
+      color: black !important;
+      margin-bottom: 10px;
+}
+.investPlanDiv .rightDiv[data-v-f410ec3c] {
+    margin-left: 20px;
+    padding-left: 20px;
+    width: calc(100% - 320px);
+}
+.investPlanDiv .rightDiv .topDiv[data-v-f410ec3c] {
+      height: 50px;
+}
+.investPlanDiv .rightDiv .unitSpan[data-v-f410ec3c] {
+      float: right;
+}
+.investPlanDiv .rightDiv .addButtonTow[data-v-f410ec3c] {
+      background: #dcdcdc !important;
+      border: 1px solid #dcdcdc !important;
+      color: black !important;
+      margin-bottom: 10px;
+}
+.investPlanDiv .rightDiv .dataTable[data-v-f410ec3c] {
+      margin-top: 50px;
+}
+.investPlanDiv .rightDiv .inlineBlockTime[data-v-f410ec3c] {
+      width: 500px;
+      margin: 0 auto;
+}
+.investPlanDiv .addButtonOne[data-v-f410ec3c] {
+    background: #1cade4 !important;
+    border: 1px solid #1cade4 !important;
+    color: #fff !important;
+    margin-bottom: 10px;
+}
+.investPlanDiv .bottombutton[data-v-f410ec3c] {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+.investPlanDiv .bottomSpan[data-v-f410ec3c] {
+    line-height: 36px;
+}
+.investPlanDiv .custom-tree-node[data-v-f410ec3c] {
+    width: 100%;
+    line-height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left: 0px;
+}
+.investPlanDiv .custom-tree-node .icon[data-v-f410ec3c] {
+      font-size: 20px;
+}
+.investPlanDiv .inlineBlock[data-v-f410ec3c] {
+    margin-top: 10px;
+}
+.investPlanDiv .el-card .box-card .mxCard .is-always-shadow[data-v-f410ec3c] {
+    min-height: 740px;
+}
+

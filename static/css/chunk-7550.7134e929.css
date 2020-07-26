@@ -1,0 +1,57 @@
+.elInput input {
+  border: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+.imageEditorApp {
+  width: 100%;
+}
+#glContainer {
+  position: relative;
+}
+.tui-image-editor-container .tui-image-editor-wrap {
+  overflow: hidden;
+}
+.tui-colorpicker-palette-button {
+  display: block;
+  border: none;
+  overflow: hidden;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.tui-colorpicker-palette-container li {
+  float: left;
+  margin: 0;
+  padding: 0 3px 3px 0;
+  list-style: none;
+}
+.tui-image-editor-menu-filter .tui-image-editor-submenu-item,
+#tie-btn-filter {
+  display: none;
+}
+.tui-image-editor-menu-shape .tui-image-editor-button label,
+.tui-image-editor-menu-icon .tui-image-editor-button label {
+  display: none !important;
+}
+.tui-image-editor-menu-shape .tui-image-editor-partition div,
+.tui-image-editor-menu-icon .tui-image-editor-partition div {
+  height: 32px !important;
+}
+.tui-image-editor {
+  width: 100% !important;
+  height: 100% !important;
+}
+.tui-image-editor .tui-image-editor-canvas-container {
+    max-height: inherit !important;
+    max-width: inherit !important;
+}
+.tui-image-editor .tui-image-editor-canvas-container canvas {
+      max-height: inherit !important;
+      max-width: inherit !important;
+}
+

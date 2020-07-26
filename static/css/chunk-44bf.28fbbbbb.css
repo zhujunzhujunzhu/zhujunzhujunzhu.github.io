@@ -1,0 +1,92 @@
+.rightCardTableDiv {
+  margin-top: 15px;
+  height: 140px;
+  background: #ecf2fe;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+.rightCardTableDiv .card {
+    margin-bottom: 6px;
+}
+.rightCardTableDiv .name {
+    height: 26px;
+    line-height: 26px;
+    background: #dae4fd;
+    color: #4993ea;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 4px;
+    margin-right: 15px;
+    cursor: default;
+}
+.rightCardTableDiv .text {
+    margin-right: 2px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+}
+.rightCardTableDiv .value {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+    line-height: 20px;
+    color: #333333;
+}
+.rightCardTableDiv .text-overflow {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@charset "UTF-8";
+.classficationCardLeftCard {
+  width: 220px;
+}
+.classficationCardLeftCard .leftCardHeader .line {
+    height: 20px;
+    width: 6px;
+    border-radius: 2px;
+    background: #1cade4;
+    margin-right: 3px;
+}
+.classficationCardLeftCard .leftCardHeader .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.classficationCardLeftCard .leftCardHeader img {
+    margin-top: 8px;
+}
+.classficationCardLeftCard .el-pager li,
+  .classficationCardLeftCard .el-pagination button {
+    font-size: 12px;
+    height: 15px;
+    min-width: 15px !important;
+    width: 15px !important;
+    line-height: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 2px;
+    background: none;
+}
+.classficationCardLeftCard .el-pagination button {
+    width: 50px !important;
+}
+.classficationCardLeftCard .el-icon-arrow-left:before {
+    content: '\4E0A\4E00\9875';
+}
+.classficationCardLeftCard .el-icon-arrow-right:before {
+    content: '\4E0B\4E00\9875';
+}
+
+.classificationCardDiv .cardWrapper {
+  margin-bottom: 10px;
+}
+.classificationCardDiv .cardWrapper:last-child {
+    margin-bottom: 0px;
+}
+

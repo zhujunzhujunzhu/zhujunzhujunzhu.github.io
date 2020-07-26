@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.epidemicStaticsDiv .leftDiv {
+  width: 50%;
+  overflow: auto;
+}
+.epidemicStaticsDiv .leftDiv .header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+.epidemicStaticsDiv .leftDiv .content {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    margin: 90px auto;
+}
+.epidemicStaticsDiv .rightDiv {
+  margin-left: 20px;
+  padding-left: 20px;
+  width: calc(50%-40px);
+}
+.epidemicStaticsDiv .rightDiv .header {
+    font-size: 30px;
+    text-align: center;
+}
+.epidemicStaticsDiv .rightDiv .tendersWrapper {
+    position: relative;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.epidemicStaticsDiv .rightDiv .tendersWrapper .vue-treeselect {
+      width: 300px;
+}
+.epidemicStaticsDiv .rightDiv .content {
+    height: 400px;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+

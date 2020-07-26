@@ -1,0 +1,495 @@
+{
+  "list": [
+    {
+      "label": "证照阶段",
+      "prop": "licensePhase",
+      "isQuery": "2",
+      "displayName": "证照阶段",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "license_phase"
+    },
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "证照名称",
+      "param": "",
+      "isQuery": "2"
+    },
+    {
+      "label": "计划提交时间",
+      "prop": "planUploadDate",
+      "displayType": "glq",
+      "filterType": "sj",
+      "displayName": "计划",
+      "param": "{y}{m}{d}",
+      "isQuery": "2"
+    },
+    {
+      "label": "计划批复时间",
+      "prop": "planReplyDate",
+      "displayType": "glq",
+      "filterType": "sj",
+      "displayName": "计划",
+      "param": "{y}{m}{d}",
+      "isQuery": "2"
+    },
+    {
+      "label": "有效期",
+      "prop": "expireDate",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "有效期限",
+      "param": "",
+      "isQuery": "2"
+    },
+    {
+      "label": "流程状态",
+      "prop": "processStatus",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "流程状态",
+      "param": "process_state",
+      "isQuery": "2"
+    },
+    {
+      "label": "证照状态",
+      "prop": "status",
+      "isQuery": "2",
+      "displayName": "证照状态",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "license_state"
+    },
+    {
+      "label": "操作",
+      "prop": "button",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "证照阶段",
+      "param": "license_phase",
+      "isQuery": "1"
+    },
+    {
+      "label": "前期工点id",
+      "prop": "previousWorkPointId"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "证照类型",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1571972447000_86942"
+                },
+                "key": "1571972447000_86942",
+                "model": "licenseLibraryId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1570584419000_20794"
+                },
+                "key": "1567048196000_67741",
+                "model": "tendersId",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "前期工点",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择前期工点",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": true,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "id",
+                    "label": "name"
+                  },
+                  "remoteFunc": "rest/previousWorkPoint/list"
+                },
+                "key": "1573538577000_2431",
+                "model": "previousWorkPointId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "办证部门",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1570584620000_97752",
+                  "required": false
+                },
+                "key": "1566801229000_60003",
+                "model": "handleGov",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "办证联系人",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1566203690000_84702",
+                  "required": false
+                },
+                "key": "1566203648000_49034",
+                "model": "contactPerson",
+                "rules": []
+              },
+              {
+                "type": "date",
+                "name": "实际提交时间",
+                "options": {
+                  "defaultValue": "",
+                  "readonly": false,
+                  "disabled": false,
+                  "editable": true,
+                  "clearable": true,
+                  "placeholder": "请选择实际报送日期",
+                  "startPlaceholder": "",
+                  "endPlaceholder": "",
+                  "type": "date",
+                  "format": "yyyy-MM-dd",
+                  "timestamp": true,
+                  "required": false,
+                  "width": "100%",
+                  "remoteFunc": "func_1566203097000_61834"
+                },
+                "key": "1573720912000_24306",
+                "model": "uploadDate",
+                "rules": []
+              },
+              {
+                "type": "date",
+                "name": "有效期",
+                "options": {
+                  "defaultValue": "",
+                  "readonly": false,
+                  "disabled": false,
+                  "editable": true,
+                  "clearable": true,
+                  "placeholder": "请选择有效期",
+                  "startPlaceholder": "",
+                  "endPlaceholder": "",
+                  "type": "date",
+                  "format": "yyyy-MM-dd",
+                  "timestamp": true,
+                  "required": false,
+                  "width": "100%",
+                  "remoteFunc": "func_1571708650000_12470"
+                },
+                "key": "1566351662000_28728",
+                "model": "expireDate",
+                "rules": []
+              },
+              {
+                "type": "imgupload",
+                "name": "附件",
+                "options": {
+                  "length": 8,
+                  "fileName": "",
+                  "isFile": true,
+                  "defaultValue": "",
+                  "remoteFunc": "func_1570584603000_19111",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1566203203000_89735",
+                "model": "docId",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "证照名称",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1571972385000_24272",
+                  "required": true
+                },
+                "key": "1566204721000_19793",
+                "model": "name",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "证照名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "证照编号",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请填写证照编号",
+                  "remoteFunc": "func_1570584418000_70750"
+                },
+                "key": "1566202255000_44428",
+                "model": "code",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "证照编号格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "工点",
+                "options": {
+                  "defaultValue": [],
+                  "multiple": true,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择工点",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": true,
+                  "filterable": true,
+                  "allowCreate": false,
+                  "dictionaryCode": "",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "id",
+                    "label": "name"
+                  },
+                  "remoteFunc": "rest/workPoint/list"
+                },
+                "key": "1570584520000_51092",
+                "model": "workPointIds",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "证照阶段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1566203648000_49034",
+                  "required": false
+                },
+                "key": "1566203693000_12643",
+                "model": "licensePhase",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "联系电话",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1566203648000_49034",
+                  "required": false
+                },
+                "key": "1566203689000_13552",
+                "model": "contactTelephone",
+                "rules": []
+              },
+              {
+                "type": "date",
+                "name": "实际批复时间",
+                "options": {
+                  "defaultValue": "",
+                  "readonly": false,
+                  "disabled": false,
+                  "editable": true,
+                  "clearable": true,
+                  "placeholder": "请选择实际批复日期",
+                  "startPlaceholder": "",
+                  "endPlaceholder": "",
+                  "type": "date",
+                  "format": "yyyy-MM-dd",
+                  "timestamp": true,
+                  "required": false,
+                  "width": "100%",
+                  "remoteFunc": "func_1573720546000_33439"
+                },
+                "key": "1573720914000_30607",
+                "model": "replyDate",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "证照状态",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": true,
+                  "clearable": true,
+                  "placeholder": "请选择证照状态",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "license_state",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1571708648000_80451"
+                },
+                "key": "1566978876000_3914",
+                "model": "status",
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1566201815000_72200",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1566201815000_72200",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "textarea",
+        "name": "备注",
+        "options": {
+          "width": "100%",
+          "defaultValue": "",
+          "required": false,
+          "disabled": false,
+          "pattern": "",
+          "placeholder": "请填写备注",
+          "remoteFunc": "func_1566203192000_34040",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1566203179000_32164",
+        "model": "remark",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "2",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

@@ -1,0 +1,30 @@
+.videoMonitorDiv .box-card-wrapper[data-v-a862e9a2] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.videoMonitorDiv .box-card-wrapper .leftCard[data-v-a862e9a2] {
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 0s;
+    transition: 0s;
+    /*float: left;*/
+}
+.videoMonitorDiv .box-card-wrapper .rightCard[data-v-a862e9a2] {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 10px;
+}
+.videoMonitorDiv .box-card-wrapper .rightCard .videoFrame[data-v-a862e9a2] {
+      margin: 60px;
+}
+.videoMonitorDiv .left-box[data-v-a862e9a2] {
+  float: left;
+}
+.videoMonitorDiv .right-box[data-v-a862e9a2] {
+  margin-right: 20px;
+  float: right;
+}
+

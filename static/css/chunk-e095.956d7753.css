@@ -1,0 +1,36 @@
+.echartsDiv .color_09B94B {
+  color: #09b94b;
+}
+.echartsDiv .color_F24336 {
+  color: #f24336;
+}
+.echartsDiv .cardWapper {
+  position: relative;
+  height: 190px;
+  padding: 5px;
+  overflow: hidden;
+}
+.echartsDiv .cardWapper .header {
+    padding: 10px 0;
+    border-bottom: 1px #dddddd solid;
+    color: #333;
+}
+.echartsDiv .cardWapper .header span {
+      font-size: 20px;
+      font-weight: bold;
+}
+.echartsDiv .cardWapper .header .rate {
+      margin-left: 5px;
+}
+.echartsDiv .cardWapper .barChartContent {
+    position: absolute;
+    top: 0;
+}
+.echartsDiv .cardWapper .content {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+.echartsDiv .upOrDown {
+  margin-left: 5px;
+}
+

@@ -1,0 +1,24 @@
+.cus-dialog-container .el-dialog__footer {
+  margin: 0 20px;
+  padding: 15px 0 16px;
+  text-align: center;
+  position: relative;
+}
+.cus-dialog-container .el-dialog__footer .dialog-footer {
+    display: block;
+}
+.cus-dialog-container .el-dialog__footer .dialog-footer .circular {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+}
+.cus-dialog-container .el-dialog__footer .dialog-footer .el-loading-text {
+      display: inline-block;
+      vertical-align: middle;
+}
+.cus-dialog-container .el-dialog__footer .dialog-footer .el-loading-spinner {
+      margin-top: -12px;
+}
+

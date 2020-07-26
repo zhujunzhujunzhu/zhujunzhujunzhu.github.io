@@ -1,0 +1,89 @@
+#bimMasterView {
+  margin: 0px;
+  overflow: hidden;
+}
+#bimMasterView .bottomDiv {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    bottom: 50px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    color: #d0d0d0;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+#bimMasterView .bottomDiv .isActive {
+      border-bottom: 3px solid #f75223;
+      background: #000;
+}
+#bimMasterView .bottomDiv .isActive .icon {
+        color: #f75223;
+}
+#bimMasterView .bottomDiv .toolBoxItem {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      font-size: 24px;
+      cursor: pointer;
+}
+#bimMasterView .bottomDiv .toolBoxItem .icon {
+        font-size: 28px;
+}
+#bimMasterView .bottomDiv .leftBord {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      margin: 5px 0px;
+      height: 30px;
+}
+#bimMasterView .active {
+    -webkit-animation: opendoor 0.3s normal forwards;
+            animation: opendoor 0.3s normal forwards;
+}
+@-webkit-keyframes opendoor {
+from {
+    width: 0;
+}
+to {
+    width: 45%;
+}
+}
+@keyframes opendoor {
+from {
+    width: 0;
+}
+to {
+    width: 45%;
+}
+}
+#bimMasterView .close {
+    -webkit-animation: close 0.3s normal forwards;
+            animation: close 0.3s normal forwards;
+}
+@-webkit-keyframes close {
+0% {
+    width: 45%;
+}
+100% {
+    width: 0;
+    opacity: 0;
+}
+}
+@keyframes close {
+0% {
+    width: 45%;
+}
+100% {
+    width: 0;
+    opacity: 0;
+}
+}
+

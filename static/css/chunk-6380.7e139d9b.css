@@ -1,0 +1,81 @@
+.weekMeetingDiv .table[data-v-137b3950] {
+  width: 100%;
+  text-align: center;
+}
+.weekMeetingDiv .table .titleSpan[data-v-137b3950] {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1279f5;
+}
+.weekMeetingDiv .table .timeSpan[data-v-137b3950] {
+    display: block;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    /*font-size: 14px;*/
+}
+.weekMeetingDiv .lDiv[data-v-137b3950] {
+  width: 80px;
+  border-right: 1px solid #cfddfc;
+  text-align: center;
+}
+.weekMeetingDiv .lDiv .title[data-v-137b3950] {
+    background: #3e75f2;
+    height: 42px;
+}
+.weekMeetingDiv .lDiv label[data-v-137b3950] {
+    margin-top: 20px;
+    display: block;
+    color: #1279f5;
+}
+.weekMeetingDiv .hDiv[data-v-137b3950] {
+  background: #eff3fc;
+  border-right: 1px solid #cfddfc;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(213, 219, 234, 0.9);
+  box-shadow: 0px 1px 1px 0px rgba(213, 219, 234, 0.9);
+  border-radius: 1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+}
+.weekMeetingDiv .hDiv .el-col[data-v-137b3950] {
+    width: calc((100% - 80px) / 7);
+    border-right: 1px solid #cfddfc;
+}
+.weekMeetingDiv .hDiv .el-col[data-v-137b3950]:last-child {
+    border-right: 0px !important;
+}
+.weekMeetingDiv .hDiv .title[data-v-137b3950] {
+    background: #3e75f2;
+    height: 42px;
+    color: #fff;
+    line-height: 42px;
+    /*border-right: 1px solid;*/
+}
+.weekMeetingDiv .hDiv .mDiv[data-v-137b3950] {
+    background: white;
+    border: 1px solid #cfddfc;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(213, 219, 234, 0.9);
+            box-shadow: 0px 1px 1px 0px rgba(213, 219, 234, 0.9);
+    border-radius: 1px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.weekMeetingDiv .hDiv .mDiv label[data-v-137b3950] {
+      margin-bottom: 5px;
+      line-height: 30px;
+}
+.weekMeetingDiv .hDiv .mDiv .mTitle[data-v-137b3950] {
+      color: #294c99;
+      font-weight: bold;
+}
+.weekMeetingDiv .hDiv .mDiv .mTime[data-v-137b3950] {
+      color: #f26c23;
+}
+.weekMeetingDiv .hDiv .mDiv .mContent[data-v-137b3950] {
+      line-height: 30px;
+      color: #333333;
+}
+

@@ -1,0 +1,30 @@
+.orgDiv .projectButton {
+  margin-left: 10px;
+}
+.orgDiv .addButton {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.orgDiv i.icon.iconfont.pointer.el-tooltip.iconzhize {
+  font-size: 18px !important;
+  position: relative;
+  top: -3px;
+}
+.orgDiv .iconxiayi,
+.orgDiv .iconshangyi {
+  font-size: 20px !important;
+  position: relative;
+  top: -2px;
+}
+.orgDutyDialog .el-form-item--small .el-form-item__label {
+  line-height: 32px;
+  text-align: left;
+  padding-left: 10px;
+}
+.orgDutyDialog .iconquxiaobianji {
+  font-size: 18px !important;
+  position: relative;
+  top: -3px;
+}
+

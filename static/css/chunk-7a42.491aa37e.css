@@ -1,0 +1,50 @@
+.authTable .el-table {
+  margin-left: 10px;
+  /*position: absolute;*/
+  /*width: calc(100% - 273px);*/
+  /*z-index: 999;*/
+}
+
+.BIMFloderDiv {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  background: #ffffff;
+}
+.BIMFloderDiv .myWidth {
+    width: 100%;
+}
+.BIMFloderDiv .left-box {
+    width: 230px;
+    border-right: 1px solid #dddee1;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+.BIMFloderDiv .right-box {
+    margin-left: 230px;
+    width: auto;
+    height: 100%;
+}
+.BIMFloderDiv .right-box .right-top-box {
+      height: 60px;
+      width: 100%;
+      padding: 10px;
+      white-space: nowrap;
+}
+.BIMFloderDiv .right-box .right-top-box .myBreadcrumb {
+        padding-top: 10px;
+        margin-left: 10px;
+}
+.BIMFloderDiv .right-box .right-top-box .myBreadcrumb .breadcrumb-item {
+          cursor: pointer;
+          float: left;
+}
+.BIMFloderDiv .right-box .right-body-box {
+      height: calc(100% - 80px);
+      padding: 0 10px;
+}
+.BIMFloderDiv .right-box .right-body-box .el-table__header-wrapper {
+        color: #515a6e;
+}
+

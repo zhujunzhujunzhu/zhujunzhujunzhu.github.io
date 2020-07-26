@@ -1,0 +1,64 @@
+.projectInfoDic {
+  padding: 5px;
+}
+.projectInfoDic .rightDiv {
+    margin-left: 20px;
+    padding-left: 20px;
+    width: calc(100% - 320px);
+}
+.projectInfoDic .rightDiv .topDiv {
+      height: 50px;
+}
+.projectInfoDic .rightDiv .firstDiv {
+      margin-bottom: 15px;
+}
+.projectInfoDic .rightDiv .el-table thead.is-group th {
+      background: #edf7ff;
+}
+.projectInfoDic .rightDiv .inlineBlock {
+      margin-right: 20px;
+}
+.projectInfoDic .rightDiv .bottomDiv {
+      margin-left: 935px;
+      margin-top: 20px;
+}
+.projectInfoDic .rightDiv .bottomDiv .marginLeft510 {
+        margin-left: 510px;
+}
+.projectInfoDic .rightDiv .bottomDiv .marginright10 {
+        margin-right: 10px;
+}
+.projectInfoDic .rightDiv .bottomDiv .float {
+        float: left;
+}
+.projectInfoDic .rightDiv .bottomSpan {
+      line-height: 36px;
+}
+.projectInfoDic .rightDiv .bottomSp {
+      color: red;
+}
+.projectInfoDic .rightDiv .el-table td,
+    .projectInfoDic .rightDiv .el-table th {
+      text-align: right;
+}
+.projectInfoDic .rightDiv .inlineBlockTime {
+      width: 500px;
+      margin-right: 20px;
+}
+.projectInfoDic .rightDiv .height {
+      height: 38px;
+}
+.projectInfoDic .color-red {
+    color: red;
+}
+.projectInfoDic .czClass {
+    text-align: center;
+}
+.projectInfoDic .unitClass {
+    float: right;
+}
+.projectInfoDic .unitDiv {
+    position: absolute;
+    right: 3%;
+}
+

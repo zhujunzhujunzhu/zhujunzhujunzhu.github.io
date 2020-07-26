@@ -1,0 +1,56 @@
+.BIMcalendarDiv .el-calendar-day {
+  padding: 0;
+}
+.BIMcalendarDiv .cellDiv {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.BIMcalendarDiv .cellDiv .addbtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #409eff;
+}
+.BIMcalendarDiv .textContent {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.BIMcalendarDiv .xingxingIcon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 1px;
+}
+.BIMcalendarDiv .yueliangIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 4px;
+}
+.BIMcalendarDiv .yiqingPicIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 4px;
+}
+.BIMcalendarDiv .explain {
+  padding: 10px 20px;
+}
+.BIMcalendarDiv .explain .explainItem {
+    margin-right: 15px;
+}
+.BIMcalendarDiv .explain .icon {
+    margin-right: 5px;
+}
+.BIMcalendarDiv .explain .yueliangIcon {
+    top: 2px;
+}
+.calendarPopoverBtn .el-button {
+  margin-top: 8px;
+}
+.calendarPopoverBtn .el-button + .el-button {
+  margin-left: 0 !important;
+}
+

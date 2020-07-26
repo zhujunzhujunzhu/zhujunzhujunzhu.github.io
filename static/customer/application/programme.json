@@ -1,0 +1,322 @@
+{
+  "list": [
+    {
+      "label": "工点ID",
+      "prop": "workPointId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "工点",
+      "param": "workPoint",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "阶段",
+      "prop": "projectPhase",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "",
+      "param": "project_phase",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "应用类型",
+      "prop": "applyPoint",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "应用类型",
+      "param": "apply_point",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "方案名称",
+      "param": "",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "方案名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入方案名称",
+                  "remoteFunc": "func_1584433428000_69279"
+                },
+                "key": "1584433428000_69279",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "方案名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "方案名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "阶段",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择阶段",
+                  "isRelated": false,
+                  "required": true,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": true,
+                  "allowCreate": false,
+                  "dictionaryCode": "project_phase",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1584433465000_67294"
+                },
+                "key": "1584433465000_67294",
+                "model": "projectPhase",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "阶段必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "radio",
+                "name": "是否双屏",
+                "options": {
+                  "inline": true,
+                  "defaultValue": "",
+                  "showLabel": false,
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "required": true,
+                  "width": "",
+                  "remote": false,
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  },
+                  "remoteFunc": "func_1584433550000_73508",
+                  "dictionaryCode": "is_show_double_screen"
+                },
+                "key": "1584433550000_73508",
+                "model": "doubleScreen",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "是否双屏必须填写"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "select",
+                "name": "应用类型",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择应用类型",
+                  "isRelated": false,
+                  "required": true,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": true,
+                  "allowCreate": false,
+                  "dictionaryCode": "apply_point",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1584433446000_9557"
+                },
+                "key": "1584433446000_9557",
+                "model": "applyPoint",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "应用类型必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "工点",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择工点",
+                  "isRelated": false,
+                  "required": true,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": true,
+                  "filterable": true,
+                  "allowCreate": false,
+                  "dictionaryCode": "",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "id",
+                    "label": "name"
+                  },
+                  "remoteFunc": "rest/workPoint/list"
+                },
+                "key": "1584433501000_40668",
+                "model": "workPointId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "工点必须填写"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1584433422000_92991",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1584433422000_92991",
+        "model": "",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

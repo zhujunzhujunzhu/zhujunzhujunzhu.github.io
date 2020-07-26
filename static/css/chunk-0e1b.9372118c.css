@@ -1,0 +1,12 @@
+
+.projectRoleDialog .el-dialog {
+  height: 80%;
+}
+.projectRoleDialog .el-dialog .el-dialog__body {
+    height: calc(100% - 110px);
+}
+.projectRoleDialog .el-dialog .el-dialog__body .chooseAuthDiv {
+      height: 100%;
+      overflow: auto;
+}
+

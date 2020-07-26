@@ -1,0 +1,23 @@
+.realTimeScheduleAllDiv {
+  margin-top: -40px;
+  /* move task lines upper */
+}
+.realTimeScheduleAllDiv .banner {
+    position: relative;
+    left: 330px;
+    top: -7px;
+}
+.realTimeScheduleAllDiv .banner .colorListDiv {
+      margin-left: 20px;
+}
+.realTimeScheduleAllDiv .gantt_task_line,
+  .realTimeScheduleAllDiv .gantt_line_wrapper {
+    margin-top: -9px;
+}
+.realTimeScheduleAllDiv .gantt_side_content {
+    margin-bottom: 7px;
+}
+.realTimeScheduleAllDiv .gantt_task_link .gantt_link_arrow {
+    margin-top: -10px;
+}
+

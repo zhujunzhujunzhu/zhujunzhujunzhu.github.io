@@ -1,0 +1,25 @@
+
+.bimFloderTable {
+  height: 100%;
+}
+.bimFloderTable .BIMFloderTable {
+    height: 100%;
+}
+.bimFloderTable .BIMFloderTable .el-table {
+      height: 100%;
+      overflow: auto;
+}
+.bimFloderTable .custom-tree-node {
+    line-height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left: 0px;
+}
+.bimFloderTable .custom-tree-node i {
+      color: #e0aa25;
+}
+.bimFloderTable .custom-tree-node .appendIcon {
+      font-size: 20px;
+      vertical-align: middle;
+}
+

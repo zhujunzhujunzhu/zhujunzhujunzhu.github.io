@@ -1,0 +1,923 @@
+{
+	"list": [{
+		"label": "项目ID",
+		"prop": "projectId",
+		"displayName": "标段",
+		"displayType": "zdy",
+    "param": "dealBidSelection",
+    "isQuery": "2"
+  },
+    {
+    "label": "前期工点",
+    "prop": "previousWorkPointId",
+    "displayType": "zdy",
+    "filterType": "",
+    "displayName": "前期工点",
+    "param": "dealWorkPointId",
+    "isQuery": "1"
+  }, {
+		"label": "征地名称",
+		"prop": "landName",
+		"isQuery": "1",
+		"displayName": "名称"
+	}, {
+		"label": "征地地点",
+		"prop": "location",
+		"isQuery": "2",
+		"displayName": "位置",
+		"displayType": "",
+		"filterType": "",
+		"param": ""
+	}, {
+		"label": "征地类型",
+		"prop": "landAcquireType",
+		"isQuery": "1",
+		"displayType": "glq",
+		"filterType": "zd",
+		"param": "land_acquire_type",
+		"displayName": "类型"
+	}, {
+		"label": "工程量",
+		"prop": "quantities",
+		"isQuery": "2",
+		"displayName": ""
+	}, {
+		"label": "完成工程量",
+		"prop": "completeQuantities",
+		"isQuery": "2",
+		"displayType": "",
+		"filterType": "sj",
+		"param": "{y}-{m}-{d}"
+	}, {
+		"label": "开始时间",
+		"prop": "startDate",
+		"isQuery": "2",
+		"displayType": "glq",
+		"filterType": "sj",
+		"param": "{y}-{m}-{d}"
+	}, {
+		"label": "完成时间",
+		"prop": "endDate",
+		"isQuery": "2",
+		"displayType": "glq",
+		"filterType": "sj",
+		"param": "{y}-{m}-{d}",
+		"displayName": ""
+	}, {
+		"label": "移植植被",
+		"prop": "transplantVegetation",
+		"isQuery": "2",
+		"displayName": "完成率",
+		"displayType": "zdy",
+		"param": "dealRate"
+  },
+  {
+    "label": "证照状态进度",
+    "isQuery": "2",
+    "prop": "licenseName",
+    "displayType": "zdy",
+    "param": "dealLicense"
+  }
+],
+	"table": {
+		"list": [{
+			"type": "grid",
+			"name": "栅格布局",
+			"icon": "icon-grid-",
+			"columns": [{
+				"span": 12,
+				"list": [
+          {
+            "type": "select",
+            "name": "前期工点",
+            "options": {
+              "defaultValue": "",
+              "multiple": false,
+              "disabled": false,
+              "clearable": true,
+              "placeholder": "请选择前期工点",
+              "isRelated": false,
+              "required": false,
+              "showLabel": false,
+              "childKey": "",
+              "width": "100%",
+              "options": [
+                {
+                  "value": "选项1",
+                  "label": "选项1"
+                },
+                {
+                  "value": "选项2",
+                  "label": "选项2"
+                },
+                {
+                  "value": "选项3",
+                  "label": "选项3"
+                }
+              ],
+              "remote": true,
+              "filterable": false,
+              "allowCreate": false,
+              "dictionaryCode": "",
+              "remoteOptions": [],
+              "props": {
+                "value": "id",
+                "label": "name"
+              },
+              "remoteFunc": "/rest/previousWorkPoint/list"
+            },
+            "key": "1573544149000_70360",
+            "model": "previousWorkPointId",
+            "rules": []
+          },
+          {
+					"type": "select",
+					"name": "施工工点",
+					"options": {
+						"defaultValue": "",
+						"multiple": true, 
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择施工工点",
+						"isRelated": false,
+						"required": true,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": true,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "/rest/workPoint/list",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "/rest/workPoint/list"
+					},
+					"key": "1566888964000_18054",
+					"model": "workPointIds",
+					"rules": [{
+						"required": true,
+						"message": "施工工点必须填写"
+					}]
+				}, {
+					"type": "input",
+					"name": "名称",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写名称",
+						"remoteFunc": "func_1566800676000_58482"
+					},
+					"key": "1566798296000_59311",
+					"model": "landName",
+					"rules": [{
+						"type": "string",
+						"message": "名称格式不正确"
+					}]
+				}, {
+					"type": "select",
+					"name": "区属",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择区属",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "land_region",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "func_1566800679000_15653"
+					},
+					"key": "1566889102000_308",
+					"model": "landRegion",
+					"rules": []
+				}, {
+					"type": "input",
+					"name": "位置",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写权属",
+						"remoteFunc": "func_1566889671000_77857"
+					},
+					"key": "1566798339000_56432",
+					"model": "location",
+					"rules": [{
+						"type": "string",
+						"message": "位置格式不正确"
+					}]
+				}, {
+					"type": "number",
+					"name": "工程量",
+					"options": {
+						"width": "100%",
+						"required": false,
+						"defaultValue": 0,
+						"min": 0,
+						"max": 0,
+						"step": 1,
+						"disabled": false,
+						"controlsPosition": "",
+						"remoteFunc": "func_1566889680000_75447"
+					},
+					"key": "1566889062000_73676",
+					"model": "quantities",
+					"rules": []
+				}, {
+					"type": "input",
+					"name": "工程量单位",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请输入工程量单位",
+						"remoteFunc": "func_1566973014000_11648"
+					},
+					"key": "1566973014000_11648",
+					"model": "unit",
+					"rules": [{
+						"type": "string",
+						"message": "工程量单位格式不正确"
+					}]
+				}, {
+					"type": "date",
+					"name": "开始时间",
+					"options": {
+						"defaultValue": "",
+						"readonly": false,
+						"disabled": false,
+						"editable": true,
+						"clearable": true,
+						"placeholder": "请输入开始时间",
+						"startPlaceholder": "",
+						"endPlaceholder": "",
+						"type": "date",
+						"format": "yyyy-MM-dd",
+						"timestamp": false,
+						"required": false,
+						"width": "100%",
+						"remoteFunc": "func_1566958015000_75540"
+					},
+					"key": "1566957929000_40598",
+					"model": "startDate",
+					"rules": []
+				}, {
+					"type": "select",
+					"name": "管线类型",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择管线类型",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "line_type",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "func_1566889174000_1303"
+					},
+					"key": "1566889487000_34450",
+					"model": "lineType",
+					"rules": []
+				}, {
+					"type": "number",
+					"name": "掩埋深度",
+					"options": {
+						"width": "100%",
+						"required": false,
+						"defaultValue": 0,
+						"min": 0,
+						"max": 0,
+						"step": 1,
+						"disabled": false,
+						"controlsPosition": "",
+						"remoteFunc": "func_1566976085000_63354"
+					},
+					"key": "1566976085000_63354",
+					"model": "buriedDepth",
+					"rules": []
+				}, {
+					"type": "date",
+					"name": "割接时间",
+					"options": {
+						"defaultValue": "",
+						"readonly": false,
+						"disabled": false,
+						"editable": true,
+						"clearable": true,
+						"placeholder": "请选择割接时间",
+						"startPlaceholder": "",
+						"endPlaceholder": "",
+						"type": "datetime",
+						"format": "yyyy-MM-dd HH:mm:ss",
+						"timestamp": false,
+						"required": false,
+						"width": "100%",
+						"remoteFunc": "func_1566902070000_12948"
+					},
+					"key": "1566902070000_12948",
+					"model": "",
+					"rules": []
+        }, 
+        {
+					"type": "input",
+					"name": "绿化移植区域",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写绿化移植区域",
+						"remoteFunc": "func_1566889417000_3012"
+					},
+					"key": "1566889415000_40405",
+					"model": "plantingArea",
+					"rules": [{
+						"type": "string",
+						"message": "绿化移植区域格式不正确"
+					}]
+        }, 
+        {
+					"type": "select",
+					"name": "行为",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择行为",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "land_behavior",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "func_1566889721000_21525"
+					},
+					"key": "1566798398000_28705",
+					"model": "landBehavior",
+					"rules": []
+        },
+      
+        {
+					"type": "input",
+					"name": "施工工艺",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写施工工艺",
+						"remoteFunc": "func_15668894170xx00_3012"
+					},
+					"key": "1566889415000_40432405",
+					"model": "constructionTechnology",
+					"rules": [{
+						"type": "string",
+						"message": "施工工艺格式不正确"
+					}]
+        }
+      
+      
+      ]
+			}, {
+				"span": 12,
+				"list": [{
+					"type": "select",
+					"name": "类型",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择类型",
+						"isRelated": false,
+						"required": true,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "land_acquire_type",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "/rest/workPoint/list"
+					},
+					"key": "1566888917000_73053",
+					"model": "landAcquireType",
+					"rules": [{
+						"required": true,
+						"message": "类型必须填写"
+					}]
+				}, {
+					"type": "select",
+					"name": "性质",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择性质",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "land_nature",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "func_1566974881000_43722"
+					},
+					"key": "1566888961000_32563",
+					"model": "landNature",
+					"rules": []
+				}, {
+					"type": "input",
+					"name": "权属",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写权属",
+						"remoteFunc": "func_1566800681000_49655"
+					},
+					"key": "1566889082000_13234",
+					"model": "landOwner",
+					"rules": [{
+						"type": "string",
+						"message": "权属格式不正确"
+					}]
+				}, {
+					"type": "select",
+					"name": "状态",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": true,
+						"placeholder": "请选择状态",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "land_status",
+						"remoteOptions": [],
+						"props": {
+							"value": "id",
+							"label": "name"
+						},
+						"remoteFunc": "func_1566889163000_98688"
+					},
+					"key": "1566889171000_54689",
+					"model": "status",
+					"rules": []
+				}, {
+					"type": "number",
+					"name": "完成工程量",
+					"options": {
+						"width": "100%",
+						"required": false,
+						"defaultValue": 0,
+						"min": 0,
+						"max": 0,
+						"step": 1,
+						"disabled": false,
+						"controlsPosition": "",
+						"remoteFunc": "func_1566889682000_58952"
+					},
+					"key": "1566798354000_83535",
+					"model": "completeQuantities",
+					"rules": []
+				}, {
+					"type": "date",
+					"name": "计划起止时间",
+					"options": {
+						"defaultValue": "",
+						"readonly": false,
+						"disabled": false,
+						"editable": true,
+						"clearable": true,
+						"placeholder": "",
+						"startPlaceholder": "请选择计划开始时间",
+						"endPlaceholder": "请选择计划结束时间",
+						"type": "daterange",
+						"format": "yyyy-MM-dd",
+						"timestamp": false,
+						"required": false,
+						"width": "100%",
+						"remoteFunc": "func_1566957819000_80371"
+					},
+					"key": "1566798373000_44573",
+					"model": "planStartAndEnd",
+					"rules": []
+				}, {
+					"type": "date",
+					"name": "结束时间",
+					"options": {
+						"defaultValue": "",
+						"readonly": false,
+						"disabled": false,
+						"editable": true,
+						"clearable": true,
+						"placeholder": "请选择结束时间",
+						"startPlaceholder": "",
+						"endPlaceholder": "",
+						"type": "date",
+						"format": "yyyy-MM-dd",
+						"timestamp": false,
+						"required": false,
+						"width": "100%",
+						"remoteFunc": "func_1566958020000_59669"
+					},
+					"key": "1566957922000_7596",
+					"model": "endDate",
+					"rules": []
+        }, 
+        {
+					"type": "input",
+					"name": "管线规格",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写管线规格",
+						"remoteFunc": "func_1566800673000_59176"
+					},
+					"key": "1566889313000_731561111",
+					"model": "lineStandard",
+					"rules": [{
+						"type": "string",
+						"message": "管线规格格式不正确"
+					}]
+				}, {
+					"type": "input",
+					"name": "管线材质",
+					"options": {
+						"width": "100%",
+						"defaultValue": "",
+						"required": false,
+						"dataType": "string",
+						"pattern": "",
+						"placeholder": "请填写管线材质",
+						"remoteFunc": "func_1566800673000_59176"
+					},
+					"key": "1566798305000_48323",
+					"model": "lineTexture",
+					"rules": [{
+						"type": "string",
+						"message": "管线材质格式不正确"
+					}]
+				}, {
+					"type": "select",
+					"name": "移植树木",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": false,
+						"placeholder": "请填写移植树木",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "transplant_trees",
+						"remoteOptions": [],
+						"props": {
+							"value": "",
+							"label": ""
+						},
+						"remoteFunc": "func_1566889896000_98351"
+					},
+					"key": "1566889896000_98351",
+					"model": "transplantTrees",
+					"rules": []
+				}, {
+					"type": "select",
+					"name": "移植植被",
+					"options": {
+						"defaultValue": "",
+						"multiple": false,
+						"disabled": false,
+						"clearable": false,
+						"placeholder": "请选择移植植被",
+						"isRelated": false,
+						"required": false,
+						"showLabel": false,
+						"childKey": "",
+						"width": "100%",
+						"options": [{
+							"value": "选项1",
+							"label": "选项1"
+						}, {
+							"value": "选项2",
+							"label": "选项2"
+						}, {
+							"value": "选项3",
+							"label": "选项3"
+						}],
+						"remote": false,
+						"filterable": false,
+						"allowCreate": false,
+						"dictionaryCode": "transplant_vegetation",
+						"remoteOptions": [],
+						"props": {
+							"value": "",
+							"label": ""
+						},
+						"remoteFunc": "func_1566889903000_74540"
+					},
+					"key": "1566889903000_74540",
+					"model": "transplantVegetation",
+					"rules": []
+				}, 
+        {
+					"type": "date",
+					"name": "借地期限",
+					"options": {
+						"defaultValue": "",
+						"readonly": false,
+						"disabled": false,
+						"editable": true,
+						"clearable": true,
+						"placeholder": "请选择借地期限",
+						"startPlaceholder": "",
+						"endPlaceholder": "",
+						"type": "date",
+						"format": "yyyy-MM-dd",
+						"timestamp": false,
+						"required": false,
+						"width": "100%",
+						"remoteFunc": "func_15669580200001_529"
+          },
+          "key": "1566976127000_24130111111",
+					"model": "borrowDeadline",
+					"rules": []
+        }
+      ]
+			}],
+			"options": {
+				"gutter": 0,
+				"justify": "start",
+				"align": "top",
+				"remoteFunc": "func_1566798240000_53829",
+				"props": {
+					"value": "value",
+					"label": "label"
+				}
+			},
+			"key": "1566798240000_53829",
+			"model": "",
+			"rules": []
+    }, 
+    {
+      "type": "grid",
+      "name": "栅格布局",
+      "icon": "icon-grid-",
+      "columns": [
+        {
+          "span": 24,
+          "list": [
+            {
+              "type": "textarea",
+              "name": "备注",
+              "options": {
+                "width": "100%",
+                "defaultValue": "",
+                "required": false,
+                "dataType": "string",
+                "pattern": "",
+                "placeholder": "请输入备注",
+                "remoteFunc": "func_1571797505000_63488"
+              },
+              "key": "1571797505000_63488",
+              "model": "remark",
+              "rules": [
+                {
+                  "type": "string",
+                  "message": "单行文本格式不正确"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "options": {
+        "gutter": 0,
+        "justify": "start",
+        "align": "top",
+        "remoteFunc": "func_1571797492000_36685",
+        "props": {
+          "value": "value",
+          "label": "label"
+        }
+      },
+      "key": "1571797492000_36685",
+      "model": "",
+      "rules": []
+    },
+    {
+			"type": "grid",
+			"name": "栅格布局",
+			"icon": "icon-grid-",
+			"columns": [{
+				"span": 24,
+				"list": [{
+					"type": "imgupload",
+					"name": "附件",
+					"options": {
+						"length": 8,
+						"fileName": "",
+						"isFile": false,
+						"defaultValue": "",
+						"remoteFunc": "func_1566800740000_83790"
+					},
+					"key": "1566800740000_83790",
+					"model": "docId",
+					"rules": []
+				}]
+			}],
+			"options": {
+				"gutter": 0,
+				"justify": "start",
+				"align": "top",
+				"remoteFunc": "func_1566800725000_3931",
+				"props": {
+					"value": "value",
+					"label": "label"
+				}
+			},
+			"key": "1566800725000_3931",
+			"model": "",
+			"rules": []
+		}],
+		"config": {
+			"labelWidth": 130,
+			"labelPosition": "right",
+			"size": "small"
+		}
+  },
+  "lookColumns":"landName",
+  "addMethod": "2",
+	"buttonList": [{
+		"id": 1,
+		"type": "look",
+		"icon": "iconyanjing",
+		"fun": "",
+		"name": "查看"
+	}, {
+		"id": 2,
+		"type": "edit",
+		"icon": "iconxiugai",
+		"fun": "",
+		"name": "修改"
+	}, {
+		"id": 3,
+		"type": "delete",
+		"icon": "iconshanchu1",
+		"fun": "",
+		"name": "删除"
+	}]
+}

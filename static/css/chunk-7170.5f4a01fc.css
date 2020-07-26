@@ -1,0 +1,22 @@
+#consultStatisticsChart {
+  width: 100%;
+  height: 260px;
+}
+.consultStatisticsDiv .el-date-editor--daterange {
+  width: 300px;
+}
+.consultStatisticsDiv .el-range-separator {
+  z-index: 100;
+}
+.consultStatisticsDiv .searchDiv {
+  padding: 15px 0 5px;
+}
+.consultStatisticsDiv .searchDiv .el-button {
+    position: relative;
+    left: -7px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    background: #1dace6;
+}
+

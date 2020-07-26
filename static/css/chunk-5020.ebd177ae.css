@@ -1,0 +1,27 @@
+.epidemicReportDailogWrapper .el-dialog {
+  width: 86%;
+  margin-top: 5vh !important;
+  min-width: 1000px;
+}
+.epidemicReportDailogWrapper .content {
+  padding: 15px 0;
+}
+.epidemicReportDailogWrapper .btnWrapper {
+  margin-top: 20px;
+}
+
+.exportsWrapper {
+  margin-right: 10px;
+}
+.exportsWrapper .formItem {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.epidemicListDiv .dataTable {
+  margin-top: 10px;
+}
+.epidemicListDiv .btnsWrapper {
+  height: 40px;
+}
+

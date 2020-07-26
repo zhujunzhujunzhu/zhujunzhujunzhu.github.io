@@ -1,0 +1,113 @@
+.homeNoticeDiv {
+  /*.itemTop {*/
+  /*color: #666666;*/
+  /*font-size: 16px;*/
+  /*.text-overflow {*/
+  /*width: 80%;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*white-space: nowrap;*/
+  /*}*/
+  /*.num {*/
+  /*color: #1cade4;*/
+  /*margin-left: 5px;*/
+  /*margin-right: 5px;*/
+  /*}*/
+  /*.promble {*/
+  /*color: red;*/
+  /*margin-left: 5px;*/
+  /*}*/
+  /*.auth {*/
+  /*margin-right: 5px;*/
+  /*}*/
+  /*}*/
+  /*.itemBottom {*/
+  /*// font-size: 14px;*/
+  /*margin-top: 10px;*/
+  /*color: #999;*/
+  /*width: 80%;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*white-space: nowrap;*/
+  /*&:hover {*/
+  /*color: #1cade4 !important;*/
+  /*}*/
+  /*}*/
+}
+.homeNoticeDiv .title {
+    font-weight: bold;
+}
+.homeNoticeDiv .header {
+    font-size: 20px;
+    height: 40px;
+    color: #1cade4;
+    margin-top: 30px;
+    border-bottom: 1px #ececec solid;
+}
+.homeNoticeDiv .header .more {
+      font-size: 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+}
+.homeNoticeDiv .header .messageNum {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: red;
+      color: #ececec;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-weight: 700;
+      margin: 0 10px;
+}
+.homeNoticeDiv .contentItem {
+    margin-top: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666666;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.homeNoticeDiv .contentItem .text {
+      line-height: 16px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.homeNoticeDiv .contentItem .text:hover {
+        color: #1cade4;
+}
+.homeNoticeDiv .contentItem .unread {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: red;
+      margin: 0 4px;
+}
+.homeNoticeDiv .contentItem .time {
+      color: #999;
+}
+

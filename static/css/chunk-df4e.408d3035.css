@@ -1,0 +1,11 @@
+.licenseListDiv .el-table thead.is-group th {
+  background: #edf7ff;
+}
+.licenseListDiv .el-table th {
+  text-align: center;
+}
+.licenseListDiv label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+

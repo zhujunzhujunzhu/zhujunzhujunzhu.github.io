@@ -1,0 +1,26 @@
+.startProcessDiv .cardWrapper .card {
+  margin-bottom: 20px;
+}
+.startProcessDiv .cardWrapper .cardItem {
+  padding: 15px 10px;
+  cursor: default;
+}
+.startProcessDiv .cardWrapper .cardItem:hover {
+    background: #fcfcfc;
+    color: #d67272;
+}
+.startProcessDiv .cardWrapper .card-header {
+  padding: 15px 10px;
+  cursor: default;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px #fafafa solid;
+}
+.startProcessDiv .cardWrapper .iconliuchengfaqi {
+  color: #05c1fa;
+}
+.sidebar-container .iconliuchengfaqi {
+  margin-left: -5px;
+  font-size: 18px;
+}
+

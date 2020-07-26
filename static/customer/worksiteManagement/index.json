@@ -1,0 +1,110 @@
+{
+  "list": [{
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "",
+      "param": "",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "编码",
+      "prop": "code"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [{
+      "type": "grid",
+      "name": "栅格布局",
+      "icon": "icon-grid-",
+      "columns": [{
+        "span": 12,
+        "list": [{
+          "type": "input",
+          "name": "名称",
+          "options": {
+            "width": "100%",
+            "defaultValue": "",
+            "required": false,
+            "dataType": "string",
+            "pattern": "",
+            "placeholder": "请输入名称",
+            "remoteFunc": "func_1573457133000_95419"
+          },
+          "key": "1573457133000_95419",
+          "model": "name",
+          "rules": [{
+            "type": "string",
+            "message": "名称格式不正确"
+          }]
+        }]
+      }, {
+        "span": 12,
+        "list": [{
+          "type": "input",
+          "name": "编码",
+          "options": {
+            "width": "100%",
+            "defaultValue": "",
+            "required": false,
+            "dataType": "string",
+            "pattern": "",
+            "placeholder": "请输入编码",
+            "remoteFunc": "func_1573457136000_63217"
+          },
+          "key": "1573457136000_63217",
+          "model": "code",
+          "rules": [{
+            "type": "string",
+            "message": "编码格式不正确"
+          }]
+        }]
+      }],
+      "options": {
+        "gutter": 0,
+        "justify": "start",
+        "align": "top",
+        "remoteFunc": "func_1573457125000_30188",
+        "props": {
+          "value": "value",
+          "label": "label"
+        }
+      },
+      "key": "1573457125000_30188",
+      "model": "",
+      "rules": []
+    }],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [{
+    "id": 1,
+    "type": "look",
+    "icon": "iconyanjing",
+    "fun": "",
+    "name": "查看"
+  }, {
+    "id": 2,
+    "type": "edit",
+    "icon": "iconxiugai",
+    "fun": "",
+    "name": "修改"
+  }, {
+    "id": 3,
+    "type": "delete",
+    "icon": "iconshanchu1",
+    "fun": "",
+    "name": "删除"
+  }],
+  "lookColumns": null
+}

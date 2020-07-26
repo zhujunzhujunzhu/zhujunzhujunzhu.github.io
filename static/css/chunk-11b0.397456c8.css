@@ -1,0 +1,75 @@
+.viewPointDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*border-left: 1px solid #e8eaec;*/
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.viewPointDiv .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+    /*color: #fff;*/
+}
+.viewPointDiv .btn {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: inherit;
+    color: #f75223;
+    border-color: #f75223;
+}
+.viewPointDiv .btn:hover {
+    background: #f75223;
+    color: #fff;
+}
+.viewPointDiv .contentDiv:hover .icon {
+    display: block;
+}
+.viewPointDiv .contentDiv {
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 122px;
+    padding: 5px;
+    background: rgba(184, 184, 184, 0.1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.viewPointDiv .contentDiv .icon {
+      /*color: #fff;*/
+      cursor: pointer;
+      display: none;
+}
+.viewPointDiv .contentDiv img {
+      width: 113px;
+      height: 113px;
+      border-radius: 5px;
+}
+.viewPointDiv .contentDiv label {
+      margin-left: 10px;
+      color: #fff;
+}
+.viewPointDialog {
+  /*.el-dialog {*/
+  /*background: rgba(30, 30, 30, 0.8) !important;*/
+  /*.el-dialog__title {*/
+  /*color: #d0d0d0;*/
+  /*}*/
+  /*}*/
+}
+.viewPointDialog .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+    /*color: #fff;*/
+}
+.viewPointDialog .el-form-item__label {
+    /*color: #fff;*/
+}
+.viewPointDialog img {
+    width: 300px;
+    height: 200px;
+    /*margin-left: 40px;*/
+    margin-bottom: 15px;
+}
+

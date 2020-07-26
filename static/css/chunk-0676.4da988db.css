@@ -1,0 +1,13 @@
+
+.w50[data-v-e790361e] {
+  width: 80%;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td[data-v-e790361e],
+.el-table__body tr.current-row > td[data-v-e790361e] {
+  color: red;
+  background-color: red !important;
+}
+.el-table tbody tr:hover > td[data-v-e790361e] {
+  background-color: red !important;
+}
+

@@ -1,0 +1,28 @@
+.setIdexPriceDiv .returnButton {
+  background: #1cade4 !important;
+  border: 1px solid #1cade4 !important;
+  color: #fff !important;
+  margin-right: 30px;
+}
+.setIdexPriceDiv .inlineBlock {
+  margin-right: 20px;
+}
+.setIdexPriceDiv .el-table__header-wrapper th {
+  background: #82add0 !important;
+}
+.setIdexPriceDiv .el-table__expanded-cell {
+  padding: 0 0 0 100px;
+  background-color: transparent !important;
+}
+.setIdexPriceDiv .el-table__expanded-cell .treeTableDiv {
+    border: 0 none !important;
+    border-left: 1px solid #ebeef5 !important;
+}
+.setIdexPriceDiv .el-table__expanded-cell .el-table__header-wrapper th {
+    background-color: transparent !important;
+    color: #333;
+}
+.setIdexPriceDiv .row-expand-cover .el-table__expand-icon {
+  visibility: hidden;
+}
+

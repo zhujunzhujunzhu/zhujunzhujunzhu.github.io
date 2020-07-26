@@ -1,0 +1,60 @@
+.issueLibraryDiv h3 {
+  margin: 0;
+  padding: 0;
+}
+.issueLibraryDiv .box-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.issueLibraryDiv .box-card-wrapper .leftCard {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.issueLibraryDiv .box-card-wrapper .rightCard {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-left: 10px;
+}
+.issueLibraryDiv .box-card-wrapper .rightCard ul li {
+      list-style: none;
+      line-height: 28px;
+}
+.issueLibraryDiv .box-card-wrapper .rightCard .issueTable .el-table__header-wrapper tr {
+      display: none;
+}
+.issueLibraryDiv .box-card {
+  overflow: auto;
+}
+.issueLibraryDiv .text-overflow {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.issueLibraryDiv .tree-btn {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: -1px;
+  position: relative;
+  top: 2px;
+  left: -1px;
+}
+.issueLibraryDiv .custom-tree-node {
+  width: 100%;
+  line-height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 0px;
+}
+.issueLibraryDiv .custom-tree-node .iconwenjianjia_kai,
+  .issueLibraryDiv .custom-tree-node .iconwenjianjia_guan {
+    color: #e0aa25;
+}
+.issueLibraryDiv .custom-tree-node .appendIcon {
+    font-size: 20px;
+    vertical-align: middle;
+}
+

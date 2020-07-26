@@ -1,0 +1,48 @@
+.topRightDiv {
+  overflow: auto;
+  width: 377px;
+  background-image: url(../../static/img/leftImg.1985e75.png);
+  background-repeat: no-repeat;
+  background-color: #bed8ed;
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.topViewPointWrapper {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 15px;
+}
+.titleLabel {
+  color: #1cade4;
+}
+.innerWrapper {
+  padding: 10px 10px;
+}
+.transverse {
+  margin-bottom: 10px;
+  padding: 0;
+  width: 334px;
+  height: 1px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.fullLineModelPreDiv {
+  padding: 0px 10px;
+}
+.fullLineModelPreDiv .searchStyle {
+    padding-left: 20px;
+    width: 200px;
+}
+.fullLineModelPreDiv .iconaddress {
+    font-size: 18px !important;
+}
+.fullLineModelPreDiv .complete td {
+    background: green !important;
+    color: #fff;
+}
+.fullLineModelPreDiv .numSpan {
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+

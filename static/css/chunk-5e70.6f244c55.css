@@ -1,0 +1,112 @@
+.detialDialog .attach-head {
+  height: 40px;
+  font-weight: bold;
+}
+.detialDialog .attach-item {
+  padding: 10px 190px;
+}
+.detialDialog .attach-item:hover {
+    color: #245fab;
+}
+
+
+.meetingNoticeDetialDialog .el-dialog {
+  width: 882px !important;
+}
+.meetingNoticeDetialDialog .el-dialog__body {
+  padding: 29px 20px 40px;
+}
+.meetingNoticeDetialDialog .el-dialog__header {
+  height: 55px;
+  background: url(../../static/img/meetingBg.47b6365.png) left center no-repeat;
+  border: 0 none;
+}
+.meetingNoticeDetialDialog .headTitle {
+  font-size: 30px;
+  color: #1279f5;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.meetingNoticeDetialDialog .solid {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: #1cade4;
+  margin-right: 5px;
+}
+.meetingNoticeDetialDialog .subTitle {
+  font-size: 18px;
+  color: #333333;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.meetingNoticeDetialDialog .subTitle label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+.meetingNoticeDetialDialog .splitLine {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 10px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAzIAAAAKCAYAAABv9GtwAAABtklEQVR4Xu3dsW2FQBAE0KMTAhI6QKKRH5BSFQEEdEUACXVggWXLHw7L0v+Y5JFetpqdmeVgJ1mWpZimKdR1HZqmCWmahv3jXH3gQ3/gB/xIH+gjf/BcAf6IP+KP7vVHyTiOxePxCH3fhyzLokOMc/WBD/2BH/BjzMTSB/pAH+gDfaAPd+lDUpZlsb5pzfM8OsRUVbXd1DhXnxhI4UN/4Af8SB/oA3043tTQR/pIH6/Xx2QYhuJskl6bsOu605sa5+oDH/oDf8TfxOFH/Igf8SN+xI9nQz5+eA8/JOs/Moocf5MCZO8BGXzB188KrN+UM/lMPn7Fr0w+k88f8Aev+oPDIDPP82Yy1uuwGMk4Vx/40B/4AT/Sh6MJpY/0kT7SR/r4v/r4NMh8kXDbttHtZc4/SVp94CO2vUl/6A/8gB/pA32gD8ftfvSRPl6lj9+DDJAB2VUgW68N4Qu+4IvJZ/KZfCafyd9/TsYf8Aev+INtkLEH3R50e9Dv3YOu/uovp0dOj5weOT1yeuT07P8Z4Q9+9wdyZKYpyEGQgyAHQQ6CHAQ5CHflIOAf/IN/8A/+OQ6xf/HnHxcMD5qYpJ2AAAAAAElFTkSuQmCC) center center no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 22px;
+}
+.meetingNoticeDetialDialog .cardItem {
+  width: 420px;
+  font-size: 18px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.meetingNoticeDetialDialog .cardItemTow {
+  font-size: 18px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.meetingNoticeDetialDialog .title {
+  color: #333;
+  font-weight: bold;
+  margin: 20px 0 4px;
+}
+.meetingNoticeDetialDialog .content {
+  line-height: 44px;
+}
+.meetingNoticeDetialDialog .attachCard {
+  font-size: 18px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.meetingNoticeDetialDialog .attach-item {
+  line-height: 44px;
+  color: #27619e;
+}
+.meetingNoticeDetialDialog .iconfujian1 {
+  font-size: 24px;
+  color: #fa5a03;
+  margin-right: 2px;
+}
+.meetingNoticeDetialDialog .attach-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.meetingNoticeDetialDialog .attach-list-container i {
+    font-size: 22px;
+    cursor: pointer;
+}
+.meetingNoticeDetialDialog .attach-list-container .attach-list-column {
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

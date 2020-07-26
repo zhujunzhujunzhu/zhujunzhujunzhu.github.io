@@ -1,0 +1,188 @@
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes rotating {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+  position: absolute;
+}
+#modelView .filterInput {
+  position: absolute;
+  z-index: 999;
+  width: 370px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#modelView .filterInput #filterInput {
+    color: #2D4573;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #cfdbe0;
+    border-radius: 2px;
+}
+#modelView #tree {
+  z-index: 999;
+  margin-top: 46px;
+  margin-left: 10px;
+  width: 370px;
+  font-size: 14px;
+  position: absolute;
+  /*background: rgba(26, 26, 26, 0.8);*/
+}
+#modelView #tree .first-tree {
+    /*background: rgba(26, 26, 26, .9) !important;*/
+    /*border-bottom: 1px solid #d0d0d0 !important;*/
+}
+#modelView #tree .first-tree[data-expanded] {
+    /*background: rgba(255, 72, 20, .15) !important;*/
+    border-bottom: none !important;
+    /*border-left: 3px solid #f75223 !important;*/
+}
+#modelView #tree .first-tree[data-expanded] span {
+      color: #235EAA;
+      font-weight: bold;
+}
+#modelView #tree .eyeIcon {
+    /*position: absolute;*/
+    font-size: 16px;
+    right: 5px;
+    cursor: pointer;
+}
+#modelView .infinite-tree-no-data {
+  /*color: #fff;*/
+}
+#modelView .preview {
+  font-family: Consolas;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: pre-wrap;
+  background-color: #282c34;
+  border: solid 1px #ccc;
+  color: #9197a3;
+  padding: 20px;
+}
+#modelView .hidden {
+  display: none !important;
+}
+#modelView .progress-bar {
+  -webkit-transition: none;
+  transition: none;
+}
+#modelView .infinite-tree-folder-icon {
+  width: 19px;
+}
+#modelView .infinite-tree-folder-icon:first-child {
+  margin-left: 20px;
+}
+#modelView .infinite-tree-folder-icon:before {
+  margin-right: 5px;
+}
+#modelView .infinite-tree-node {
+  padding: 14px;
+  margin-bottom: 2px;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#modelView .infinite-tree-node .icon {
+    /*color: #fff;*/
+    font-size: 12px;
+}
+#modelView .infinite-tree-node .br-checkbox {
+    position: relative;
+    cursor: pointer;
+    right: 5px;
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 16px;
+}
+#modelView .infinite-tree-node .br-checkbox input {
+      cursor: pointer;
+}
+#modelView .infinite-tree-node .br-checkbox input:checked + .show-box {
+      background: #ec6337;
+}
+#modelView .infinite-tree-node .br-checkbox .show-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      border: 1px solid #d8d8d8;
+      background: white;
+}
+#modelView .infinite-tree-node .br-checkbox .show-box:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 3px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+}
+#modelView .infinite-tree-node .count {
+  right: 55px;
+  padding: 0 8px;
+  height: 18px;
+  line-height: 18px;
+  /*color: #fff;*/
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+#modelView .infinite-tree-scroll {
+  overflow: auto;
+  max-height: 100%;
+}
+#modelView .infinite-tree-overlay {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid red;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+#modelView .leaf-btn {
+  cursor: pointer !important;
+}
+#modelView .infinite-tree-content .infinite-tree-selected.infinite-tree-item, #modelView .infinite-tree-content .infinite-tree-selected.infinite-tree-item:hover {
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0px !important;
+}
+#modelView .iconsanjiaoright, #modelView .iconxiajiantou, #modelView .iconshuaxin {
+  position: absolute;
+  margin-top: 2px;
+}
+#modelView .infinite-tree-item {
+  border: 0px;
+}
+#modelView .infinite-tree-title {
+  margin-left: 15px;
+  cursor: inherit;
+}
+#modelView .infinite-tree-item:hover {
+  background: rgba(0, 0, 0, 0) !important;
+}
+

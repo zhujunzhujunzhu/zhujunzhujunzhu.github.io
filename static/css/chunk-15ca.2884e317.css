@@ -1,0 +1,22 @@
+.imageListWrapper .listTitle {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.imageListWrapper .imgWapper {
+  width: 50%;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imageListWrapper .imgWapper .el-image {
+    width: 100%;
+    height: 300px;
+    margin-right: 15px;
+}
+.imageListWrapper .imgWapper .imgTitle {
+    margin-top: 10px;
+    width: 100%;
+}
+

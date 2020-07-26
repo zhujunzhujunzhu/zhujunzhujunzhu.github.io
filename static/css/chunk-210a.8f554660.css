@@ -1,0 +1,14 @@
+.landAcquisitionDiv .el-table thead.is-group th {
+  background: #245fab;
+  border: 1px;
+}
+.landAcquisitionDiv .iconaddress {
+  font-size: 18px !important;
+  position: relative;
+  top: -1px;
+  left: 2px;
+}
+.landAcquisitionDiv .iconaddress_gray {
+  color: #aaa !important;
+}
+

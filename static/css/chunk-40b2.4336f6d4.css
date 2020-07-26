@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.sysHomeDiv {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 516px;
+  height: 100%;
+  padding: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8edfc), color-stop(86%, #e8edfc), to(#d1d6e3));
+  background: linear-gradient(0deg, #e8edfc 0%, #e8edfc 86%, #d1d6e3 100%);
+}
+.sysHomeDiv .emptyGif {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+}
+.sysHomeDiv .dashboard-container {
+    padding: 50px 60px 0px;
+}
+.sysHomeDiv .dashboard-container .pan-info-roles {
+      font-size: 12px;
+      font-weight: 700;
+      color: #333;
+      display: block;
+}
+.sysHomeDiv .dashboard-container .info-container {
+      position: relative;
+      height: 150px;
+      line-height: 200px;
+}
+.sysHomeDiv .dashboard-container .info-container .display_name {
+        font-size: 48px;
+        line-height: 48px;
+        color: #212121;
+        position: absolute;
+        top: 25px;
+}
+.sysHomeDiv .backgroundImg {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: '100% 100%';
+}
+.sysHomeDiv .dashboardDiv {
+    min-height: 516px;
+    height: 100%;
+    overflow: auto;
+}
+.sysHomeDiv .dashboardDiv .buttonClass {
+      background-color: #3dadfd;
+      height: 60px;
+      border-radius: 30px;
+      margin-top: 3%;
+      margin-right: 2.5%;
+}
+.sysHomeDiv .dashboardDiv .buttonClass .buttonClassOne {
+        background: rgba(0, 0, 0, 0) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAAA0CAYAAACZ3pqKAAAFTElEQVR4Xu2dTW8TVxSG33fGcT5IF1W7cxOM8BBZIosWWohalW6zKiU/gF0FqtR0R/8CO4JUVbQrfgD9WLEtSIgCbVm0kpWOgXw0CFBCUA2JE9tzqmOSFBKS+GOmanLPbH3vOXMev5p759475xAxXiJyEMAHAN4BMACgD8CbALoBpGJ0ZabiIVAFsAhgFsA0gHEAvwG4RvL3eFwAbNeQiKigTgIYAZBp1571/98QmAFwCcBFkiq8lq+WRCYi2u9jEfkSwJGWvVvHHUGA5M8AzgL4kaQ0e9NNi6xSqQz5vj8G4N1mnVn7HU/gFslRktebiaRhkYlIdxRFqubPAHjNOLG2u4pABOArz/POkNT53LZXQyIrl8sH0un0pZWJ/bZGrcHuJ0DyD5IjJP/cLtptRSYix2q12vcAXt/OmP3uHIF53/c/IXllq8i3FFm1Wh3WNwwdKp3DZwE3RGBlyBxJpVKXN+uwqcgqlcoxANrRBNYQbqcb6dxsuKOj45VPtFeKrFwu5zzPu2lDpNPCaTb4+Y6OjvdIFtd33CAyEelcXl7WV9S3m/Vi7Z0ncDudTg+RXHqRxAaRLS8vnxORUedxGYCWCJAcS6fTX2wqsmfPnh3yff8GAL8lD9bJCAC1Wq12ZM+ePb+uwlh7kulWUblc1mHStolMKu0SuNHV1aXDZn0Lak1kS0tLx1fWw9p1YP2NAHT9rLOz84eXRLawsHBdRI4aHyMQBwHdVO/p6RlaE5nOxUTklziMmw0jsDYXIw/r3Kw+XD59+nRMRD43PEYgTgIkz/f29o7WRVYqlfRU5FtxOjBbRoDkX729vX0slUoHRSS2o7aG1gi8tEZGDvLJkyenSH5taIxAEgRE5LSK7AKAT5NwYDaNAIBvOD8/rzvnHxoOI5AQgat8/PjxPQDZhByYWSMwwbm5ub8BvGYsjEBCBEoqsoqI2Ie3CRF23SzJKmdnZ01krish2fhrfPTokQ2XyUJ23XqJDx48uEfSJv6uSyGh+EVkgg8fPrwiIraEkRBk182SvKpPsgsiYouxrqshofhF5Fvev3//FADbVkoIspnFaU5NTR30fd82yE0NiRDwfX+wftRnZmZmWkTsqE8imN01qkd9MplM36rIxqIoskOL7uohkcg9zzufyWSeH1qcnJw8RNKOXyeC2l2jInJ47969z49f6zU1NaXZ9OxzOHc1EXfkN/r7++sfJq2JbGJiQlMAfRe3J7PnJgEROZHNZjXl2L8i0497Jycn7eNeNzURa9QicjObzR7d8HGveikWi5amIFbcThqrpynI5XIb0xSs4rh7964mHbY3TSf10X7QmnBl3759mydcURdhGHb6vm+po9rn7aKF27VabSgIgq1TRymZO3fuBAA0u4/liXVRKq3FPK+rE/v37w/Xd980nWcYhsc8z7ts+WJbI+5SL80bG0XRcBAEjafzXAVULBaHRUSXNbpcgmaxNkWgTPJELpdrPjHxqpswDD8CoEKzobMp9k401iHyRBAEP20V7bZ5/LVzoVA4kEqlrFiEE7ppLEgtFlGtVkfy+Xz7xSJWXU5PT3cvLi7Wy96IiJW9aey/2HWtSNbL3nR3d5/p6+uLr+zNi6TCMByKosgKeO06+TQU0C3P80aDIEimgNe6W+D4+PhxAGdExDbVG/p/dm4jkrqcdXZgYEDTcyZfinA9qkKhcMjzvJO6IWpFVXeukF5x5zN6YCKKoov5fH5ti6iVCBua+DdquFAoDJJ8f6War5aH7if5BskeEbG07Y2C/I/akayJyIKIzOlpLy0PrVV6ReRaPp+P7Uj+P2QgrWb1b8jFAAAAAElFTkSuQmCC);
+        background-size: 100% 100%;
+        border: none;
+        font-size: 23px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        border-radius: 30px;
+        color: #3dadfd;
+        line-height: 40px;
+}
+.sysHomeDiv .dashboardDiv .buttonClass .buttonClassTwo {
+        font-size: 23px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        border-style: none;
+        line-height: 40px;
+}
+.sysHomeDiv .dashboardDiv .bottomDiv {
+      margin-top: 5rem;
+}
+.sysHomeDiv .dashboardDiv .textDiv {
+      width: 70%;
+      height: 20%;
+      clear: both;
+}
+.sysHomeDiv .dashboardDiv .bottomButtonDiv {
+      text-align: center;
+      margin-top: 5rem;
+}
+.sysHomeDiv .dashboardDiv .bottomButton {
+      font-family: MicrosoftYaHei-Bold;
+      color: #3dadfd;
+      background: rgba(0, 0, 0, 0) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAAzCAYAAABSfnBXAAAFTklEQVR4Xu1dS2xbRRQ99+k5Se18NpHIX0lMlEqkJBJGFNHu6KIbGiRWZAGLLGiqwpYCbRJaxB4E7aKbLsgKiVAWXcAOqiBhBCGKRBQS59Oo+Skfx8/B5sUXjZtAfq797BHylDtbz5y599yjeTN+d+4jaG7M7APQDuBpALUAqgCUap7m/w6XALAJ4CGAPwBMENFfOkkhHWDM/AyA1wC8DCAEoEwHrmDkzMCfAMIAvgPwJRGN5zwyQ8e8hcHMJwC8AaAXwHOFGiLjtTLwM4DbAO4Q0XY+yJ6FsfuoeIuZ3wNQk8+kMuY/Y2CJiD4CcMvro8aTMJLJ5GnbtpUS1aNDmjkMjLuu21tSUvJjribnJAxmplQq9QGAawDsXMGlX1Ex4AL40LKsG0TE2SzLKozFxcVAdXX1FwAuZAOT341g4OvV1dWempoa53HWPlYYzFzluu49InrRCJfFyJwYYOYR27bPE5E68h7bMgqDmQOu634LQESRE91mdVLi8Pl854jo2JXjWGGoPUUymRwmolfMcles9cIAEd21bbv7uD3HscJIJBJX1UbFyyTS10wGLMu65vP5rh+2/ogwksnkC8z8g5w+zAx0Hla7Ozs7Z/1+/4Gj7AFhMLOdSCR+AdCRxwQyxFwGxktLS7uISB1p0+2AMOLx+GUi+sRc/8TyfBkgorfLyso+PSIM9e4jHo9HiOipfMFlnNEMLG1sbLTW1dXFD6wYjuNcBPC50a6J8YUy0BcIBG4eFsYoMz9bKLKMN5qBsfLy8rQG0nuMWCzWycy/Gu2SGK+FASLqKi8vH00LY2trq5+ZB7QgC4jRDBDRQEVFxWBaGJubm+p/i5eM9kiM18XA/aqqqjOkEm+i0WiUmSUdTxe1BuMQUaKysrKC1tbWOohozGBfxHTNDNi2fYrW19e7mfkrzdgCZzADRPSqWjH6mPkzg/0Q0zUzQESXaHV19V0AH2vGFjizGbhCKysr/QDkqGp2IHVbP0DLy8uyYuim1Xy8K7S0tNQHQPYY5gdTpweXlDDkVKKT0icAK30qWVxc7GBm+R/jCQioLheI6BSFw2FfXV3dltxI10Wr8TiJ2traivS7koWFBXlXYnw8tTlwv76+/syeMOTIqo1X44EG6uvrH71dffDgQScAyccwPqZaHOhqaGh4lI+h2tzc3G9q06EFWkBMZWCssbHx3wyuXWFIzqep4dRnd19TU9PBnM9wOOyvrq6elixxfSybhMTMSyUlJUezxJUTs7Ozl5lZ7pWYFFFNtjLzOy0tLf/E/shNtJmZGbUJlYo5mgg3BGa8ubk580005UQkEjnNzN/L3VVDQlq4mS4RnW1pacl8d3Vvjunp6avMLLfdCyfdBIT+YDB4JNYZ62NEIpFhZpb6GCaENn8bv2ltbb2Qc30MNc/o6GggEAhIRZ38SS/2kSOO45zr7OzMvaLOnkdTU1NVqVTqnpRbKvYYe7ZvxLKs88Fg0HsNrr2p1Mrh9/ulap9n7otzADPf3d7efj3TSrFnddZyjqpjf3+/1dPT877U+SzOYOdolcvM14eGhm4MDg6mso3JSRh7IJOTk+ooe3u3qHw2bPm9SBhQReeJqLetrU1vZeD9/qnEnsrKSlVLXK0gUmSlSIKfwYx0LfFoNHorFAp5+myFpxVj/+Tz8/MnHMd5k5kvylvZ4lKHStUkopuxWOxOKBRKV8jx2vIWxv6JJiYmVD5Ht/peCTM/L2mCXsNQcP8EEf20+72S4fb29tFCEbUI4/CjJhAInLQsK8jMtUQkXzgqNEpHxyeYeZOIHqZSqSnHcX73+qjIZtLfKOy3Y5FNkikAAAAASUVORK5CYII=);
+      border-style: none;
+      font-size: 20px;
+      line-height: 20px;
+      margin-right: 4rem;
+}
+.sysHomeDiv .dashboardDiv .projectRemark {
+      text-indent: 2em;
+      font-family: MicrosoftYaHei-Bold;
+      color: #ffffff;
+      font-size: 25px;
+      line-height: 33px;
+}
+.sysHomeDiv .dashboardDiv .pd-20 {
+      padding: 20px;
+}
+.sysHomeDiv .dashboardDiv .color—666 {
+      color: #666;
+}
+.sysHomeDiv .dashboardDiv .fs-13 {
+      font-size: 13px;
+}
+.sysHomeDiv .dashboardDiv .fs-24 {
+      font-size: 24px;
+}
+.sysHomeDiv .dashboardDiv .des .title {
+      font-size: 30px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: white;
+      line-height: 40px;
+}
+.sysHomeDiv .dashboardDiv .color_1E4BA0 {
+      color: #1e4ba0;
+}
+.sysHomeDiv .dashboardDiv .el-carousel {
+      height: 100% !important;
+}
+.sysHomeDiv .dashboardDiv .el-carousel__container {
+      height: 100% !important;
+}
+

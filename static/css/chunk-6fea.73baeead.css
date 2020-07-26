@@ -1,0 +1,195 @@
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes rotating {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+  position: absolute;
+}
+#modelView .flex {
+  position: absolute;
+  bottom: 40px;
+  z-index: 999;
+  margin-left: 160px;
+}
+.fullLineTree .filterInput {
+  position: absolute;
+  z-index: 999;
+  width: 370px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.fullLineTree .filterInput #filterInput {
+    color: #2D4573;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #cfdbe0;
+    border-radius: 2px;
+}
+.fullLineTree #tree {
+  z-index: 999;
+  margin-top: 46px;
+  margin-left: 10px;
+  width: 370px;
+  font-size: 14px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.fullLineTree #tree .first-tree {
+    /*background: rgba(26, 26, 26, .9) !important;*/
+    /*border-bottom: 1px solid #d0d0d0 !important;*/
+}
+.fullLineTree #tree .first-tree[data-expanded] {
+    /*background: rgba(255, 72, 20, .15) !important;*/
+    border-bottom: none !important;
+    /*border-left: 3px solid #f75223 !important;*/
+}
+.fullLineTree #tree .first-tree[data-expanded] span {
+      color: #235EAA;
+      font-weight: bold;
+}
+.fullLineTree #tree .eyeIcon {
+    /*position: absolute;*/
+    color: #000 !important;
+    font-size: 16px;
+    right: 5px;
+    cursor: pointer;
+}
+.fullLineTree .infinite-tree-no-data {
+  /*color: #fff;*/
+}
+.fullLineTree .preview {
+  font-family: Consolas;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: pre-wrap;
+  background-color: #282c34;
+  border: solid 1px #ccc;
+  color: #9197a3;
+  padding: 20px;
+}
+.fullLineTree .hidden {
+  display: none !important;
+}
+.fullLineTree .progress-bar {
+  -webkit-transition: none;
+  transition: none;
+}
+.fullLineTree .infinite-tree-folder-icon {
+  width: 19px;
+}
+.fullLineTree .infinite-tree-folder-icon:first-child {
+  margin-left: 20px;
+}
+.fullLineTree .infinite-tree-folder-icon:before {
+  margin-right: 5px;
+}
+.fullLineTree .infinite-tree-node {
+  padding: 14px;
+  margin-bottom: 2px;
+  color: #000 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.fullLineTree .infinite-tree-node .icon {
+    /*color: #fff;*/
+    font-size: 12px;
+}
+.fullLineTree .infinite-tree-node .br-checkbox {
+    position: relative;
+    cursor: pointer;
+    right: 5px;
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 16px;
+}
+.fullLineTree .infinite-tree-node .br-checkbox input {
+      cursor: pointer;
+}
+.fullLineTree .infinite-tree-node .br-checkbox input:checked + .show-box {
+      background: #ec6337;
+}
+.fullLineTree .infinite-tree-node .br-checkbox .show-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      border: 1px solid #d8d8d8;
+      background: white;
+}
+.fullLineTree .infinite-tree-node .br-checkbox .show-box:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 3px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+}
+.fullLineTree .infinite-tree-node .count {
+  right: 55px;
+  padding: 0 8px;
+  height: 18px;
+  line-height: 18px;
+  /*color: #fff;*/
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+.fullLineTree .infinite-tree-scroll {
+  overflow: auto;
+  max-height: 100%;
+}
+.fullLineTree .infinite-tree-overlay {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid red;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.fullLineTree .leaf-btn {
+  cursor: pointer !important;
+}
+.fullLineTree .infinite-tree-content .infinite-tree-selected.infinite-tree-item, .fullLineTree .infinite-tree-content .infinite-tree-selected.infinite-tree-item:hover {
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0px !important;
+}
+.fullLineTree .iconsanjiaoright, .fullLineTree .iconxiajiantou, .fullLineTree .iconshuaxin {
+  position: absolute;
+  margin-top: 2px;
+}
+.fullLineTree .infinite-tree-item {
+  border: 0px;
+}
+.fullLineTree .infinite-tree-title {
+  margin-left: 15px;
+  cursor: inherit;
+}
+.fullLineTree .infinite-tree-item:hover {
+  background: rgba(0, 0, 0, 0) !important;
+}
+

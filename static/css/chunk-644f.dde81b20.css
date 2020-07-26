@@ -1,0 +1,15 @@
+.realTimeScheduleApprovalDiv .relative {
+  position: relative;
+}
+.realTimeScheduleApprovalDiv .mybtn {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+}
+.realTimeScheduleApprovalDiv .banner .colorListDiv {
+  margin-left: 20px;
+  position: absolute;
+  left: 330px;
+  top: -35px;
+}
+

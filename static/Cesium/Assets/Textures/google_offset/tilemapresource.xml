@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tilemap tilemapservice="http://www.osgeo.org/services/tilemapservice.xml" version="1.0.0">
+    <title>屏幕范围_TMS</title>
+    <abstract/>
+    <srs>EPSG:4326</srs>
+    <boundingbox maxx="180.000000000000000" maxy="90.000000000000000" minx="-180.000000000000000" miny="-90.000000000000000"/>
+    <origin x="-180" y="-90"/>
+    <tileformat extension="jpg" mime-type="image/jpg" height="256" width="256"/>
+    <tilesets profile="geodetic">
+        <tileset href="0" order="0" units-per-pixel="0.7031250000"/>
+        <tileset href="1" order="1" units-per-pixel="0.3515625000"/>
+        <tileset href="2" order="2" units-per-pixel="0.1757812500"/>
+    </tilesets>
+</tilemap>

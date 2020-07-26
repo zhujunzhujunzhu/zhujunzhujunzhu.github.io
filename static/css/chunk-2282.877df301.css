@@ -1,0 +1,54 @@
+.bpmn-dealProcess {
+  padding: 20px;
+}
+.bpmn-dealProcess .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.bpmn-dealProcess .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.bpmn-dealProcess .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.bpmn-dealProcess .btns {
+    padding: 10px;
+}
+.bpmn-dealProcess .dealProcess-card {
+    width: 500px;
+    background: #fff;
+    margin: 0 auto;
+}
+.bpmn-dealProcess .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.bpmn-dealProcess .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.bpmn-dealProcess .el-input {
+    width: 500px;
+}
+.bpmn-dealProcess .mt10 {
+    margin-top: 10px;
+}
+.bpmn-dealProcess .mb10 {
+    margin-bottom: 10px;
+}
+

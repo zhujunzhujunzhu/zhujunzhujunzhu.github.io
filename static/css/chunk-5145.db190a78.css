@@ -1,0 +1,50 @@
+.myContextMenu {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  top: 600px;
+  left: 300px;
+  z-index: 1000000;
+  background: #fff;
+  list-style-type: none;
+  border: 1px solid #e8eaec;
+  padding: 0;
+  -webkit-box-shadow: 0 0px 2px 0px rgba(15, 32, 65, 0.2);
+          box-shadow: 0 0px 2px 0px rgba(15, 32, 65, 0.2);
+  border-radius: 2px;
+}
+.myContextMenu li {
+    width: auto;
+    min-width: 150px;
+    max-width: 250px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 10px;
+    margin: 0px;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+    display: list-item;
+    text-align: left;
+}
+.myContextMenu li span {
+      padding: 0 0 0 22px;
+      position: relative;
+}
+.myContextMenu li:hover {
+    color: #fff;
+    background: #2d8cf0;
+}
+.myContextMenu .disable-li {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+}
+.myContextMenu .disable-li:hover {
+      background-color: #eee;
+      color: #aaa;
+}
+

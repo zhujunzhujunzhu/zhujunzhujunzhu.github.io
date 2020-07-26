@@ -1,0 +1,12 @@
+.authorityDiv .addButton {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.authorityDiv .iconxiayi,
+.authorityDiv .iconshangyi {
+  font-size: 20px !important;
+  position: relative;
+  top: -2px;
+}
+

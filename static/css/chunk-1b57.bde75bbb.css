@@ -1,0 +1,15 @@
+.message-edit {
+  margin: 20px auto;
+  padding: 15px;
+  width: 98%;
+  height: 92%;
+  min-width: 1300px;
+  min-height: 600px;
+  background: #fff;
+}
+.message-edit .form {
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+}
+

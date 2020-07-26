@@ -1,0 +1,56 @@
+.calendarDiv .el-calendar-day {
+  padding: 0;
+}
+.calendarDiv .cellDiv {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.calendarDiv .cellDiv .addbtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #409eff;
+}
+.calendarDiv .textContent {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.calendarDiv .xingxingIcon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 1px;
+}
+.calendarDiv .yueliangIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 4px;
+}
+.calendarDiv .yiqingPicIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 4px;
+}
+.calendarDiv .explain {
+  padding: 10px 20px;
+}
+.calendarDiv .explain .explainItem {
+    margin-right: 15px;
+}
+.calendarDiv .explain .icon {
+    margin-right: 5px;
+}
+.calendarDiv .explain .yueliangIcon {
+    top: 2px;
+}
+.calendarPopoverBtn .el-button {
+  margin-top: 8px;
+}
+.calendarPopoverBtn .el-button + .el-button {
+  margin-left: 0 !important;
+}
+

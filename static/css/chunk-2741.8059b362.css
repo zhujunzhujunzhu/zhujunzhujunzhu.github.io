@@ -1,0 +1,18 @@
+.sysNoticeDiv .banner .searchItem {
+  margin: 10px 20px 20px 0px;
+}
+.sysNoticeDiv .banner .searchItem label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #606266;
+}
+.sysNoticeDiv .banner .searchItem .vue-treeselect {
+    width: 350px;
+}
+.sysNoticeDiv .banner .el-range-separator {
+  z-index: 1000;
+}
+.sysNoticeDiv .banner .el-select {
+  width: 350px;
+}
+

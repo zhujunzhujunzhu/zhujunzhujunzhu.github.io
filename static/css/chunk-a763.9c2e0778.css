@@ -1,0 +1,57 @@
+.dispatchingDialogDiv .el-dialog {
+  width: 1200px;
+}
+.dispatchingDialogDiv .el-input__inner {
+  width: 395px;
+}
+.dispatchingDialogDiv .el-textarea__inner {
+  width: 102%;
+}
+.dispatchingDialogDiv .my-form-item {
+  position: relative;
+  left: -52px;
+  height: 60px;
+}
+.dispatchingDialogDiv .my-form-item1 {
+  position: relative;
+  left: -52px;
+}
+.dispatchingDialogDiv .vue-treeselect__control {
+  min-height: 150px;
+}
+.dispatchingDialogDiv .selectOrg {
+  width: 395px;
+}
+.dispatchingDialogDiv .el-table {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.dispatchingDialogDiv .bottomTable .el-table--border {
+  border: 0 none;
+}
+.dispatchingDialogDiv .attach-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dispatchingDialogDiv .attach-list-container i {
+    font-size: 22px;
+    cursor: pointer;
+}
+.dispatchingDialogDiv .attach-list-container .attach-list-column {
+    margin: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.info-box {
+  position: absolute;
+  height: 100%;
+  width: 440px;
+  right: 0;
+  z-index: 9;
+  background: #ffffff;
+  border-left: 1px solid #e8eaec;
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.info-box .el-tabs__content {
+    overflow: auto;
+}
+.info-box .close {
+    z-index: 1;
+    font-size: 14px;
+    margin-right: 10px;
+    float: right;
+    color: #999;
+    overflow: hidden;
+    cursor: pointer;
+}
+.info-box .ml5 {
+    margin-left: 5px;
+}
+.info-box .bg-default {
+    text-align: center;
+    color: #fff;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    /* 动画时长1s */
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    /*当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）*/
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    /* 动画次数 无限次 */
+    -webkit-animation-name: animationa;
+            animation-name: animationa;
+    /* 执行动画名称 */
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    /* 动画速度，线性匀速 */
+    /* background: #f6f7f8; */
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 10px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #245fab), color-stop(18%, #409eff), color-stop(33%, #245fab));
+    background: linear-gradient(to right, #245fab 8%, #409eff 18%, #245fab 33%);
+    /* 背景颜色 */
+    background-size: 750px auto;
+    /* 背景大小 */
+    height: 100%;
+    min-height: 1em;
+    position: relative;
+}
+@-webkit-keyframes animationa {
+  /* 修改背景定位 */
+0% {
+    background-position: -375px 0;
+}
+100% {
+    background-position: 375px 0;
+}
+}
+@keyframes animationa {
+  /* 修改背景定位 */
+0% {
+    background-position: -375px 0;
+}
+100% {
+    background-position: 375px 0;
+}
+}
+.info-box .tdLabel {
+    margin-top: 10px;
+    display: block;
+}
+.info-box .hdLabel {
+    display: block;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.info-box .titleLabel {
+    margin: 20px 0px 0px 0px;
+    display: block;
+    color: #66b1ff;
+}
+.info-box .contentDiv {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /*border-top: 1px solid rgba(0, 0, 0, 0.2);*/
+    padding: 20px 0px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    /*align-items: center;*/
+    /*display: flex;*/
+}
+.info-box .contentDiv .ylLabel {
+      cursor: pointer;
+      color: #66b1ff;
+}
+.info-box .contentDiv .ylLabel span {
+        text-decoration: underline;
+}
+.info-box .contentDiv .icon {
+      color: #66b1ff;
+      cursor: pointer;
+      /*margin-left: 10px;*/
+}
+

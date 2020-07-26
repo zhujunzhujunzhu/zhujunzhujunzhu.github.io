@@ -1,0 +1,22 @@
+
+.bottomDiv[data-v-1952bf14] {
+  margin-top: 2rem;
+}
+.leftDiv[data-v-1952bf14] {
+  width: 30%;
+}
+.inputClass[data-v-1952bf14] {
+  width: 300px;
+  margin-right: 1rem;
+}
+.bottombutton[data-v-1952bf14] {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+}
+.rightDiv[data-v-1952bf14] {
+  width: 70%;
+  min-height: 30rem;
+  border: 2px solid yellow;
+}
+

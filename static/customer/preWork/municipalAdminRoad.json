@@ -1,0 +1,500 @@
+{
+  "list": [{
+      "label": "项目ID",
+      "prop": "projectId",
+      "isQuery": "2",
+      "displayName": "标段",
+      "displayType": "zdy",
+      "param": "dealBidSelection"
+    },
+    {
+      "label": "前期工点",
+      "prop": "previousWorkPointId",
+      "displayType": "zdy",
+      "filterType": "",
+      "displayName": "前期工点",
+      "param": "dealWorkPointId",
+      "isQuery": "1"
+    },
+    {
+      "label": "道路名称",
+      "prop": "landName",
+      "isQuery": "2",
+      "displayName": "名称"
+    }, {
+      "label": "道路位置",
+      "prop": "location",
+      "isQuery": "2",
+      "displayName": "道路位置",
+      "displayType": "",
+      "filterType": "",
+      "param": ""
+    }, {
+      "label": "权属",
+      "prop": "landOwner",
+      "isQuery": "2"
+    },
+    {
+      "label": "总长度（m）",
+      "prop": "quantities",
+      "isQuery": "2",
+      "displayName": ""
+    }, {
+      "？label": "已完成（m）",
+      "？prop": "completeQuantities",
+      "？isQuery": "2",
+      "？displayType": "",
+      "？filterType": "sj",
+      "？param": "{y}-{m}-{d}"
+    }, {
+      "label": "完成时间",
+      "prop": "endDate",
+      "isQuery": "2",
+      "displayType": "glq",
+      "filterType": "sj",
+      "param": "{y}-{m}-{d}",
+      "displayName": ""
+    },
+    {
+      "？label": "完成率",
+      "？prop": "transplantVegetation",
+      "？isQuery": "2",
+      "？displayName": "完成率",
+      "？displayType": "zdy",
+      "？param": "dealRate"
+    },
+    {
+      "？label": "证照状态进度",
+      "？isQuery": "2",
+      "？prop": "licenseName",
+      "？displayType": "zdy",
+      "？param": "dealLicense"
+    }
+  ],
+  "table": {
+    "list": [{
+      "type": "grid",
+      "name": "栅格布局",
+      "icon": "icon-grid-",
+      "columns": [{
+          "span": 12,
+          "list": [{
+              "type": "select",
+              "name": "前期工点",
+              "options": {
+                "defaultValue": "",
+                "multiple": false,
+                "disabled": false,
+                "clearable": true,
+                "placeholder": "请输入前期工点",
+                "isRelated": false,
+                "required": false,
+                "showLabel": false,
+                "childKey": "",
+                "width": "100%",
+                "options": [{
+                    "value": "选项1",
+                    "label": "选项1"
+                  },
+                  {
+                    "value": "选项2",
+                    "label": "选项2"
+                  },
+                  {
+                    "value": "选项3",
+                    "label": "选项3"
+                  }
+                ],
+                "remote": true,
+                "filterable": false,
+                "allowCreate": false,
+                "dictionaryCode": "",
+                "remoteOptions": [],
+                "props": {
+                  "value": "id",
+                  "label": "name"
+                },
+                "remoteFunc": "/rest/previousWorkPoint/list"
+              },
+              "key": "1573608471000_69367",
+              "model": "previousWorkPointId",
+              "rules": []
+            },
+            {
+              "type": "select",
+              "name": "施工工点",
+              "options": {
+                "defaultValue": "",
+                "multiple": true,
+                "disabled": false,
+                "clearable": true,
+                "placeholder": "请选择施工工点",
+                "isRelated": false,
+                "required": true,
+                "showLabel": false,
+                "childKey": "",
+                "width": "100%",
+                "options": [{
+                    "value": "选项1",
+                    "label": "选项1"
+                  },
+                  {
+                    "value": "选项2",
+                    "label": "选项2"
+                  },
+                  {
+                    "value": "选项3",
+                    "label": "选项3"
+                  }
+                ],
+                "remote": true,
+                "filterable": false,
+                "allowCreate": false,
+                "dictionaryCode": "/rest/workPoint/list",
+                "remoteOptions": [],
+                "props": {
+                  "value": "id",
+                  "label": "name"
+                },
+                "remoteFunc": "/rest/workPoint/list"
+              },
+              "key": "1566888964000_18054",
+              "model": "workPointIds",
+              "rules": [{
+                "required": true,
+                "message": "施工工点必须填写"
+              }]
+            },
+            {
+              "type": "input",
+              "name": "权属",
+              "options": {
+                "width": "100%",
+                "defaultValue": "",
+                "required": false,
+                "clearable": true,
+                "dataType": "string",
+                "pattern": "",
+                "placeholder": "请填写权属",
+                "remoteFunc": "func_1566800681000_49655"
+              },
+              "key": "1566889082000_13234",
+              "model": "landOwner",
+              "rules": [{
+                "type": "string",
+                "message": "权属格式不正确"
+              }]
+            },
+            {
+              "type": "date",
+              "name": "开始时间",
+              "options": {
+                "defaultValue": "",
+                "readonly": false,
+                "disabled": false,
+                "editable": true,
+                "clearable": true,
+                "placeholder": "请输入开始时间",
+                "startPlaceholder": "",
+                "endPlaceholder": "",
+                "type": "date",
+                "format": "yyyy-MM-dd",
+                "timestamp": false,
+                "required": false,
+                "width": "100%",
+                "remoteFunc": "func_1566958015000_75540"
+              },
+              "key": "1566957929000_40598",
+              "model": "startDate",
+              "rules": []
+            },
+            {
+              "type": "input",
+              "name": "总长度（m）",
+              "options": {
+                "width": "100%",
+                "defaultValue": "",
+                "required": false,
+                "dataType": "number",
+                "pattern": "",
+                "placeholder": "请输入总长度",
+                "remoteFunc": "func_1574047110000_1304"
+              },
+              "key": "1574047110000_1304",
+              "model": "quantities",
+              "rules": [{
+                "type": "number",
+                "message": "格式不正确"
+              }]
+            },
+            {
+              "type": "select",
+              "name": "行为",
+              "options": {
+                "defaultValue": "",
+                "multiple": false,
+                "disabled": false,
+                "clearable": true,
+                "placeholder": "请选择行为",
+                "isRelated": false,
+                "required": false,
+                "showLabel": false,
+                "childKey": "",
+                "width": "100%",
+                "options": [{
+                    "value": "选项1",
+                    "label": "选项1"
+                  },
+                  {
+                    "value": "选项2",
+                    "label": "选项2"
+                  },
+                  {
+                    "value": "选项3",
+                    "label": "选项3"
+                  }
+                ],
+                "remote": false,
+                "filterable": false,
+                "allowCreate": false,
+                "dictionaryCode": "municipal_behavior",
+                "remoteOptions": [],
+                "props": {
+                  "value": "id",
+                  "label": "name"
+                },
+                "remoteFunc": "func_1573724362000_77390"
+              },
+              "key": "1566798398000_28705",
+              "model": "landBehavior",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "span": 12,
+          "list": [{
+              "type": "input",
+              "name": "道路名称",
+              "options": {
+                "defaultValue": "",
+                "placeholder": "请输入道路名称",
+                "required": false,
+                "width": "100%",
+                "dataType": "string",
+                "remoteOptions": [],
+                "pattern": "",
+                "remoteFunc": "func_1573724089000_81865"
+              },
+              "key": "1573724089000_81865",
+              "model": "landName",
+              "rules": [{
+                "required": true,
+                "message": "道路名称必须填写"
+              }]
+            },
+            {
+              "type": "input",
+              "name": "道路位置",
+              "options": {
+                "defaultValue": "",
+                "placeholder": "请输入道路位置",
+                "isRelated": false,
+                "required": false,
+                "showLabel": false,
+                "childKey": "",
+                "width": "100%",
+                "remote": false,
+                "filterable": false,
+                "allowCreate": false,
+                "dictionaryCode": "",
+                "remoteOptions": [],
+                "remoteFunc": "func_1573724085000_27609"
+              },
+              "key": "1573724085000_27609",
+              "model": "location",
+              "rules": [{
+                "required": true,
+                "message": "道路位置必须填写"
+              }]
+            }, {
+              "type": "date",
+              "name": "计划起止时间",
+              "options": {
+                "defaultValue": "",
+                "readonly": false,
+                "disabled": false,
+                "editable": true,
+                "clearable": true,
+                "placeholder": "",
+                "startPlaceholder": "请选择计划开始时间",
+                "endPlaceholder": "请选择计划结束时间",
+                "type": "datetimerange",
+                "format": "yyyy-MM-dd",
+                "timestamp": false,
+                "required": false,
+                "width": "100%",
+                "remoteFunc": "func_1566957819000_80371"
+              },
+              "key": "1566798373000_44573",
+              "model": "planStartAndEnd",
+              "rules": []
+            },
+            {
+              "type": "date",
+              "name": "结束时间",
+              "options": {
+                "defaultValue": "",
+                "readonly": false,
+                "disabled": false,
+                "editable": true,
+                "clearable": true,
+                "placeholder": "请选择结束时间",
+                "startPlaceholder": "",
+                "endPlaceholder": "",
+                "type": "date",
+                "format": "yyyy-MM-dd",
+                "timestamp": false,
+                "required": false,
+                "width": "100%",
+                "remoteFunc": "func_1566958020000_59669"
+              },
+              "key": "1566957922000_7596",
+              "model": "endDate",
+              "rules": []
+            },
+            {
+              "type": "input",
+              "name": "已完成（m）",
+              "options": {
+                "width": "100%",
+                "defaultValue": "",
+                "required": false,
+                "dataType": "number",
+                "pattern": "",
+                "placeholder": "请输入完成长度",
+                "remoteFunc": "func_1574668919000_30248"
+              },
+              "key": "1574668919000_30248",
+              "model": "completeQuantities",
+              "rules": [{
+                "type": "number",
+                "message": "格式不正确"
+              }]
+            }, {
+              "type": "select",
+              "name": "状态",
+              "options": {
+                "defaultValue": "",
+                "multiple": false,
+                "disabled": false,
+                "clearable": true,
+                "placeholder": "请选择状态",
+                "isRelated": false,
+                "required": false,
+                "showLabel": false,
+                "childKey": "",
+                "width": "100%",
+                "options": [{
+                    "value": "选项1",
+                    "label": "选项1"
+                  },
+                  {
+                    "value": "选项2",
+                    "label": "选项2"
+                  },
+                  {
+                    "value": "选项3",
+                    "label": "选项3"
+                  }
+                ],
+                "remote": false,
+                "filterable": false,
+                "allowCreate": false,
+                "dictionaryCode": "municipal_status",
+                "remoteOptions": [],
+                "props": {
+                  "value": "id",
+                  "label": "name"
+                },
+                "remoteFunc": "func_1566889163000_98688"
+              },
+              "key": "1566889171000_54689",
+              "model": "status",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "options": {
+        "gutter": 0,
+        "justify": "start",
+        "align": "top",
+        "remoteFunc": "func_1566798240000_53829",
+        "props": {
+          "value": "value",
+          "label": "label"
+        }
+      },
+      "key": "1566798240000_53829",
+      "model": "",
+      "rules": []
+    }, {
+      "type": "grid",
+      "name": "栅格布局",
+      "icon": "icon-grid-",
+      "columns": [{
+        "span": 24,
+        "list": [{
+          "type": "textarea",
+          "name": "道路说明",
+          "options": {
+            "width": "100%",
+            "defaultValue": "",
+            "required": false,
+            "disabled": false,
+            "pattern": "",
+            "placeholder": "请输入道路说明",
+            "remoteFunc": "func_1573724360000_46593"
+          },
+          "key": "1573724171000_23665",
+          "model": "remark",
+          "rules": []
+        }, {
+          "type": "imgupload",
+          "name": "附件",
+          "options": {
+            "length": 8,
+            "fileName": "",
+            "isFile": false,
+            "defaultValue": "",
+            "remoteFunc": "func_1566800740000_83790"
+          },
+          "key": "1566800740000_83790",
+          "model": "docId",
+          "rules": []
+        }]
+      }],
+      "options": {
+        "gutter": 0,
+        "justify": "start",
+        "align": "top",
+        "remoteFunc": "func_1566800725000_3931",
+        "props": {
+          "value": "value",
+          "label": "label"
+        }
+      },
+      "key": "1566800725000_3931",
+      "model": "",
+      "rules": []
+    }],
+    "config": {
+      "labelWidth": 130,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "0",
+  "buttonList": []
+}

@@ -1,0 +1,22 @@
+.detialDialog .attach-head {
+  height: 40px;
+  font-weight: bold;
+}
+.detialDialog .attach-item {
+  padding: 10px 190px;
+}
+.detialDialog .attach-item:hover {
+    color: #245fab;
+}
+
+.dispatchingNoticeDetialDialog .attach-head {
+  height: 40px;
+  font-weight: bold;
+}
+.dispatchingNoticeDetialDialog .attach-item {
+  padding: 10px 190px;
+}
+.dispatchingNoticeDetialDialog .attach-item:hover {
+    color: #245fab;
+}
+

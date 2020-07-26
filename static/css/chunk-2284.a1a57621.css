@@ -1,0 +1,63 @@
+.el-tree[data-v-f94ec82e] {
+  overflow: auto;
+}
+
+
+.drawingFilesDialog .container[data-v-2741dc4e] {
+  overflow-y: auto;
+}
+
+.downloadHistoryDiv .path[data-v-9fb0c54a] {
+  font-size: small;
+  font-weight: bold;
+}
+
+.constructionDrawingDiv h3 {
+  margin: 0;
+  padding: 0;
+}
+.constructionDrawingDiv .box-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.constructionDrawingDiv .box-card-wrapper .leftCard {
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 0s;
+    transition: 0s;
+    /*float: left;*/
+}
+.constructionDrawingDiv .box-card-wrapper .rightCard {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 10px;
+    /*float: right;*/
+    /*box-sizing: border-box;*/
+    /*overflow: hidden;*/
+}
+.constructionDrawingDiv .box-card-wrapper .rightCard .el-table {
+      /*max-height: 100px;*/
+      /*overflow: auto;*/
+}
+.constructionDrawingDiv .box-card-wrapper .rightCard .el-table .el-table__body-wrapper {
+        /*max-height: 600px;*/
+        overflow: auto;
+}
+.constructionDrawingDiv .box-card-wrapper .resize-line {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.constructionDrawingDiv .box-card-wrapper .resize-line:hover {
+      border-right: 1px dashed #ccc;
+      cursor: e-resize;
+}
+.constructionDrawingDiv .leftRight {
+  text-align: justify;
+}
+

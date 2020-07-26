@@ -1,0 +1,32 @@
+.editNewsDialog .el-dialog {
+  margin-top: 10vh !important;
+  width: 952px;
+}
+.editNewsDialog .el-date-editor.el-input,
+.editNewsDialog .el-date-editor.el-input__inner {
+  width: 100%;
+}
+.editFormNews {
+  margin: 20px auto;
+  padding: 15px;
+  width: 98%;
+  height: 92%;
+  background: #fff;
+}
+.editFormNews .mce-edit-area {
+    min-height: 200px;
+}
+.editFormNews .form {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+}
+.editFormNews .el-form-item {
+    padding-right: 100px;
+}
+.editFormNews .el-upload--picture-card {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+

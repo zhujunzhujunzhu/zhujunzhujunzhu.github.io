@@ -1,0 +1,23 @@
+.realTimeScheduleCollectDiv {
+  margin-top: -40px;
+}
+.realTimeScheduleCollectDiv .rollBackBg {
+    background: #f07878;
+}
+.realTimeScheduleCollectDiv .colorCard {
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+.realTimeScheduleCollectDiv .mybtns {
+    margin-left: 30px;
+}
+.realTimeScheduleCollectDiv .banner {
+    position: relative;
+    left: 330px;
+    top: -7px;
+}
+.realTimeScheduleCollectDiv .banner .colorListDiv {
+      margin-left: 20px;
+}
+

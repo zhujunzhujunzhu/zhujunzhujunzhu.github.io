@@ -1,0 +1,162 @@
+.pie {
+  height: 200px;
+}
+
+.RightDiv {
+  overflow: auto;
+  width: 360px;
+  background-image: url(../../static/img/leftImg.1985e75.png);
+  background-repeat: no-repeat;
+  background-color: #bed8ed;
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 142px;
+}
+.transverse {
+  margin: 0;
+  padding: 0;
+  width: 310px;
+  height: 1px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.statisticalLabel {
+  float: left;
+  margin: 10px 0px 10px 10px;
+  color: #1cade4;
+}
+.topData::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 9%;
+  right: 0;
+  width: 300px;
+  height: 1px;
+  background-color: #ccc;
+}
+.whiteBackgroun {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+.progressManageDiv {
+  padding: 0px 10px;
+}
+.progressManageDiv .progress {
+    margin-top: 2rem;
+}
+.progressManageDiv .jdLabel {
+    margin: 10px 0px 10px 10px;
+    color: #1cade4;
+}
+.progressManageDiv .progressDiv {
+    margin-top: 45px;
+}
+.progressManageDiv .progressDiv .innerProgress {
+      margin: 0 auto;
+      width: 90%;
+}
+.progressManageDiv .playSpan {
+    margin: 10px 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAABB0lEQVQ4T53TPU7DQBAF4PeMHSQ4ASeIOAaHIFJwpAg6fpQiFKSmoUtHQ0UBoSSiRnACRGc7ESUgKKwIiQqv96EgmZ+IxHa23H3fTDGzrJ6bdQdqC7iBcbtRkzEKHK72EmU5AW8Ujui5x0GN77P8H/gT5CtgD8MV7wRrNP8VmAK/o0OQnbDuXk7iPJjl762wP/C92+yiKMzy15I6kV+5Kwu/CgjozgXHeC4oIC0PhVhMN8tBoU/P3Q5qfCkIGcumraix2Cszjr7lx+6gvvz8ewlmdRwRbAUb7lnhlRNwZZNkZ9hcepq26BMdOZJsO/Irp3k/i9ULs+XI7olOaNKFg4cGH/PQ+P0TTfqACcLL5zcAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+}
+.progressManageDiv .suspendSpan {
+    margin: 10px 10px 10px 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAAAaklEQVQ4T2M0XPXfj5Hh30wGBgaG/wxM6efDGDeB2MgAXQ2j0aq/zxkYGCSgil6cC2OWRNeErgak6T+yonNhzIxYNKGoGdUEDaHRgKA0IEhPsAar//sz/f83A2TzP0amjAuhjBvREyy6GgAVen4CkyvzSAAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+}
+.progressManageDiv .quitSpan {
+    margin: 10px 10px 10px 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAACuUlEQVQ4T42US0hUURjH/9+dO1drEoqoFqEFps0dpaIWboLAyDYVtonmzmhWYBAEPaBFGExEq1y1qITAFO8dadPCXPSQbBfRgx5678hQFEG0qKRAce6d88W583BmYsyz+l7nd/7fdziHsMSKWAtxZuWmUJS+VDRwY6laWiqpm+4TEPaCKW3H1KZlg1pGOCJUKPZR+iA36Zb7CMA+BjuOoeky1mwtdCqkzDrR4GQpuKgobGXOEEjKZ0WorVNxml4EwXGMoB4edTtI4KEEMOOKEwsmCjAfFLa8YwS+6wcZcyLrtaa6V3yqBOnm/CaQ+grA2hxAuWgbgevSouahuY0BTZsB80qAfgpP7E91ay/LW8sp8mMmN4GyEwDXSz+b5R0zXdpbCo9kbpNCp2RQMNpTseDTgtxKRcX4KLdCeG8AqADGbSN4gHTT/Q1CHYDHthHsKB1gNZA/jqQ3QMy90s546gbSLZf90RAdd6Jqbk75FbbcCQLawZy2Y1rZ9W+13HYFmMh1Io4UQcjyLrtLe10GMt1rRLjEzINOTDtRmmsc/rNeU2u/50B8tggSENtTRs270mJpR6yFlumoNg0iX3lhNZiza0IU+iEvDOBzi4qYonZMHa0EVfMjSW5j9p77YwH1UNhyPQICACVtQzWWC9JN9yoIfbLe42yjVHQfQCdI+mKnE695/z9YY3KuXmNtCuA6MF7YsWAbRYYzbaxSTiLzRxLubrsr9K0abPPgr9W1NaueEbAt39Yhx1DH8k8k00+gC/5m5i9QlNN2VB2vhOWv/JZ8u7kcDdmG2uNbhWLd9O6A+GRxM1MaJCblFwLmBii0B0BLIc9ED5xU4DAS5JWBpBO2sucJfBng1dVaY2CeCP12Sk0gQaJQ98/HtuUerwt4Xq8CHASoCeAQQPMM/kyMMZfVgXScvlYe9BcdwjeSpLBqpwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+}
+.progressManageDiv .settingSpan {
+    margin: 10px 0px 10px 0px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACAUlEQVQ4T4VTPWhTURg95+a9pkUSUGut0kGkbV4GNzcXFaciKB1CiTpICx0EBUcHDUIFQcQqCHYQKklQ6dClgg6COIiLY/MoUQdx8q9RsU3efe9IImmTkthvu9/POed+P0Sr5WRSo/YohQsgbvlZ9009PPJY6VhkbzIMH5SG4s9xjLZZxtb64buKu3tsBUJcQIVRNCeaAMQUgQEAtarjDHzIsNIRYOj2p77E4OAqgJ42ZZuPIISzfyXLr20AdWbsQtwxwR2C57sUN92LCtamTF/i13KGNaaKwXECSwTMf5jbMYVAQAhFk0wXgkUQpzqyCvXvhCB2d1H1lqknwRGGeEYg2Zok8J6/L3YZrxB5I/YqiWtb4muCxhtT8ArVGdJcaUn4Xsq6baxesfae4MHNHD0sZXsmmwA50mwwCPjiZ9362DYsXQyWAaSbDklz/pmeaXp5HYKxLwn0t0kkcv6Ecx2kUoXaRUPObunDb1InmC7aJUBjnZok8SMYBQRHuzT5Hb28PUmjBfwbo7vNDjTCjRECAaRLBMThPBKusAOx8D6g09uAvIbsuUC9P8pl/Gm/hfy3pGuS9TXtpsSGjnNgJcPPXY/J6berBHolrJNakIwFMU4oKWDdRs7e8ln+7AiAp4p5NswQmpbBDX/CfVFPTD2qHabDWcjM251mvjzGahPgLyoGxRpxyrpUAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+}
+.progressManageDiv .settingLabel {
+    color: #1cade4;
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+}
+.progressManageDiv .progressBottom {
+    padding: 12px 0px;
+    font-size: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.progressManageDiv .tooltipDiv {
+    margin-right: 10px;
+}
+.progressManageDiv .tooltipDiv span {
+      width: 20px;
+      height: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      border-radius: 18%;
+}
+.progressManageDiv .tooltipDiv .red {
+      background: red;
+}
+.progressManageDiv .tooltipDiv .green {
+      background: #1cade4;
+}
+.progressManageDiv .tooltipDiv .grey {
+      background: #ccc;
+}
+.progressManageDiv .el-progress-bar__outer {
+    background: #ccc;
+}
+.progressManageDiv .textDiv {
+    font-size: 14px;
+    margin: 10px 0px 5px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.progressManageDiv .settingDiv {
+    float: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: 20px;
+    position: absolute;
+}
+.progressManageDiv .optDiv {
+    margin-left: 15px;
+}
+.progressManageDiv .optDiv .icon {
+      cursor: pointer;
+      font-size: 25px;
+      padding: 0px 10px;
+      border: 1px solid #dddddd;
+      background: -webkit-gradient(linear, left bottom, left top, from(#eaeaea), to(white));
+      background: linear-gradient(0deg, #eaeaea 0%, white 100%);
+      border-radius: 1px;
+      width: 50px;
+      height: 33px;
+      line-height: 33px;
+      margin-right: 7px;
+}
+.progressManageDiv .optDiv .el-button {
+      border: 1px solid #dddddd;
+      background: -webkit-gradient(linear, left bottom, left top, from(#eaeaea), to(white));
+      background: linear-gradient(0deg, #eaeaea 0%, white 100%);
+      border-radius: 1px;
+      height: 33px;
+}
+

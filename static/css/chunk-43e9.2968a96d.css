@@ -1,0 +1,67 @@
+.topographyDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  background: rgba(26, 26, 26, 0.8);
+  /*border-left: 1px solid #e8eaec;*/
+  -webkit-box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.topographyDiv .silderDiv {
+    padding: 0px 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+}
+.topographyDiv .silderDiv .lLabel {
+      color: #fff;
+      white-space: nowrap;
+}
+.topographyDiv .silderDiv .silder {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-left: 10px;
+      width: 100%;
+}
+.topographyDiv .silderDiv .silder .el-input-number__decrease, .topographyDiv .silderDiv .silder .el-input-number__increase {
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+}
+.topographyDiv .silderDiv .silder .el-slider__input {
+        width: 100px;
+}
+.topographyDiv .silderDiv .silder .el-slider__input:hover {
+          border-color: red !important;
+}
+.topographyDiv .silderDiv .silder .el-slider__runway.show-input {
+        width: 180px;
+}
+.topographyDiv .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+    /*color: #fff;*/
+}
+.topographyDiv .titleLabel {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+}
+.topographyDiv .btn {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: inherit;
+    color: #f75223;
+    border-color: #f75223;
+}
+.topographyDiv .btn:hover {
+    background: #f75223;
+    color: #fff;
+}
+

@@ -1,0 +1,23 @@
+.noticePublicityDialog .el-upload-list__item-name {
+  white-space: inherit !important;
+}
+.noticePublicityDialog .el-dialog {
+  margin-top: 10vh !important;
+  width: 70%;
+}
+.noticePublicityDialog .el-date-editor.el-input,
+.noticePublicityDialog .el-date-editor.el-input__inner {
+  width: 100%;
+}
+.noticePublicityDialog .mce-edit-area {
+  min-height: 200px;
+}
+.noticePublicityDialog .form {
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto;
+}
+.noticePublicityDialog .el-form-item {
+  padding-right: 100px;
+}
+

@@ -1,0 +1,409 @@
+{
+  "list": [
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "监控名称",
+      "param": "",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "安装地点",
+      "prop": "installSite"
+    },
+    {
+      "label": "里程",
+      "prop": "mileage"
+    },
+    {
+      "label": "设备类型",
+      "prop": "type",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "设备类型",
+      "param": "video_device_type",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "设备状态",
+      "prop": "status",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "设备状态",
+      "param": "video_device_status",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "编码",
+      "prop": "code",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "设备编号",
+      "param": "",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "备注",
+      "prop": "remark"
+    },
+    {
+      "label": "排序号",
+      "prop": "sequenceNumber"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "监控名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入监控名称",
+                  "remoteFunc": "func_1572313617000_10644"
+                },
+                "key": "1572313617000_10644",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "监控名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "监控名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "dataType": "String",
+                  "isShowLabel": true,
+                  "defaultValue": "",
+                  "remoteFunc": "func_1572313775000_13485",
+                  "placeholder": "请选择标段",
+                  "required": true,
+                  "pattern": ""
+                },
+                "key": "1572313775000_13485",
+                "model": "tendersId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "标段名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "设备类型",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": false,
+                  "placeholder": "请选择设备类型",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "video_device_type",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1572313745000_40174"
+                },
+                "key": "1572313815000_3858",
+                "model": "type",
+                "rules": []
+              },
+              {
+                "type": "input",
+                "name": "里程",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入里程",
+                  "remoteFunc": "func_1572313839000_20192"
+                },
+                "key": "1572313856000_65915",
+                "model": "mileage",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "里程格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "视频地址",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "",
+                  "remoteFunc": "func_1572428201000_52065",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1572428201000_52065",
+                "model": "videoUrl",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "单行文本格式不正确"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "设备编号",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入设备编号",
+                  "remoteFunc": "func_1572313631000_36826"
+                },
+                "key": "1572313631000_36826",
+                "model": "code",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "设备编号格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "设备编号必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "工点",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572315668000_20381"
+                },
+                "key": "1572315668000_20381",
+                "model": "workPointId",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "设备状态",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": false,
+                  "placeholder": "请选择设备状态",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "video_device_status",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1572313816000_85233"
+                },
+                "key": "1572313745000_40174",
+                "model": "status",
+                "rules": []
+              },
+              {
+                "type": "input",
+                "name": "安装地点",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入安装地点",
+                  "remoteFunc": "func_1572313858000_27861"
+                },
+                "key": "1572313839000_20192",
+                "model": "installSite",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "安装地点格式不正确"
+                  }
+                ]
+              },
+              {
+                "type": "input",
+                "name": "排序号",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": false,
+                  "dataType": "number",
+                  "pattern": "",
+                  "placeholder": "请输入排序号",
+                  "remoteFunc": "func_1594262964000_36915",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1572313856000_65915",
+                "model": "sequenceNumber",
+                "rules": [
+                  {
+                    "type": "number",
+                    "message": "序号格式不正确"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1572313611000_45297",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1572313611000_45297",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "textarea",
+        "name": "备注",
+        "options": {
+          "width": "100%",
+          "defaultValue": "",
+          "required": false,
+          "disabled": false,
+          "pattern": "",
+          "placeholder": "请输入备注",
+          "remoteFunc": "func_1572314384000_69941",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1572314384000_69941",
+        "model": "remark",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

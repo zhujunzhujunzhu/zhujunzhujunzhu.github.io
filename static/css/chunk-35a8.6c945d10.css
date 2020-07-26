@@ -1,0 +1,52 @@
+.measureDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*background: rgba(26, 26, 26, 0.8);*/
+  /*border-left: 1px solid #e8eaec;*/
+  /*box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);*/
+}
+.measureDiv .el-select {
+    width: calc(100% - 100px);
+}
+.measureDiv .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+}
+.measureDiv .el-row {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.measureDiv .el-row .leftlabel {
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.5);
+      width: 80px;
+}
+.measureDiv .is-focus input {
+    /*border-color: #f56840!important;*/
+}
+.measureDiv .el-select .el-input__inner:focus {
+    /*border-color: #f56840!important;*/
+}
+.measureDiv .btLabel {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.measureDiv .btnDiv {
+    margin-top: 9px;
+    text-align: right;
+    padding-right: 15px;
+}
+.measureDiv .btnDiv .btn {
+      color: #fff;
+      background-color: #f56840;
+      border: 1px solid #f56840;
+}
+.measureDiv .btnDiv .btn:hover {
+      opacity: 0.9;
+}
+

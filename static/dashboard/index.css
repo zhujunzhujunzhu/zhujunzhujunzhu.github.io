@@ -1,0 +1,1252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow: hidden;
+}
+.pointer {
+  cursor: pointer;
+}
+.df {
+  display: flex;
+}
+
+.dg {
+  display: grid;
+}
+
+.fww {
+  flex-wrap: wrap;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.rotate180{
+  transform: rotate(180deg);
+}
+
+.dashboard {
+  width: 19.2rem;
+  height: 10.8rem;
+  position: relative;
+}
+
+#mysubway {
+  width: 19.2rem;
+  height: 10.8rem;
+}
+.panel-header {
+  width: 19.2rem;
+  height: 1.31rem;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-image: url("./img/header-bg.png"); */
+  position: absolute;
+  left: 0;
+  top: 0.07rem;
+  z-index: 2;
+}
+
+.panel-header-date {
+  color: #01c9f7;
+  font-size: 0.14rem;
+  position: absolute;
+  top: 0.22rem;
+  right: 2.34rem;
+}
+
+.panel-header-time {
+  color: #01c9f7;
+  font-size: 0.14rem;
+  position: absolute;
+  top: 0.22rem;
+  right: 1.56rem;
+}
+
+.panel-header-weather-today {
+  color: white;
+  font-size: 0.14rem;
+
+  position: absolute;
+  top: 0.37rem;
+  left: 14.76rem;
+}
+.panel-header-day {
+  color: #01c9f7;
+  font-size: 0.14rem;
+  position: absolute;
+  top: 0.22rem;
+  right: 1.07rem;
+}
+.panel-header-weather {
+  color: #01c9f7;
+  font-size: 0.14rem;
+  position: absolute;
+  top: 0.22rem;
+  right: 0.28rem;
+}
+.panel-header-weather-tomorrow {
+  color: white;
+  font-size: 0.16rem;
+
+  position: absolute;
+  top: 0.37rem;
+  left: 16.69rem;
+}
+
+/* loader */
+
+[class*="loader-"] {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: inherit;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.loader-19 {
+  border-top: 10px solid white;
+  border-right: 10px solid transparent;
+  -webkit-animation: loader-19 1s linear infinite;
+  animation: loader-19 1s linear infinite;
+  border-radius: 100%;
+  position: relative;
+}
+@-webkit-keyframes loader-19 {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-19 {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 201;
+  background: black;
+}
+.leftBox {
+  position: absolute;
+  top: 0.6rem;
+  left: 0rem;
+  z-index: 2;
+}
+.panel-left {
+  background-image: url(./img/leftbg.png);
+  width: 4.81rem;
+  height: 10.29rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: relative;
+}
+
+.statusNumBox {
+  position: absolute;
+  left: 0rem;
+  top: 1.01rem;
+  display: flex;
+  justify-content: center;
+  width: 4.44rem;
+  box-sizing: border-box;
+  padding-left: 0rem;
+}
+.statusNumBox-inner {
+  width: 100%;
+  position: relative;
+}
+.statusNum {
+  width: 1.48rem;
+  font-size: 0.24rem;
+  font-family: Impact;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+.status-num1 {
+  width: 0.84rem;
+  left: 0.7rem;
+  position: absolute;
+}
+
+.status-num2 {
+  width: 0.84rem;
+  left: 2rem;
+  position: absolute;
+}
+
+.status-num3 {
+  width: 0.58rem;
+  left: 3.74rem;
+  position: absolute;
+}
+.status-num1,
+.status-num2 {
+  /* text-align: left; */
+}
+.status-num2 {
+  /* margin-left: 0.15rem; */
+}
+.node-textBox1 {
+  position: absolute;
+  top: 1.85rem;
+  left: 2.15rem;
+  width: 2.8rem;
+  overflow-y: scroll;
+  height: 0.64rem;
+}
+.node-text1 {
+  width: 2.8rem;
+  display: flex;
+  box-sizing: border-box;
+}
+.node-text1Content {
+  font-size: 0.14rem;
+  color: #25aaff;
+  line-height: 0.28rem;
+  margin-right: 0.12rem;
+  box-sizing: border-box;
+}
+.node-text1Content-desc {
+  width: 1.7rem;
+  height: 0.28rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.node-text1Content-title {
+  width: 0.4rem;
+  text-align: right;
+}
+.node-textBox2 {
+  position: absolute;
+  left: 2.15rem;
+  top: 3.02rem;
+}
+.tfJiantou {
+  position: absolute;
+  left: 0.1rem;
+  top: 4.9rem;
+  width: 0.17rem;
+  height: 0.85rem;
+  background-image: url(./img/leftJiantou.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+  z-index: 100;
+}
+.administration-nums {
+  width: 4.44rem;
+  position: absolute;
+  left: 0rem;
+  top: 4.22rem;
+  display: flex;
+  /* padding-left: 0.73rem; */
+  box-sizing: border-box;
+}
+
+.administration-nums-inner {
+  position: relative;
+  width: 100%;
+}
+.administration-num1 {
+  width: 0.56rem;
+  position: absolute;
+  left: 0.7rem;
+}
+.administration-num {
+  text-align: center;
+  font-size: 0.24rem;
+  font-family: Impact;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+  /* margin-right: 1.45rem; */
+}
+.administration-num2 {
+  width: 0.72rem;
+  position: absolute;
+  left: 2.18rem;
+}
+
+.administration-num3 {
+  width: 0.56rem;
+  position: absolute;
+  left: 3.76rem;
+}
+.warning-textBox1 {
+  width: 2.2rem;
+  height: 0.64rem;
+  position: absolute;
+  left: 0.42rem;
+  top: 5.05rem;
+  overflow-y: scroll;
+}
+.warning-textBox2 {
+  width: 2.2rem;
+  height: 0.64rem;
+  position: absolute;
+  left: 0.42rem;
+  top: 6.07rem;
+  overflow-y: scroll;
+}
+.leftJiantou {
+  position: absolute;
+  left: 0.1rem;
+  top: 5.25rem;
+  width: 0.17rem;
+  height: 0.85rem;
+  background-image: url(./img/leftJiantou.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+.tfJiantou:hover,
+.leftJiantou:hover {
+  cursor: pointer;
+}
+.work-nums {
+  width: 4.44rem;
+  position: absolute;
+  left: 0.26rem;
+  top: 7.3rem;
+  display: flex;
+  padding-left: 0.3rem;
+  box-sizing: border-box;
+}
+.work-num {
+  text-align: center;
+  width: 1.13rem;
+  overflow-x: scroll;
+  font-size: 0.2rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.24rem;
+  margin-right: 0.42rem;
+  white-space: nowrap;
+}
+.work-num2 {
+  margin-right: 0.38rem;
+}
+.work-num3 {
+  margin-right: 0;
+}
+.typeSelect {
+  position: absolute;
+  left: 1.15rem;
+  top: 8.16rem;
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+.typetext {
+  position: absolute;
+  font-size: 0.14rem;
+  font-family: "MicrosoftYaHei";
+  font-weight: 400;
+  color: rgba(104, 186, 255, 1);
+  line-height: 0.14rem;
+}
+.typetext1 {
+  left: 0.5rem;
+  top: 8.15rem;
+
+  width: 0.6rem;
+  height: 0.16rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.selectBox {
+  display: block;
+  position: absolute;
+  left: 0.35rem;
+  top: 8.05rem;
+  width: 1.04rem;
+  height: 0.3rem;
+  opacity: 0;
+  z-index: 100;
+}
+.rightSelect {
+  display: block;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.28rem;
+  width: 1.04rem;
+  height: 0.3rem;
+  opacity: 0;
+  z-index: 100;
+}
+.objectSelect {
+  display: block;
+  position: absolute;
+  right: 0.4rem;
+  top: 3.74rem;
+  width: 1.04rem;
+  height: 0.3rem;
+  opacity: 0;
+  z-index: 100;
+}
+/* .objectSelect-tf{
+  position: absolute;
+  right: 0.5rem;
+  top: 3.88rem;
+  transform: rotate(180deg);
+} */
+.manSelectBox {
+  display: block;
+  position: absolute;
+  right: 0.4rem;
+  top: 6.9rem;
+  width: 1.04rem;
+  height: 0.3rem;
+  opacity: 0;
+  z-index: 100;
+}
+.typetext4 {
+  top: 6.95rem;
+  right: 0.7rem;
+  width: 0.6rem;
+  height: 0.16rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.typeBox span {
+  font-size: 0.14rem;
+  font-family: "MicrosoftYaHei";
+  font-weight: 400;
+  color: rgba(104, 186, 255, 1);
+  line-height: 0.14rem;
+}
+.rightjiantou {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.35rem;
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+/* .rightJiantou-tf{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.32rem;
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  transform: rotate(180deg);
+} */
+.typeNum {
+  position: absolute;
+  left: 2.75rem;
+  top: 7.88rem;
+  font-size: 0.12rem;
+  font-family: "MicrosoftYaHei";
+  font-weight: 400;
+  color: #fff;
+  line-height: 0.14rem;
+}
+.typeNum2 {
+  left: 1.37rem;
+  top: 8.86rem;
+}
+.typeNum3 {
+  left: 4.1rem;
+  top: 8.86rem;
+}
+.typeNum4 {
+  top: 9.81rem;
+  left: 2.72rem;
+}
+.rightBox {
+  position: absolute;
+  top: 0.57rem;
+  right: 0rem;
+  z-index: 2;
+}
+.panel-right {
+  width: 4.84rem;
+  height: 10.31rem;
+  background-image: url(./img/rightbg.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.staticNum {
+  text-align: center;
+  width: 2rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 0.74rem;
+  font-size: 0.24rem;
+  font-family: Impact;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+}
+.staticRight {
+  right: 0.3rem;
+}
+.projectSelect {
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 0.5rem;
+  top: 3.86rem;
+}
+.typetext3 {
+  right: 0.7rem;
+  top: 3.82rem;
+
+  width: 0.6rem;
+  height: 0.16rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.typetext2 {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.3rem;
+
+  width: 0.6rem;
+  height: 0.16rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* .projectSelect-tf{
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 0.5rem;
+  top: 3.88rem;
+  transform: rotate(180deg);
+} */
+.project-quality {
+  width: 4.44rem;
+  position: absolute;
+  right: 0rem;
+  top: 4.31rem;
+  display: flex;
+}
+.project-quality-inner {
+  position: relative;
+  width: 100%;
+}
+.projectQuality {
+  width: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qualityLeft {
+  position: absolute;
+  right: 3.2rem;
+}
+.qualityRight {
+  position: absolute;
+  right: 1.05rem;
+}
+.qualityNum {
+  font-size: 0.24rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+.qualityText {
+  font-size: 0.14rem;
+  font-family: "MicrosoftYaHei";
+  font-weight: 400;
+  color: rgba(104, 186, 255, 1);
+  line-height: 0.14rem;
+  text-align: center;
+}
+.rect-textBox2 {
+  width: 2.2rem;
+  height: 0.8rem;
+  position: absolute;
+  right: 2.3rem;
+  top: 5.5rem;
+  overflow-y: scroll;
+}
+.rightJiantou {
+  position: absolute;
+  right: 0rem;
+  top: 5.35rem;
+  width: 0.17rem;
+  height: 0.85rem;
+  background-image: url(./img/rightJiantou.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+.manSelect {
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 0.5rem;
+  top: 6.98rem;
+}
+/* .manSelect-tf{
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  right: 0.5rem;
+  top: 7rem;
+  transform: rotate(180deg);
+} */
+.management {
+  position: absolute;
+  right: 3.38rem;
+  top: 7.5rem;
+  font-size: 0.24rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+}
+.worker {
+  top: 8.15rem;
+  position: absolute;
+  right: 3.38rem;
+  font-size: 0.24rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+}
+.onJob {
+  right: 2.32rem;
+}
+.registered {
+  right: 1.2rem;
+}
+.machineNum {
+  font-size: 0.18rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(147, 249, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+  position: absolute;
+  right: 3.74rem;
+  top: 9.06rem;
+}
+.crane {
+  font-size: 0.18rem;
+  font-family: "Impact";
+  font-weight: 400;
+  color: rgba(147, 249, 255, 1);
+  line-height: 0.14rem;
+  text-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.35);
+  position: absolute;
+  right: 3.74rem;
+  top: 9.7rem;
+}
+.machineNum2 {
+  right: 0.8rem;
+  text-align: center;
+  width: 0.6rem;
+}
+
+.rightJiantouTf {
+  position: absolute;
+  right: 0rem;
+  top: 5.1rem;
+  width: 0.17rem;
+  height: 0.85rem;
+  background-image: url(./img/rightJiantou.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+  z-index: 100;
+}
+.rightJiantou:hover,
+.rightJiantouTf:hover {
+  cursor: pointer;
+}
+.rightShow {
+  display: none;
+}
+/* .SelectTS{
+  background-image: url(./img/xiala.png);
+  width: 0.16rem;
+  height: 0.08rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 1.15rem;
+  top: 8.22rem;
+} */
+.bottomBox {
+  width: 6rem;
+  height: 0.76rem;
+  background-image: url(./img/bottom.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  left: 6.9rem;
+  bottom: 0rem;
+  z-index: 2;
+}
+.panel-header-notice {
+  width: 4.8rem;
+  height: 0.31rem;
+  position: absolute;
+  left: 0rem;
+  top: 0.22rem;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 0.54rem;
+  overflow: hidden;
+}
+.notice-icon {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-image: url(./img/headerIcon.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.16rem;
+}
+.notice-text {
+  font-size: 0.12rem;
+  color: #01e8fb;
+  font-weight: bold;
+  margin-right: 0.16rem;
+  line-height: 0.23rem;
+}
+.notice-text-content {
+  width: 3rem;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+  overflow-y: scroll;
+}
+.notice-text-content-inner span {
+  margin-right: 0.3rem;
+}
+.bigmap {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/bigbg.png);
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.node-pieBox {
+  position: absolute;
+  left: 0.13rem;
+  top: 1.17rem;
+  width: 2rem;
+  height: 2rem;
+}
+.leftPieBox {
+  position: absolute;
+  width: 1.72rem;
+  height: 1.72rem;
+  left: 2.91rem;
+  top: 4.48rem;
+}
+.lineBox {
+  position: absolute;
+  left: 0;
+  top: 1.87rem;
+  width: 4.2rem;
+  height: 1.59rem;
+  overflow-x: hidden;
+}
+.rightPieBox {
+  position: absolute;
+  right: 0.55rem;
+  top: 4.93rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.btnText {
+  font-size: 0.14rem;
+  font-family: "MicrosoftYaHei";
+  font-weight: bold;
+  color: rgba(104, 186, 255, 1);
+  line-height: 0.14rem;
+  position: absolute;
+}
+.btnText1 {
+  top: 1.24rem;
+  left: 0.7rem;
+}
+.btnText2 {
+  top: 1.24rem;
+  left: 2rem;
+}
+.btnText3 {
+  top: 1.24rem;
+  left: 3.74rem;
+}
+.btnText4 {
+  top: 4.47rem;
+  left: 0.7rem;
+}
+.btnText5 {
+  top: 4.47rem;
+  left: 2.18rem;
+}
+.btnText6 {
+  top: 4.47rem;
+  left: 3.75rem;
+}
+.btnText7 {
+  top: 7.57rem;
+  left: 0.9rem;
+}
+.btnText8 {
+  top: 7.57rem;
+  left: 2.45rem;
+}
+.btnText9 {
+  top: 7.57rem;
+  left: 3.9rem;
+}
+.btnText10 {
+  top: 1rem;
+  right: 3.2rem;
+}
+.btnText11 {
+  top: 1rem;
+  right: 1rem;
+}
+.btnText12 {
+  top: 4.58rem;
+  right: 3.2rem;
+}
+.btnText13 {
+  top: 4.58rem;
+  right: 1.05rem;
+}
+.legendBox {
+  width: 1.7rem;
+  height: 0.32rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 0.3rem;
+  top: 2.97rem;
+}
+.legenItem {
+  display: flex;
+  align-items: center;
+}
+.legenItems {
+  margin-bottom: 0.08rem;
+}
+.legenItem1 {
+  width: 0.14rem;
+  height: 0.08rem;
+  margin-right: 0.08rem;
+  background: rgba(23, 152, 218, 1);
+  border-radius: 0rem;
+}
+.legenItem2 {
+  font-size: 0.12rem;
+  color: rgba(170, 214, 237, 1);
+  line-height: 0.14rem;
+}
+.legenItem11 {
+  background: rgba(234, 160, 42, 1);
+}
+.legenItem12 {
+  background: rgba(7, 203, 89, 1);
+}
+.legenItem13 {
+  background: rgba(235, 124, 127, 1);
+}
+.warningLegenBox {
+  width: 1.26rem;
+  position: absolute;
+  left: 3.25rem;
+  top: 5.98rem;
+}
+.warningLegens {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.08rem;
+}
+.warningLegenItem {
+  color: rgba(235, 124, 127, 1);
+  font-size: 0.12rem;
+}
+.warningLengend {
+  width: 0.14rem;
+  height: 0.08rem;
+  background: rgba(217, 174, 96, 1);
+  margin-right: 0.08rem;
+}
+.warningLegenItem1 {
+  color: rgba(217, 174, 96, 1);
+}
+.warningLengend2 {
+  background: rgba(66, 203, 108, 1);
+  margin-right: 0.08rem;
+}
+.warningLegenItem2 {
+  color: rgba(66, 203, 108, 1);
+}
+.warningLengend1 {
+  background-color: rgba(235, 124, 127, 1);
+}
+.planBox {
+  width: 2rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 1.48rem;
+  display: flex;
+  justify-content: space-between;
+}
+.planItems {
+  display: flex;
+  align-items: center;
+  margin-right: 0.08rem;
+}
+.planItem1 {
+  width: 0.14rem;
+  height: 0.08rem;
+  background: rgba(23, 152, 218, 1);
+  margin-right: 0.08rem;
+}
+.planItem2 {
+  font-size: 0.14rem;
+  color: rgba(104, 186, 255, 1);
+}
+.planItem11 {
+  background: rgba(234, 160, 42, 1);
+}
+.planItem12 {
+  color: rgba(234, 160, 42, 1);
+}
+.objectLengedBox {
+  width: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0.35rem;
+  top: 6.2rem;
+}
+.objectLengedItems {
+  display: flex;
+  margin-right: 0.08rem;
+  align-items: center;
+  margin-bottom: 0.08rem;
+}
+.objectLengedItem1 {
+  width: 0.14rem;
+  height: 0.08rem;
+  background: rgba(231, 165, 44, 1);
+  border-radius: 0rem;
+  margin-right: 0.08rem;
+}
+.objectLengedItem2 {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: rgba(227, 172, 46, 1);
+}
+.objectLengedItem11 {
+  background: rgba(23, 152, 218, 1);
+}
+.objectLengedItem12 {
+  background: rgba(235, 124, 127, 1);
+}
+.objectLengedItem21 {
+  color: rgba(23, 152, 218, 1);
+}
+.objectLengedItem22 {
+  color: rgba(235, 124, 127, 1);
+}
+/* 按钮样式高亮 */
+.btnTextStyle2 {
+  color: #eee;
+}
+.btnLengedStyle2 {
+  background-color: #eee;
+}
+.lineJiantou {
+  width: 0.22rem;
+  height: 0.22rem;
+  position: absolute;
+  right: 0.41rem;
+  top: 3.18rem;
+  background-image: url(./img/lineJiantou.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#radar {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  top: 7.555rem;
+  left: 1.31rem;
+
+}
+
+.br2 {
+  border-radius: 0.04rem;
+}
+
+.pie-score {
+  position: absolute;
+  color: white;
+
+  right: 0.74rem;
+  top: 5rem;
+  width: 1.07rem;
+  height: 1.06rem;
+  text-align: center;
+  line-height: 0.1rem;
+}
+.pie-score span:first-child {
+  font-size: 0.22rem;
+}
+.pie-score span:last-child {
+  font-size: 0.14rem;
+}
+
+.select {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #aaa;
+  text-shadow: none;
+  border-radius: 4px;
+  transition: box-shadow 0.25s ease;
+  z-index: 2;
+}
+
+select {
+  border: solid 1px #ccc;
+  appearance: none; /*清除select下拉框默认样式*/
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 14px; /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  background: url("img/arrow.png") no-repeat scroll right center transparent; /*自定义图片覆盖原有的下三角符号*/
+}

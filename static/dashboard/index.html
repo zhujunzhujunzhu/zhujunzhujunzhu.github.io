@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机场联络线</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <script src="./api.js"></script>
+    <script src="https://lib.baomitu.com/echarts/4.7.0/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=2916bc0cd4c3821605b32c82648a2ca4&plugin=AMap.LineSearch,AMap.StationSearch"></script>
+    <script src="https://webapi.amap.com/loca?v=1.3.2&key=2916bc0cd4c3821605b32c82648a2ca4"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.20.1/moment.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./icon.css" />
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_1907551_hbi65fv39hr.css
+    "
+    />
+    <!-- 工具包 主要 提供了 防抖 方法 -->
+    <script src="./utils.js"></script>
+    <!-- 此包提供的方法主要 用于 数字 转换 为 iconfont  数字  此项目 没用 可以忽略 --> 
+    <script src="./num.js"></script>
+    <!-- 
+      主要提供了rem 自适应 代码 ， 
+      基准值 100 px = 1rem ， 
+      基准尺寸 1920 * 1080 , 
+      如果 尺寸 放大 后 会 根据 放大的 倍数 修改 基准值，
+      假设放大 2 倍 1920 * 1080  =》 3840 * 2160，
+      那么就会有 基准值 * 放大 倍数 = 100 * 2 = 200px，
+      得到 200px = 1rem ，
+      所以假设我们单位 都用 rem ，我们写的尺寸 例如 1rem 没有 变 ，通过 放大 根元素 的基准值 让 网页 自动实现了适配
+
+
+      写代码的时候如何用？
+      首先 我们 的 图纸 必须是 1920 * 1080 的，不是的话 用 ps 自己 放大 或 缩小到 1920 * 1080，正常情况下 都会是这个尺寸
+
+      假设我们 图纸上 某一个 div 宽度 是 56px 就有 56 / 100 = 0.56rem ，也就是说无论 什么 元素的尺寸 都是 尺寸 / 100 = xxx rem
+    -->
+    <script src="./rem.js"></script>
+    <!-- 主要管理 各种 echarts 图表 的渲染，基本一个 xxxRender  管理 一个 图表 -->
+    <script src="./chart.js"></script>
+    <!-- 主要管理地图 方案 还没定 ，所以还没用到 -->
+    <script src="./map.js"></script>
+    <!-- 封装了 简单的 环形链表  用于 轮播 文字 使用 ，因为轮播修改了方案，也用不到了，可以忽略  -->
+    <script src="./linkList.js"></script>
+    <!-- 主要封装了 vue 的 渲染 部分，对 网页 需要 渲染的 地方 就 在 这里做 -->
+    <script src="./app.js"></script>
+
+  </head>
+  <body>
+    <div id="app" class="df aic jcc">
+      <div class="loading-box df aic jcc" v-if="loading">
+        <div class="loader-19"></div>
+      </div>
+      <div class="dashboard">
+        <div class="bigmap"></div>
+        <div id="mysubway"></div>
+        <img
+          src="./img/header-black-bg.png"
+          style="
+            width: 19.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+          "
+          alt=""
+        />
+        <div class="panel-header">
+          <img
+            src="./img/header-bg.png"
+            style="
+              width: 19.2rem;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 2;
+            "
+            alt=""
+          />
+          <div class="panel-header-notice">
+            <div class="notice-icon"></div>
+            <div class="notice-text">最新公告</div>
+
+            <div class="notice-text notice-text-content" ref="textScroll">
+              <div class="notice-text-content-inner">
+                <span v-for="(item,index) in newsLists" :key="index"
+                  >{{item.title}}</span
+                >
+              </div>
+              <!-- <span v-if="showCurNews">{{curNews}}</span> -->
+            </div>
+          </div>
+          <div class="panel-header-date">{{date}}</div>
+          <div class="panel-header-time">{{time}}</div>
+          <div class="panel-header-day">{{weather.week}}</div>
+          <div class="panel-header-weather">{{weather.w}}</div>
+        </div>
+        <div :class="[jiantou?'leftJiantou':'tfJiantou']" @click="toggle"></div>
+        <div
+          :class="[rightToggle?'rightJiantou':'rightJiantouTf']"
+          @click="rightShow"
+        ></div>
+        <div class="leftBox">
+          <div class="panel-left" v-show="jiantou">
+            <div id="radar"></div>
+
+            <div class="statusNumBox">
+              <div class="statusNumBox-inner">
+                <div class="statusNum status-num1">{{pieKeyData.advance}}</div>
+                <div class="statusNum status-num2">{{pieKeyData.delay}}</div>
+                <div class="statusNum status-num3">{{keyNodeNumOfNear}}</div>
+              </div>
+            </div>
+            <div class="btnText btnText1">关键节点提前</div>
+            <div class="btnText btnText2">关键节点滞后</div>
+            <div class="btnText btnText3">关键节点</div>
+            <div class="node-pieBox">
+              <div id="node-pie" style="width: 100%; height: 100%;"></div>
+            </div>
+            <div class="legendBox">
+              <div class="legenItem legenItems">
+                <div class="legenItem1 br2"></div>
+                <div class="legenItem2 btnTextStyle2">未开始</div>
+              </div>
+              <div class="legenItem legenItems">
+                <div class="legenItem1 legenItem11 br2"></div>
+                <div class="legenItem2">提前</div>
+              </div>
+              <div class="legenItem">
+                <div class="legenItem1 legenItem12 br2"></div>
+                <div class="legenItem2">进行中</div>
+              </div>
+              <div class="legenItem">
+                <div class="legenItem1 legenItem13 br2"></div>
+                <div class="legenItem2">滞后</div>
+              </div>
+            </div>
+            <div class="node-textBox1">
+              <div
+                class="node-text1"
+                v-for="(item,index) in keyNodeDelayList"
+                :key="index"
+              >
+                <div class="node-text1Content">{{item.tendersName}}</div>
+                <div class="node-text1Content">{{item.workPointName}}</div>
+                <div class="node-text1Content">{{item.name}}</div>
+              </div>
+            </div>
+            <div class="node-textBox2">
+              <div
+                class="node-text1"
+                v-for="(item,index) in keyNodeDelayOfNearList"
+                :key="index"
+              >
+                <div class="node-text1Content">{{item.tendersName}}</div>
+                <div class="node-text1Content">{{item.workPointName}}</div>
+                <div class="node-text1Content">{{item.name}}</div>
+              </div>
+            </div>
+            <div class="administration-nums">
+              <div class="administration-nums-inner">
+                <div class="administration-num administration-num1">
+                  {{riskPointStatus.actived}}
+                </div>
+                <div class="administration-num administration-num2">
+                  {{riskPointStatus.not_touched}}
+                </div>
+                <div class="administration-num administration-num3">
+                  {{riskPointStatus.sleep}}
+                </div>
+              </div>
+            </div>
+            <div class="btnText btnText4">激活风险</div>
+            <div class="btnText btnText5">未激活风险</div>
+            <div class="btnText btnText6">休眠风险</div>
+            <div class="leftPieBox">
+              <div id="leftPie" :style="{width:'100%',height:'100%'}"></div>
+            </div>
+            <div class="warningLegenBox">
+              <div class="warningLegens">
+                <div class="warningLengend warningLengend1 br2"></div>
+                <div class="warningLegenItem">红色风险</div>
+              </div>
+              <div class="warningLegens">
+                <div class="warningLengend br2"></div>
+                <div class="warningLegenItem warningLegenItem1">橙色风险</div>
+              </div>
+              <div class="warningLegens">
+                <div class="warningLengend2 warningLengend br2"></div>
+                <div class="warningLegenItem warningLegenItem2">
+                  其他激活风险
+                </div>
+              </div>
+            </div>
+            <div class="warning-textBox1">
+              <div class="node-text1">
+                <div class="node-text1Content">1标</div>
+                <div class="node-text1Content">七宝站基坑临近沪杭客专路基</div>
+              </div>
+              <div class="node-text1">
+                <div class="node-text1Content">3标</div>
+                <div class="node-text1Content">侧穿泗申41号铁塔</div>
+              </div>
+              <div class="node-text1">
+                <div class="node-text1Content">2标</div>
+                <div class="node-text1Content">与沪杭客专及2层房屋并行</div>
+              </div>
+            </div>
+            <div class="warning-textBox2">
+              <div class="node-text1">
+                <div class="node-text1Content">1标</div>
+                <div class="node-text1Content">七宝站基坑临近沪杭客专路基</div>
+              </div>
+              <div class="node-text1">
+                <div class="node-text1Content">3标</div>
+                <div class="node-text1Content">侧穿泗申41号铁塔</div>
+              </div>
+              <div class="node-text1">
+                <div class="node-text1Content">2标</div>
+                <div class="node-text1Content">与沪杭客专及2层房屋并行</div>
+              </div>
+            </div>
+            <div class="work-nums">
+              <div
+                class="work-num"
+                :title="useLandAcquire.complete + '/' + useLandAcquire.total"
+              >
+                {{useLandAcquire.complete}}/{{useLandAcquire.total}}
+              </div>
+              <div
+                class="work-num work-num2"
+                :title="removeLand.complete + '/' + removeLand.total"
+              >
+                {{removeLand.complete}}/{{removeLand.total}}
+              </div>
+              <div
+                class="work-num work-num3"
+                :title="queryPipelineTotal.completed + '(' + queryPipelineTotal.alreadyCutOver + ')' + '/' + queryPipelineTotal.total"
+              >
+                {{queryPipelineTotal.completed}}({{queryPipelineTotal.alreadyCutOver
+                + queryPipelineTotal.completed}})/{{queryPipelineTotal.total}}
+              </div>
+            </div>
+            <div class="btnText btnText7">用地(㎡)</div>
+            <div class="btnText btnText8">拆迁(㎡)</div>
+            <div class="btnText btnText9">管线(处)</div>
+            <select
+              name=""
+              id=""
+              class="selectBox"
+              @focus="topSelect"
+              @blur="bottomSelect"
+              v-model="onLandAcquireType"
+              @change="onChangeLandAcquireType($event)"
+            >
+              <option
+                v-for="(item,index) in land_acquire_type"
+                :key="index"
+                :value="item.code"
+                >{{item.name}}</option
+              >
+            </select>
+            <div class="typetext typetext1">
+              {{onLandAcquireType.name}}
+            </div>
+            <div class="typeSelect"></div>
+            <!-- <div class="typeNum">{{radarData.completed}}%</div>
+            <div class="typeNum typeNum2">{{radarData.noStart}}%</div>
+            <div class="typeNum typeNum3">{{radarData.underWay}}%</div>
+            <div class="typeNum typeNum4">{{radarData.alreadyCutOver}}%</div> -->
+          </div>
+        </div>
+        <div class="rightBox">
+          <div :class="[rightToggle?'panel-right':'rightShow']">
+            <select
+              name="abce"
+              class="rightSelect"
+              v-model="onSyncTreeData"
+              @change="onChangeSyncTreeData($event)"
+            >
+              <option
+                v-for="(item,index) in syncTreeData"
+                :key="index"
+                :value="item.id"
+                >{{item.name}}</option
+              >
+            </select>
+            <!-- <div class="pie-score"><span>90</span><span>分</span></div> -->
+            <div class="typetext typetext2">
+              {{mapSyncTreeData[onSyncTreeData].name}}
+            </div>
+            <div class="rightjiantou"></div>
+            <div class="staticNum">{{projectLifeCycleRes.invPlanDataTotal | rmb2wan}}万</div>
+            <div class="staticNum staticRight">{{projectLifeCycleRes.invStatisticDataTotal | rmb2wan}}万</div>
+            <div class="btnText btnText10">投资计划</div>
+            <div class="btnText btnText11">投资统计</div>
+            <div class="planBox">
+              <div class="planItems">
+                <div class="planItem1 br2"></div>
+                <div class="planItem2">投资计划</div>
+              </div>
+              <div class="planItems planItems1">
+                <div class="planItem1 planItem11 br2"></div>
+                <div class="planItem2 planItem12">投资完成</div>
+              </div>
+            </div>
+            <div class="typetext typetext3">
+              {{mapTendersType[onTendersType.project].name}}
+            </div>
+            <div class="projectSelect"></div>
+            <select
+              name=""
+              id=""
+              class="objectSelect"
+              @focus="objectTopSelect"
+              @blur="objectBottomSelect"
+              v-model="onRadarType"
+              @change="onChangeRadarType($event,'project')"
+            >
+              <option
+                v-for="(item,index) in tenders_type"
+                :key="index"
+                :value="item.id"
+                >{{item.name}}</option
+              >
+            </select>
+            <div class="lineBox" ref="barScrollX">
+              <!-- <div id="line" style="width:12rem;height:100%;" ></div> -->
+              <div id="line" style="width:100%;height:100%;" ></div>
+            </div>
+            <div class="lineJiantou" :class="{'rotate180':turn==='left'}"  @click="onClickBarRightScroll()"></div>
+            <div class="project-quality">
+              <div class="project-quality-inner">
+                <div class="projectQuality qualityLeft">
+                  <div class="qualityNum">{{rectifyBill}}</div>
+                </div>
+                <div class="projectQuality qualityRight">
+                  <div class="qualityNum">
+                    {{noRectifyData.length}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btnText btnText12">质量整改单</div>
+            <div class="btnText btnText13">待整改问题</div>
+            <div class="rect-textBox2">
+              <div
+                class="node-text1"
+                v-for="(item,index) in noRectifyData"
+                :key="index"
+              >
+                <div class="node-text1Content node-text1Content-title">
+                  {{item.shortName}}
+                </div>
+                <div class="node-text1Content node-text1Content-desc">
+                  {{item.issue_description}}
+                </div>
+              </div>
+            </div>
+            <div class="objectLengedBox">
+              <div class="objectLengedItems">
+                <div class="objectLengedItem1 br2"></div>
+                <div class="objectLengedItem2">已整改</div>
+              </div>
+              <div class="objectLengedItems">
+                <div class="objectLengedItem11 objectLengedItem1 br2"></div>
+                <div class="objectLengedItem21 objectLengedItem2">已复核</div>
+              </div>
+              <div class="objectLengedItems">
+                <div class="objectLengedItem12 objectLengedItem1 br2"></div>
+                <div class="objectLengedItem22 objectLengedItem2">待整改</div>
+              </div>
+            </div>
+            <div class="rightPieBox">
+              <div id="rightPie" :style="{width:'100%',height:'100%'}"></div>
+            </div>
+            <select
+              name=""
+              id=""
+              class="manSelectBox"
+              @focus="manTopSelect"
+              @blur="manBottomSelect"
+              @change="onChangeRadarType($event,'person')"
+            >
+              <option
+                v-for="(item,index) in tenders_type"
+                :key="index"
+                :value="item.id"
+                >{{item.name}}</option
+              >
+            </select>
+            <div class="typetext typetext4">
+              {{mapTendersType[onTendersType.person].name}}
+            </div>
+            <div class="manSelect"></div>
+            <div class="management">256</div>
+            <div class="management onJob">324</div>
+            <div class="management registered">354</div>
+            <div class="worker attendance">122</div>
+            <div class="worker onJob">981</div>
+            <div class="worker registered">990</div>
+            <div
+              class="machineNum"
+              style="right:3.6rem;width:0.6rem;text-align: center;"
+            >
+              0/17
+            </div>
+            <div class="machineNum machineNum2">5/15</div>
+            <div
+              class="crane"
+              style="right:3.6rem;width:0.6rem;text-align: center;"
+            >
+              6/26
+            </div>
+            <div class="crane machineNum2">12/36</div>
+          </div>
+        </div>
+        <div class="bottomBox"></div>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.completedProcess {
+  padding: 20px;
+}
+.completedProcess .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.completedProcess .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.completedProcess .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.completedProcess .btns {
+    padding: 10px;
+}
+

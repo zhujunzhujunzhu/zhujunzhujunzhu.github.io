@@ -1,0 +1,58 @@
+.designChangeApproval {
+  padding: 20px;
+}
+.designChangeApproval .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.designChangeApproval .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.designChangeApproval .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.designChangeApproval .btns {
+    padding: 10px;
+}
+.designChangeApproval .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.designChangeApproval .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.designChangeApproval .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.designChangeApproval .el-input {
+    width: 500px;
+}
+.designChangeApproval .mt10 {
+    margin-top: 10px;
+}
+.designChangeApproval .mb10 {
+    margin-bottom: 10px;
+}
+.designChangeApproval .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+

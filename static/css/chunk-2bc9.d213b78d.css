@@ -1,0 +1,198 @@
+.overviewCardDiv {
+  height: 800px;
+}
+.overviewCardDiv .buleOneSpan {
+    font-size: 26px;
+    font-family: Impact;
+    font-weight: 400;
+    line-height: 31px;
+    display: block;
+    text-align: center;
+    color: #4178f2;
+    opacity: 1;
+}
+.overviewCardDiv .orangeSpan {
+    font-size: 27px;
+    font-family: Impact;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    display: block;
+    color: #f0802a;
+    opacity: 1;
+}
+.overviewCardDiv .redSpan {
+    font-size: 27px;
+    font-family: Impact;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    display: block;
+    color: #cb0202;
+    opacity: 1;
+}
+.overviewCardDiv .buleTwoSpan {
+    font-size: 26px;
+    font-family: Impact;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    display: block;
+    color: #244fe6;
+    opacity: 1;
+}
+.overviewCardDiv .greenSpan {
+    font-size: 26px;
+    font-family: Impact;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    display: block;
+    color: #008457;
+    opacity: 1;
+}
+.overviewCardDiv .outbreakStatistical {
+    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 10px 0px;
+}
+.overviewCardDiv .outbreakStatistical .statisticalSpan {
+      display: inline-block;
+      width: 100px;
+      border-top: 1px solid #d5daf0;
+}
+.overviewCardDiv .outbreakStatistical .outbreakStatisticalSpan {
+      font-size: 24px;
+      font-family: PingFang SC;
+      line-height: 33px;
+      color: #3b96fe;
+      opacity: 1;
+      vertical-align: -4px;
+      vertical-align: middle;
+      margin-right: 8px;
+}
+.overviewCardDiv .outbreakStatistical .aligncenter {
+      vertical-align: middle;
+      height: 35px;
+      width: 35px;
+      margin: 0px 9px;
+}
+.overviewCardDiv .image {
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+.overviewCardDiv .image img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+}
+.overviewCardDiv .outbreakStatisticalNumber {
+    width: 390px;
+    display: table;
+    margin: 8% auto;
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv {
+      display: table-cell;
+      vertical-align: middle;
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv .outbreakStatisticalNumberDivTwo {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv .outbreakStatisticalNumberDivTwo .width240 {
+          width: calc(calc((100 / var(--n)) * 1%) - 30px);
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv .outbreakStatisticalNumberDivTwo span {
+          margin-bottom: 14px;
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv .outbreakStatisticalNumberDivTwo .spanText {
+          display: block;
+          text-align: center;
+          line-height: 18px;
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          opacity: 1;
+}
+.overviewCardDiv .outbreakStatisticalNumber .outbreakStatisticalNumberDiv .outbreakStatisticalNumberDivTwo .spanTextTwo {
+          display: block;
+          text-align: center;
+          line-height: 18px;
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          opacity: 1;
+}
+.overviewCardDiv .soundCode {
+    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+.overviewCardDiv .soundCode .soundSpan {
+      display: inline-block;
+      width: 100px;
+      border-top: 1px solid #d5daf0;
+}
+.overviewCardDiv .soundCode .soundCodeSpan {
+      margin-right: 22px;
+      vertical-align: middle;
+      color: #3b96fe;
+      font-size: 24px;
+      font-family: PingFang SC;
+      vertical-align: -4px;
+}
+.overviewCardDiv .soundCode .image {
+      vertical-align: middle;
+      height: 24px;
+      width: 24px;
+      margin: 0px 14px 0px 26px;
+}
+.overviewCardDiv .soundCodeDiv {
+    width: 270px;
+    display: table;
+    margin: 8% auto;
+}
+.overviewCardDiv .soundCodeDiv .soundCodeDivOne {
+      display: table-cell;
+      vertical-align: middle;
+}
+.overviewCardDiv .soundCodeDiv .soundCodeDivOne .soundCodeDivTwo {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+}
+.overviewCardDiv .soundCodeDiv .soundCodeDivOne .soundCodeDivTwo span {
+          margin-bottom: 14px;
+}
+.overviewCardDiv .soundCodeDiv .soundCodeDivOne .soundCodeDivTwo .spanText {
+          display: block;
+          text-align: center;
+          line-height: 18px;
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: #333333;
+          opacity: 1;
+}
+.overviewCardDiv .soundCodeDiv .soundCodeDivOne .soundCodeDivTwo .width240 {
+          width: calc(calc((100 / var(--n)) * 1%) - 20px);
+}
+.overviewCardDiv .white {
+    height: 100px;
+}
+

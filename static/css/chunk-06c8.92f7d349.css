@@ -1,0 +1,18 @@
+.investPlanEditOrViewDiv .addButtonTow {
+  background: #dcdcdc !important;
+  border: 1px solid #dcdcdc !important;
+  color: black !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.investPlanEditOrViewDiv .topDiv {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.investPlanEditOrViewDiv .unitClass {
+  float: right;
+}
+.investPlanEditOrViewDiv .inlineBlock {
+  margin-right: 20px;
+}
+

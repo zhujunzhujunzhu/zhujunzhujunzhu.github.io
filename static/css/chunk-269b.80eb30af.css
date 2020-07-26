@@ -1,0 +1,24 @@
+.drawingFilesDialog .container[data-v-2741dc4e] {
+  overflow-y: auto;
+}
+
+.uploadStyle {
+  cursor: pointer;
+  color: #67c23a;
+}
+.drawButton1 {
+  color: #0000c0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+}
+.drawButton2 {
+  margin-left: 30px;
+  color: #0000c0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+}
+

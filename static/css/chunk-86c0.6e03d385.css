@@ -1,0 +1,10 @@
+.authorityDiv .projectButton {
+  margin-left: 10px;
+}
+.authorityDiv .iconxiayi,
+.authorityDiv .iconshangyi {
+  font-size: 20px !important;
+  position: relative;
+  top: -2px;
+}
+

@@ -1,0 +1,12 @@
+.industryDocDialog .path[data-v-b7777878] {
+  font-size: small;
+  font-weight: bold;
+}
+.industryDocDialog h3[data-v-b7777878] {
+  background-color: orange;
+  padding: 10px;
+}
+.industryDocDialog .review_doc_body[data-v-b7777878] {
+  overflow: auto;
+}
+

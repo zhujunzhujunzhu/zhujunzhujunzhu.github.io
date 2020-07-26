@@ -1,0 +1,27 @@
+.bpmn-myProcess {
+  padding: 20px;
+}
+.bpmn-myProcess .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.bpmn-myProcess .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.bpmn-myProcess .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.bpmn-myProcess .btns {
+    padding: 10px;
+}
+

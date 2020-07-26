@@ -1,0 +1,54 @@
+.divClass[data-v-95cc7fa2] {
+  line-height: 34px;
+}
+.treeSelectDiv[data-v-95cc7fa2] {
+  width: 350px;
+  height: 34px;
+  margin-left: 10px;
+}
+
+.statisticalStatementDiv[data-v-0d9848e2] {
+  padding: 5px;
+}
+.statisticalStatementDiv .addButtonOne[data-v-0d9848e2] {
+    background: #1cade4 !important;
+    border: 1px solid #1cade4 !important;
+    color: #fff !important;
+    margin-bottom: 10px;
+}
+.statisticalStatementDiv .topDiv[data-v-0d9848e2] {
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.statisticalStatementDiv .leftDiv[data-v-0d9848e2] {
+    position: relative;
+    width: 300px;
+    overflow: auto;
+}
+.statisticalStatementDiv .leftDiv .addButtonTow[data-v-0d9848e2] {
+      background: #dcdcdc !important;
+      border: 1px solid #dcdcdc !important;
+      color: black !important;
+      margin-bottom: 10px;
+}
+.statisticalStatementDiv .leftDiv .margin[data-v-0d9848e2] {
+      margin: 1.25rem;
+}
+.statisticalStatementDiv .rightDiv[data-v-0d9848e2] {
+    margin-left: 20px;
+    padding-left: 20px;
+    width: calc(100% - 320px);
+}
+.statisticalStatementDiv .rightDiv .inlineBlockTime[data-v-0d9848e2] {
+      width: 500px;
+      margin: 0 auto;
+}
+.statisticalStatementDiv .rightDiv .PeriodTimeClass[data-v-0d9848e2] {
+      margin-bottom: 20px;
+      width: 500px;
+}
+.statisticalStatementDiv .rightDiv .unitClass[data-v-0d9848e2] {
+      float: right;
+}
+

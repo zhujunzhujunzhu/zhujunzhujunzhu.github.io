@@ -1,0 +1,65 @@
+.detialPageNewsReadRecordDiv .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.detialPageNewsReadRecordDiv .el-table {
+  width: 100%;
+}
+
+.detailPageNews {
+  padding: 20px 150px;
+  background: #eff3fc;
+}
+.detailPageNews .mxCard {
+    border-radius: 0;
+}
+.detailPageNews .fs-18 {
+    font-size: 18px;
+}
+.detailPageNews .content {
+    line-height: 1.5;
+    min-height: 370px;
+}
+.detailPageNews .fs-20 {
+    font-size: 20px;
+}
+.detailPageNews .head-title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.detailPageNews .sub-title {
+    font-size: 16px;
+    color: #888;
+    height: 40px;
+}
+.detailPageNews .inner-wrapper {
+    width: 900px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+.detailPageNews .height40 {
+    height: 40px;
+}
+.detailPageNews .splitLine {
+    height: 10px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAzIAAAAKCAYAAABv9GtwAAABtklEQVR4Xu3dsW2FQBAE0KMTAhI6QKKRH5BSFQEEdEUACXVggWXLHw7L0v+Y5JFetpqdmeVgJ1mWpZimKdR1HZqmCWmahv3jXH3gQ3/gB/xIH+gjf/BcAf6IP+KP7vVHyTiOxePxCH3fhyzLokOMc/WBD/2BH/BjzMTSB/pAH+gDfaAPd+lDUpZlsb5pzfM8OsRUVbXd1DhXnxhI4UN/4Af8SB/oA3043tTQR/pIH6/Xx2QYhuJskl6bsOu605sa5+oDH/oDf8TfxOFH/Igf8SN+xI9nQz5+eA8/JOs/Moocf5MCZO8BGXzB188KrN+UM/lMPn7Fr0w+k88f8Aev+oPDIDPP82Yy1uuwGMk4Vx/40B/4AT/Sh6MJpY/0kT7SR/r4v/r4NMh8kXDbttHtZc4/SVp94CO2vUl/6A/8gB/pA32gD8ftfvSRPl6lj9+DDJAB2VUgW68N4Qu+4IvJZ/KZfCafyd9/TsYf8Aev+INtkLEH3R50e9Dv3YOu/uovp0dOj5weOT1yeuT07P8Z4Q9+9wdyZKYpyEGQgyAHQQ6CHAQ5CHflIOAf/IN/8A/+OQ6xf/HnHxcMD5qYpJ2AAAAAAElFTkSuQmCC) center center no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 22px;
+}
+.detailPageNews .el-table {
+    width: 800px !important;
+    margin: 20px auto;
+}
+.detailPageNews .has-gutter tr {
+    height: 40px !important;
+}
+.detailPageNews .attachList {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.detailPageNews .attach-item {
+    color: #245fab;
+    padding: 20px 50px;
+}
+

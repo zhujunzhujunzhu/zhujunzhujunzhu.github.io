@@ -1,0 +1,10 @@
+.model-select-dialog-container .filter-container .el-select {
+  width: 160px;
+}
+.model-select-dialog-container .filter-container .el-input {
+  width: 160px;
+}
+.model-select-dialog-container .modelSelectTable .current-row td {
+  background: beige !important;
+}
+

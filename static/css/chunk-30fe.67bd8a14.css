@@ -1,0 +1,7 @@
+.consultDynamicDiv .cardItem {
+  margin-top: 28px;
+}
+.consultDynamicDiv .width {
+  width: calc(100% - 120px);
+}
+

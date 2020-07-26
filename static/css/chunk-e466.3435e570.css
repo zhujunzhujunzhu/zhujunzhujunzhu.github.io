@@ -1,0 +1,110 @@
+.bisectDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*background: rgba(26, 26, 26, 0.8);*/
+  /*border-left: 1px solid #e8eaec;*/
+  /*box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);*/
+}
+.bisectDiv .tDiv {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+.bisectDiv .tDiv .icon {
+      /*color: #fff;*/
+      font-size: 30px;
+      margin: 0px 10px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 5px;
+}
+.bisectDiv .tDiv .active {
+      background: #1CADE4;
+      color: #fff;
+}
+.bisectDiv .overturnDiv {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bisectDiv .overturnDiv .lLabel {
+      color: rgba(0, 0, 0, 0.5);
+      padding-left: 10px;
+      width: 86%;
+}
+.bisectDiv .silderDiv {
+    padding: 0px 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.bisectDiv .silderDiv .lLabel {
+      color: #fff;
+}
+.bisectDiv .silderDiv .silder {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-left: 30px;
+      width: 100%;
+}
+.bisectDiv .silderDiv .silder .el-input-number__decrease, .bisectDiv .silderDiv .silder .el-input-number__increase {
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+}
+.bisectDiv .silderDiv .silder .el-slider__input {
+        width: 100px;
+}
+.bisectDiv .silderDiv .silder .el-slider__input:hover {
+          border-color: red !important;
+}
+.bisectDiv .silderDiv .silder .el-slider__runway.show-input {
+        width: 180px;
+}
+.bisectDiv .el-select {
+    width: calc(100% - 100px);
+}
+.bisectDiv .el-input input {
+    /*background: rgba(0, 0, 0, 0);*/
+    /*border: 1px solid #d0d0d0;*/
+}
+.bisectDiv .el-row {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.bisectDiv .el-row .leftlabel {
+      display: inline-block;
+      color: #fff;
+      width: 80px;
+}
+.bisectDiv .is-focus input {
+    /*border-color: #f56840 !important;*/
+}
+.bisectDiv .el-select .el-input__inner:focus {
+    /*border-color: #f56840 !important;*/
+}
+.bisectDiv .btLabel {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.bisectDiv .btnDiv {
+    margin-top: 9px;
+    text-align: right;
+    padding-right: 15px;
+}
+.bisectDiv .btnDiv .btn {
+      color: #fff;
+      background-color: #f56840;
+      border: 1px solid #f56840;
+}
+.bisectDiv .btnDiv .btn:hover {
+      opacity: 0.9;
+}
+

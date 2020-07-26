@@ -1,0 +1,16 @@
+.editRealNameInfoDiv .iconshanchu {
+  font-size: 20px !important;
+}
+.editRealNameInfoDiv .el-table th,
+.editRealNameInfoDiv .el-table tr {
+  opacity: 1 !important;
+}
+.editRealNameInfoDiv .btnWrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.editRealNameInfoDiv .inlineBlock {
+  width: 200px;
+  margin: 0px 10px 20px;
+}
+

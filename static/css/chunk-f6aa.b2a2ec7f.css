@@ -1,0 +1,30 @@
+
+.dispatchingDiv .searchBar .left .item {
+  margin-right: 10px;
+}
+.dispatchingDiv .searchBar .left .item:first-child {
+    margin-right: 25px;
+}
+.dispatchingDiv .searchBar .left label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 5px;
+}
+.dispatchingDiv .selectOrg {
+  width: 300px;
+}
+.dispatchingDiv .titleIcon {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+  color: #a4ec31;
+}
+.dispatchingDiv .text-overflow-org {
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+

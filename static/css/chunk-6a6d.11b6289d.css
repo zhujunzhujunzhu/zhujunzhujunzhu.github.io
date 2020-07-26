@@ -1,0 +1,22 @@
+.contactsDiv .vue-treeselect__control {
+  width: 350px !important;
+}
+.contactsDiv .el-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactsDiv .el-row .leftCard {
+    width: 22%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 0s;
+    transition: 0s;
+}
+.contactsDiv .el-row .rightCard {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-left: 10px;
+}
+

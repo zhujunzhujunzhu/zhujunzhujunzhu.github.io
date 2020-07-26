@@ -1,0 +1,194 @@
+.startReportDealProcess {
+  padding: 20px;
+}
+.startReportDealProcess .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.startReportDealProcess .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.startReportDealProcess .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.startReportDealProcess .btns {
+    padding: 10px;
+}
+.startReportDealProcess .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.startReportDealProcess .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.startReportDealProcess .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.startReportDealProcess .el-input {
+    width: 500px;
+}
+.startReportDealProcess .mt10 {
+    margin-top: 10px;
+}
+.startReportDealProcess .mb10 {
+    margin-bottom: 10px;
+}
+.startReportDealProcess .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+
+.designChangeApproval {
+  padding: 20px;
+}
+.designChangeApproval .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.designChangeApproval .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.designChangeApproval .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.designChangeApproval .btns {
+    padding: 10px;
+}
+.designChangeApproval .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.designChangeApproval .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.designChangeApproval .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.designChangeApproval .el-input {
+    width: 500px;
+}
+.designChangeApproval .mt10 {
+    margin-top: 10px;
+}
+.designChangeApproval .mb10 {
+    margin-bottom: 10px;
+}
+.designChangeApproval .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+
+.newsApprovalDiv {
+  padding: 20px;
+}
+.newsApprovalDiv .pl {
+    padding-left: 170px;
+}
+.newsApprovalDiv .newsContent {
+    margin-top: -45px;
+}
+.newsApprovalDiv .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.newsApprovalDiv .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.newsApprovalDiv .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.newsApprovalDiv .btns {
+    padding: 10px;
+}
+.newsApprovalDiv .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.newsApprovalDiv .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.newsApprovalDiv .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.newsApprovalDiv .el-input {
+    width: 500px;
+}
+.newsApprovalDiv .mt10 {
+    margin-top: 10px;
+}
+.newsApprovalDiv .mb10 {
+    margin-bottom: 10px;
+}
+.newsApprovalDiv .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+
+.customizedApprovalDiv .formshow {
+  margin-bottom: 45px;
+}
+.customizedApprovalDiv .formshow .formshow-item {
+  font-size: 14px;
+  height: 40px;
+}
+.customizedApprovalDiv .formshow .formshow-item label {
+  width: 150px;
+  color: #666666;
+  text-align: right;
+  padding-right: 20px;
+}
+

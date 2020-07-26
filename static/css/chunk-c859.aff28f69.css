@@ -1,0 +1,20 @@
+.statisticsShowDiv .topDiv {
+  height: 50px;
+}
+.statisticsShowDiv .unitSpan {
+  float: right;
+}
+.statisticsShowDiv .firstDiv {
+  margin-bottom: 15px;
+}
+.statisticsShowDiv .el-table thead.is-group th {
+  background: #edf7ff;
+}
+.statisticsShowDiv .inlineBlock {
+  margin-right: 20px;
+}
+.statisticsShowDiv .unitDiv {
+  position: absolute;
+  right: 3%;
+}
+

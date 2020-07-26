@@ -1,0 +1,64 @@
+.newsApprovalDiv {
+  padding: 20px;
+}
+.newsApprovalDiv .pl {
+    padding-left: 170px;
+}
+.newsApprovalDiv .newsContent {
+    margin-top: -45px;
+}
+.newsApprovalDiv .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.newsApprovalDiv .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.newsApprovalDiv .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.newsApprovalDiv .btns {
+    padding: 10px;
+}
+.newsApprovalDiv .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.newsApprovalDiv .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.newsApprovalDiv .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.newsApprovalDiv .el-input {
+    width: 500px;
+}
+.newsApprovalDiv .mt10 {
+    margin-top: 10px;
+}
+.newsApprovalDiv .mb10 {
+    margin-bottom: 10px;
+}
+.newsApprovalDiv .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+

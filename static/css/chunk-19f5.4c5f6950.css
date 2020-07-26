@@ -1,0 +1,25 @@
+.reportDialog .el-dialog {
+  margin-top: 4vh !important;
+  width: 1200px !important;
+}
+.reportDialog .headTitle, .reportDialog .subTitle {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.reportDialog .baseInfoDiv span:nth-child(odd) {
+  margin-right: 16px;
+}
+.reportDialog .baseInfoDiv span:nth-child(even) {
+  margin-right: 90px;
+}
+.reportDialog .report-form-item-title {
+  font-weight: bold;
+  display: inline-block;
+  margin: 16px 0 8px;
+}
+.reportDialog .textarea {
+  text-indent: 2em;
+  line-height: 23px;
+}
+

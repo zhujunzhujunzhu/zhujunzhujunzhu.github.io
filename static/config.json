@@ -1,0 +1,11 @@
+{
+  "host": {
+    "prodHost": "https://tech.suitbim.com/promis-web/",
+    "?1": "测服地址",
+    "devHost": "https://tech.suitbim.com/promis-web/",
+    "?2": "正服地址",
+    "?devHost": "http://117.131.102.29:8008/promis-web/",
+    "bimHost": "https://tech.suitbim.com/bim/",
+    "gisbimHost": "https://tech.suitbim.com/gisbim/"
+  }
+}

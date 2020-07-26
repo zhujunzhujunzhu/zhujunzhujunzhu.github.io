@@ -1,31 +1,32 @@
 {
-  "name": "一个PWA示例",
-  "short_name": "PWA示例",
-  "start_url": "/index.html",
+  "orientation": "portrait",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#3eaf7c",
-  "prefer_related_applications": true,
   "icons": [
     {
-      "src": "img/icons/40x40.png",
+      "src": "static/img/icons/40x40.png",
       "sizes": "40x40",
       "type": "image/png"
     },
     {
-      "src": "img/icons/80x80.png",
+      "src": "static/img/icons/80x80.png",
       "sizes": "80x80",
       "type": "image/png"
     },
     {
-      "src": "img/icons/120x120.png",
+      "src": "static/img/icons/120x120.png",
       "sizes": "120x120",
       "type": "image/png"
     },
     {
-      "src": "img/icons/144x144.png",
+      "src": "static/img/icons/144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
-  ]
+  ],
+  "name": "申铁webpack测试",
+  "short_name": "申铁测试",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c",
+  "prefer_related_applications": true
 }

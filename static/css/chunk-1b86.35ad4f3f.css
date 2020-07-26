@@ -1,0 +1,58 @@
+.startReportDealProcess {
+  padding: 20px;
+}
+.startReportDealProcess .headTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+}
+.startReportDealProcess .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.startReportDealProcess .flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.startReportDealProcess .btns {
+    padding: 10px;
+}
+.startReportDealProcess .dealProcess-card {
+    width: 800px;
+    background: #fff;
+    margin: 0 auto;
+}
+.startReportDealProcess .flex-space-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.startReportDealProcess .card-item {
+    width: 500px;
+    margin: 20px auto;
+}
+.startReportDealProcess .el-input {
+    width: 500px;
+}
+.startReportDealProcess .mt10 {
+    margin-top: 10px;
+}
+.startReportDealProcess .mb10 {
+    margin-bottom: 10px;
+}
+.startReportDealProcess .footer {
+    margin: 20px auto;
+    width: 850px;
+}
+

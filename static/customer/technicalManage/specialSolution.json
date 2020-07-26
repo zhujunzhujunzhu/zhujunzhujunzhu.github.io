@@ -1,0 +1,291 @@
+{
+  "list": [
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "方案名称",
+      "param": "",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "类型",
+      "prop": "type",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "",
+      "param": "special_solution_type",
+      "isQuery": "1",
+      "columnWidth": null
+    },
+    {
+      "label": "发起单位ID",
+      "prop": "orgId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "发起单位",
+      "param": "orgName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "附件",
+      "prop": "docId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "附件",
+      "param": "attach",
+      "isQuery": "2",
+      "columnWidth": "300"
+    },
+    {
+      "label": "发起时间",
+      "prop": "date",
+      "displayType": "glq",
+      "filterType": "sj",
+      "displayName": "上传时间",
+      "param": "{y}-{m}-{d}",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "状态",
+      "prop": "status",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "",
+      "param": "special_solution_status",
+      "isQuery": "2",
+      "columnWidth": ""
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "方案名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入方案名称",
+                  "remoteFunc": "func_1572572428000_47329"
+                },
+                "key": "1572572428000_47329",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "方案名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "方案名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "类型",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择类型",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "special_solution_type",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1572572465000_73849"
+                },
+                "key": "1572572465000_73849",
+                "model": "type",
+                "rules": []
+              },
+              {
+                "type": "imgupload",
+                "name": "附件",
+                "options": {
+                  "length": 8,
+                  "fileName": "",
+                  "isFile": true,
+                  "defaultValue": "",
+                  "remoteFunc": "func_1572572526000_42623",
+                  "props": {
+                    "value": "value",
+                    "label": "label"
+                  }
+                },
+                "key": "1572572501000_39663",
+                "model": "docId",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572572436000_10178",
+                  "required": true
+                },
+                "key": "1572572436000_10178",
+                "model": "tendersId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "标段必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "name": "等级",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择等级",
+                  "isRelated": false,
+                  "required": false,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "special_solution_grade",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1572572524000_95867"
+                },
+                "key": "1572572477000_99508",
+                "model": "grade",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "方案数",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572678935000_13639"
+                },
+                "key": "1572678935000_13639",
+                "model": "num",
+                "rules": []
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1572572427000_10310",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1572572427000_10310",
+        "model": "",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

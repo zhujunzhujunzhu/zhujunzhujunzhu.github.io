@@ -1,0 +1,205 @@
+{
+  "list": [
+    {
+      "label": "标段ID",
+      "prop": "tendersId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "标段",
+      "param": "tendersName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "申报单位",
+      "prop": "applyOrgId",
+      "isQuery": "2",
+      "displayType": "qt",
+      "param": "applyOrgName",
+      "displayName": "申报单位"
+    },
+    {
+      "label": "申报人",
+      "prop": "applyUserId",
+      "isQuery": "2",
+      "displayType": "qt",
+      "param": "applyUserName",
+      "displayName": "申报人",
+      "filterType": "sj"
+    },
+    {
+      "label": "申报日期",
+      "prop": "applyDate",
+      "isQuery": "2",
+      "displayType": "glq",
+      "filterType": "sj",
+      "param": "{y}-{m}-{d}"
+    },
+    {
+      "label": "状态",
+      "prop": "status",
+      "isQuery": "2",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "merit_plan_status",
+      "displayName": ""
+    },
+    {
+      "label": "评定结果",
+      "prop": "evaluateResult",
+      "isQuery": "2",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "access_result"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "申报单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574141852000_40759",
+                  "required": false
+                },
+                "key": "1575255671000_16592",
+                "model": "applyOrgId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "申报日期",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574141852000_40759",
+                  "required": false
+                },
+                "key": "1574141852000_40759",
+                "model": "applyDate",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "申报人",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574141854000_87022",
+                  "required": false
+                },
+                "key": "1574141854000_87022",
+                "model": "applyUserId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1574141954000_32852",
+                  "required": true
+                },
+                "key": "1574141954000_32852",
+                "model": "tendersId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "标段必须填写"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1574134961000_77013",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1574134961000_77013",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "imgupload",
+        "name": "附件",
+        "options": {
+          "length": 8,
+          "fileName": "",
+          "isFile": true,
+          "defaultValue": "",
+          "remoteFunc": "func_1574141971000_49048",
+          "props": {
+            "value": "value",
+            "label": "label"
+          },
+          "required": true
+        },
+        "key": "1574141971000_49048",
+        "model": "docId",
+        "rules": [
+          {
+            "required": true,
+            "message": "附件必须填写"
+          }
+        ]
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

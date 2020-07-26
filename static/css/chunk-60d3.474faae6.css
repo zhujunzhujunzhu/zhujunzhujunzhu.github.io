@@ -1,0 +1,19 @@
+.projectListDiv .addButton {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.projectListDiv .custom-tree-node .el-button {
+  margin-left: 20px;
+}
+.projectListDiv .el-loading-mask {
+  background: rgba(255, 255, 255, 0.5);
+}
+.projectListDiv .el-loading-mask .circular {
+    width: 20px;
+}
+.projectListDiv .el-date-editor.el-input,
+.projectListDiv .el-date-editor.el-input__inner {
+  width: 100%;
+}
+

@@ -1,0 +1,101 @@
+.carouselDiv {
+  position: relative;
+}
+.carouselDiv .el-carousel__container {
+    position: relative;
+    height: 375px !important;
+}
+.carouselDiv .maskDes {
+    background: -webkit-gradient(linear, left top, right top, from(#333333), to(rgba(51, 51, 51, 0)));
+    background: linear-gradient(90deg, #333333 0%, rgba(51, 51, 51, 0) 100%);
+    width: 100%;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    padding: 10px;
+    z-index: 10;
+}
+.carouselDiv .maskDes .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fefefe;
+      margin-right: 5px;
+}
+.carouselDiv .maskDes .active {
+      width: 20px;
+      border-radius: 4px;
+      background: #ffffff;
+}
+
+.homeInfoDiv .iconxinwen {
+  color: #1cade4;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.homeInfoDiv .header {
+  height: 40px;
+  margin-top: 30px;
+  border-bottom: 1px #ececec solid;
+}
+.homeInfoDiv .header .more {
+    font-size: 12px;
+    color: #1cade4;
+}
+.homeInfoDiv .header .title {
+    color: #1cade4;
+    font-size: 20px;
+    font-weight: bold;
+}
+.homeInfoDiv .active {
+  color: #1cade4;
+  font-size: 20px;
+}
+.homeInfoDiv .no-data {
+  text-align: center;
+  margin-top: 20vh;
+  color: #ccc;
+}
+.homeInfoDiv .menuTab {
+  font-size: 16px;
+}
+.homeInfoDiv .menuTab span {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ccc;
+}
+.homeInfoDiv .card-content-item {
+  cursor: pointer;
+  margin-top: 30px;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeInfoDiv .card-content-item .nameDiv {
+    cursor: pointer;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.homeInfoDiv .card-content-item .nameDiv:hover {
+    color: #1cade4 !important;
+}
+.homeInfoDiv .card-content-item .time {
+    width: 120px;
+    text-align: right;
+}
+.homeInfoDiv .card-content-item:hover {
+    color: #1cade4 !important;
+}
+
+.projectHomeDiv {
+  background: #fff;
+  padding: 15px;
+  overflow: auto;
+}
+#myIframe .reportContent {
+  overflow: hidden !important;
+}
+

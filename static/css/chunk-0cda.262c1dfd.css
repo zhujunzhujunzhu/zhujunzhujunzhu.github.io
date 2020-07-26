@@ -1,0 +1,67 @@
+.viewpointManageDiv {
+  overflow: auto;
+  width: 360px;
+  margin-top: 10px;
+  /*background: rgba(26, 26, 26, 0.8);*/
+  /*border-left: 1px solid #e8eaec;*/
+  /*box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.1);*/
+}
+.viewpointManageDiv .btn {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: inherit;
+    color: #f75223;
+    border-color: #f75223;
+}
+.viewpointManageDiv .contentDiv:hover .icon {
+    display: block;
+}
+.viewpointManageDiv .contentDiv {
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 122px;
+    padding: 5px;
+    background: rgba(184, 184, 184, 0.1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.viewpointManageDiv .contentDiv .icon {
+      color: #fff;
+      cursor: pointer;
+      display: none;
+}
+.viewpointManageDiv .contentDiv img {
+      width: 113px;
+      height: 113px;
+      border-radius: 5px;
+}
+.viewpointManageDiv .contentDiv label {
+      margin-left: 10px;
+      color: #fff;
+}
+.viewPointDialog {
+  /*.el-dialog {*/
+  /*background: rgba(30,30,30,.8)!important;*/
+  /*.el-dialog__title {*/
+  /*color: #d0d0d0;*/
+  /*}*/
+  /*}*/
+  /*.el-input {*/
+  /*input {*/
+  /*background: rgba(0,0,0,0);*/
+  /*border: 1px solid #d0d0d0;*/
+  /*}*/
+  /*}*/
+  /*.el-form-item__label {*/
+  /*color: #fff;*/
+  /*}*/
+}
+.viewPointDialog img {
+    width: 300px;
+    height: 200px;
+    /*margin-left: 40px;*/
+    margin-bottom: 15px;
+}
+

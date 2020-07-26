@@ -1,0 +1,35 @@
+.approvalNewsDialog .recordBtn {
+  margin: -24px 79px 10px;
+}
+.approvalNewsDialog .el-dialog {
+  margin-top: 10vh !important;
+  width: 952px;
+}
+.approvalNewsDialog .el-date-editor.el-input,
+.approvalNewsDialog .el-date-editor.el-input__inner {
+  width: 100%;
+}
+.approvalFormNews {
+  margin: 20px auto;
+  padding: 15px;
+  width: 98%;
+  height: 92%;
+  background: #fff;
+}
+.approvalFormNews .mce-edit-area {
+    min-height: 200px;
+}
+.approvalFormNews .form {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+}
+.approvalFormNews .el-form-item {
+    padding-right: 100px;
+}
+.approvalFormNews .el-upload--picture-card {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+

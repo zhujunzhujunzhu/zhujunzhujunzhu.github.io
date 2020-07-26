@@ -1,0 +1,12 @@
+.reviewDocDialog .path[data-v-c2fe2998] {
+  font-size: small;
+  font-weight: bold;
+}
+.reviewDocDialog h3[data-v-c2fe2998] {
+  background-color: orange;
+  padding: 10px;
+}
+.reviewDocDialog .review_doc_body[data-v-c2fe2998] {
+  overflow: auto;
+}
+

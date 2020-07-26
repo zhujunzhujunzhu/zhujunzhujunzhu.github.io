@@ -1,0 +1,13 @@
+.rightCardHeaderDiv .label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.rightCardHeaderDiv .number {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 28px;
+}
+

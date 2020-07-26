@@ -1,0 +1,12 @@
+.epidemicReportDailogWrapper .el-dialog {
+  width: 86%;
+  margin-top: 5vh !important;
+  min-width: 1000px;
+}
+.epidemicReportDailogWrapper .content {
+  padding: 15px 0;
+}
+.epidemicReportDailogWrapper .btnWrapper {
+  margin-top: 20px;
+}
+

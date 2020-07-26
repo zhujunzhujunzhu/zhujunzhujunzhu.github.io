@@ -1,0 +1,35 @@
+.CommandPlanDiv[data-v-bd040c8c] {
+  padding: 0px;
+}
+.CommandPlanDiv .mr20px[data-v-bd040c8c] {
+    margin-right: 20px;
+}
+.CommandPlanDiv .unitClass[data-v-bd040c8c] {
+    float: right;
+}
+.CommandPlanDiv .input-item1[data-v-bd040c8c] {
+    min-height: 40px;
+    font-size: 12px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.CommandPlanDiv .input-item1 label[data-v-bd040c8c] {
+      color: #909699;
+      width: 100px;
+}
+.CommandPlanDiv .changeSwitch[data-v-bd040c8c] {
+    margin-right: 10px;
+}
+.CommandPlanDiv .unitDiv[data-v-bd040c8c] {
+    position: absolute;
+    right: 3%;
+}
+.CommandPlanDiv .titleDiv[data-v-bd040c8c] {
+    float: right;
+}
+.CommandPlanDiv .titleIcon[data-v-bd040c8c] {
+    font-size: 24px;
+    color: #a4ec31;
+}
+

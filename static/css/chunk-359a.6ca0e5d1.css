@@ -1,0 +1,53 @@
+.temperatureList .iconshanchu {
+  font-size: 16px !important;
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.temperatureList .dataTable {
+  margin-top: 10px;
+}
+
+.abnormalListDiv .iconshanchu {
+  font-size: 16px !important;
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.abnormalListDiv .dataTable {
+  margin-top: 10px;
+}
+
+.goodsListDiv .iconshanchu {
+  font-size: 16px !important;
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.goodsListDiv .dataTable {
+  margin-top: 10px;
+}
+.goodsListDiv .item2 {
+  width: 320px;
+}
+.goodsListDiv .item2 .el-select {
+    width: 320px;
+}
+.goodsListDiv .item2 .el-select .el-input {
+      width: 320px;
+}
+
+.epidemicStaticsDiv .el-table {
+  margin-bottom: 20px;
+}
+.epidemicStaticsDiv .lightBg td {
+  background: #f0f9eb !important;
+}
+.epidemicStaticsDiv .mxCard {
+  border-radius: 10px;
+}
+
+.epidemicDetialsDiv .content {
+  padding: 15px 0;
+}
+

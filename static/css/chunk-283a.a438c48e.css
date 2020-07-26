@@ -1,0 +1,13 @@
+.customerFormPage .iconzibiaodan {
+  font-size: 19px !important;
+  position: relative;
+  top: -2px;
+  left: 2px;
+}
+.customerFormPage .color-bbb {
+  color: #bbb;
+}
+.customerFormPage .cursor {
+  cursor: default;
+}
+

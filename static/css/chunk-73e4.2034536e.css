@@ -1,0 +1,6 @@
+.baseDialog .el-dialog {
+  width: 86%;
+  margin-top: 5vh !important;
+  min-width: 1000px;
+}
+

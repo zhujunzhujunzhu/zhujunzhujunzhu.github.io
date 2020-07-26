@@ -1,0 +1,348 @@
+{
+  "list": [
+    {
+      "label": "编码",
+      "prop": "code",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "问题编码",
+      "param": "",
+      "isQuery": "2"
+    },
+    {
+      "label": "分部分项ID",
+      "prop": "qbsId",
+      "displayType": "qt",
+      "filterType": "zd",
+      "displayName": "qbs节点",
+      "param": "qbsName",
+      "isQuery": "2"
+    },
+    {
+      "label": "问题描述",
+      "prop": "issueDescription",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "",
+      "param": "",
+      "isQuery": "2"
+    },
+    {
+      "label": "整改单位",
+      "prop": "rectifyOrgId",
+      "displayType": "qt",
+      "filterType": "zd",
+      "displayName": "整改单位",
+      "param": "rectifyOrgName",
+      "isQuery": "2"
+    },
+    {
+      "label": "责任人",
+      "prop": "rectifyUserId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "负责人",
+      "param": "rectifyUserName",
+      "isQuery": "2"
+    },
+    {
+      "label": "要求处理时间",
+      "prop": "handleDate",
+      "displayType": "glq",
+      "filterType": "sj",
+      "displayName": "",
+      "param": "{y}-{m}-{d}",
+      "isQuery": "2"
+    },
+    {
+      "label": "状态",
+      "prop": "status",
+      "displayType": "glq",
+      "filterType": "zd",
+      "displayName": "问题状态",
+      "param": "issue_status",
+      "isQuery": "2"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "发起单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1569218680000_10728"
+                },
+                "key": "1571383391000_40800",
+                "model": "initiateOrgId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "发起人",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568858682000_80583"
+                },
+                "key": "1568858682000_80583",
+                "model": "initiateUserId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "整改单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1569218700000_56780",
+                  "required": true
+                },
+                "key": "1569218700000_56780",
+                "model": "rectifyOrgId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "整改单位必须填写"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "发起时间",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1571383394000_51426"
+                },
+                "key": "1569218680000_10728",
+                "model": "initiateDate",
+                "rules": []
+              },
+              {
+                "type": "date",
+                "name": "要求处理时间",
+                "options": {
+                  "defaultValue": "",
+                  "readonly": false,
+                  "disabled": false,
+                  "editable": true,
+                  "clearable": true,
+                  "placeholder": "请选择要求处理时间",
+                  "startPlaceholder": "",
+                  "endPlaceholder": "",
+                  "type": "date",
+                  "format": "yyyy-MM-dd",
+                  "timestamp": true,
+                  "required": true,
+                  "width": "100%",
+                  "remoteFunc": "func_1569051316000_28561"
+                },
+                "key": "1569051316000_28561",
+                "model": "handleDate",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "要求处理时间必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "责任人",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568858704000_14931",
+                  "required": true
+                },
+                "key": "1568858704000_14931",
+                "model": "rectifyUserId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "责任人必须填写"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1568858646000_61697",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1568858646000_61697",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "blank",
+        "name": "问题节点",
+        "options": {
+          "defaultType": "String",
+          "isShowLabel": true,
+          "remoteFunc": "func_1568858717000_25423",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1568858717000_25423",
+        "model": "qbsId",
+        "rules": []
+      },
+      {
+        "type": "select",
+        "name": "问题类型",
+        "options": {
+          "defaultValue": "",
+          "multiple": false,
+          "disabled": false,
+          "clearable": true,
+          "placeholder": "请选择问题类型",
+          "isRelated": false,
+          "required": false,
+          "showLabel": false,
+          "childKey": "",
+          "width": "100%",
+          "options": [
+            {
+              "value": "选项1",
+              "label": "选项1"
+            },
+            {
+              "value": "选项2",
+              "label": "选项2"
+            },
+            {
+              "value": "选项3",
+              "label": "选项3"
+            }
+          ],
+          "remote": false,
+          "filterable": false,
+          "allowCreate": false,
+          "dictionaryCode": "issue_type",
+          "remoteOptions": [],
+          "props": {
+            "value": "value",
+            "label": "label"
+          },
+          "remoteFunc": "func_1568858723000_65443"
+        },
+        "key": "1568858723000_65443",
+        "model": "issueType",
+        "rules": []
+      },
+      {
+        "type": "blank",
+        "name": "问题描述",
+        "options": {
+          "defaultType": "String",
+          "isShowLabel": true,
+          "remoteFunc": "func_1568858733000_71253",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1568858733000_71253",
+        "model": "issueDescription",
+        "rules": []
+      },
+      {
+        "type": "textarea",
+        "name": "整改要求",
+        "options": {
+          "width": "100%",
+          "defaultValue": "请输入整改要求",
+          "required": false,
+          "disabled": false,
+          "pattern": "",
+          "placeholder": "",
+          "remoteFunc": "func_1568858745000_67252",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1568858745000_67252",
+        "model": "rectifyRequirements",
+        "rules": []
+      },
+      {
+        "type": "imgupload",
+        "name": "问题图片",
+        "options": {
+          "length": 8,
+          "fileName": "",
+          "isFile": false,
+          "defaultValue": "",
+          "remoteFunc": "func_1569051625000_38619",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1569051625000_38619",
+        "model": "docId",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 110,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    }
+  ],
+  "lookColumns": null
+}

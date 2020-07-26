@@ -1,0 +1,478 @@
+{
+  "list": [
+    {
+      "label": "名称",
+      "prop": "name",
+      "displayType": "",
+      "filterType": "",
+      "displayName": "检查名称",
+      "param": "",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "巡检单位ID",
+      "prop": "inspectOrgId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "被检单位",
+      "param": "inspectOrgName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "标段ID",
+      "prop": "tendersId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "标段",
+      "param": "tendersName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "工点ID",
+      "prop": "workPointId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "工点",
+      "param": "workPointName",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "巡检开始时间",
+      "prop": "startDate",
+      "displayType": "glq",
+      "filterType": "sj",
+      "displayName": "检查日期",
+      "param": "{y}-{m}-{d}",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "巡检人ID",
+      "prop": "inspectUserId",
+      "displayType": "qt",
+      "filterType": "",
+      "displayName": "检查人",
+      "param": "inspectUserNames",
+      "isQuery": "2",
+      "columnWidth": null
+    },
+    {
+      "label": "巡检状态",
+      "prop": "status",
+      "isQuery": "1",
+      "displayType": "glq",
+      "filterType": "zd",
+      "param": "inspect_status",
+      "displayName": "状态"
+    },
+    {
+      "label": "操作",
+      "prop": "button"
+    }
+  ],
+  "table": {
+    "list": [
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "input",
+                "name": "检查名称",
+                "options": {
+                  "width": "100%",
+                  "defaultValue": "",
+                  "required": true,
+                  "dataType": "string",
+                  "pattern": "",
+                  "placeholder": "请输入检查名称",
+                  "remoteFunc": "func_1568687968000_42261"
+                },
+                "key": "1568687968000_42261",
+                "model": "name",
+                "rules": [
+                  {
+                    "type": "string",
+                    "message": "检查名称格式不正确"
+                  },
+                  {
+                    "required": true,
+                    "message": "检查名称必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "标段",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568792231000_45825",
+                  "required": true
+                },
+                "key": "1568792231000_45825",
+                "model": "tendersId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "标段必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "被检单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568687905000_29010",
+                  "required": true
+                },
+                "key": "1577066395000_65811",
+                "model": "inspectOrgId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "被检单位必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "负责人",
+                "options": {
+                  "defaultType": "Array",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1577067054000_6013",
+                  "required": true
+                },
+                "key": "1577066465000_41564",
+                "model": "inspectUserId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "负责人必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "审核单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568687905000_29010",
+                  "required": false
+                },
+                "key": "1568687905000_29010",
+                "model": "superviseOrgId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "审核负责人",
+                "options": {
+                  "defaultType": "Array",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1577066989000_28336",
+                  "required": false
+                },
+                "key": "1568788753000_5468",
+                "model": "superviseUserId",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "检查项目",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572399500000_38996"
+                },
+                "key": "1568888594000_72265",
+                "model": "inspectTypeIds",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "编码",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1573536618000_54183"
+                },
+                "key": "1573536618000_54183",
+                "model": "code",
+                "rules": []
+              },
+              {
+                "type": "blank",
+                "name": "工点",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572490114000_58283"
+                },
+                "key": "1572490114000_58283",
+                "model": "workPointId",
+                "rules": []
+              },
+              {
+                "type": "select",
+                "name": "检查类型",
+                "options": {
+                  "defaultValue": "",
+                  "multiple": false,
+                  "disabled": false,
+                  "clearable": true,
+                  "placeholder": "请选择巡检类型",
+                  "isRelated": true,
+                  "required": true,
+                  "showLabel": false,
+                  "childKey": "",
+                  "width": "100%",
+                  "options": [
+                    {
+                      "value": "选项1",
+                      "label": "选项1"
+                    },
+                    {
+                      "value": "选项2",
+                      "label": "选项2"
+                    },
+                    {
+                      "value": "选项3",
+                      "label": "选项3"
+                    }
+                  ],
+                  "remote": false,
+                  "filterable": false,
+                  "allowCreate": false,
+                  "dictionaryCode": "inspect_type",
+                  "remoteOptions": [],
+                  "props": {
+                    "value": "",
+                    "label": ""
+                  },
+                  "remoteFunc": "func_1577067075000_39422"
+                },
+                "key": "1568192369000_85625",
+                "model": "type",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "检查类型必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "date",
+                "name": "检查日期",
+                "options": {
+                  "defaultValue": "",
+                  "readonly": false,
+                  "disabled": false,
+                  "editable": true,
+                  "clearable": true,
+                  "placeholder": "请选择开始时间",
+                  "startPlaceholder": "开始时间",
+                  "endPlaceholder": "结束时间",
+                  "type": "date",
+                  "format": "yyyy-MM-dd",
+                  "timestamp": true,
+                  "required": true,
+                  "width": "100%",
+                  "remoteFunc": "func_1572399492000_15185"
+                },
+                "key": "1568192403000_33194",
+                "model": "startDate",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "检查日期必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "检查单位",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1573721833000_57767",
+                  "required": true
+                },
+                "key": "1573721833000_57767",
+                "model": "checkOrgId",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "检查单位必须填写"
+                  }
+                ]
+              },
+              {
+                "type": "blank",
+                "name": "检查人",
+                "options": {
+                  "defaultType": "Array",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1568788753000_5468",
+                  "required": true
+                },
+                "key": "1577067035000_81970",
+                "model": "inspectUserIds",
+                "rules": [
+                  {
+                    "required": true,
+                    "message": "检查人必须填写"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1568192308000_74514",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1568192308000_74514",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "textarea",
+        "name": "备注",
+        "options": {
+          "width": "100%",
+          "defaultValue": "",
+          "required": false,
+          "disabled": false,
+          "pattern": "",
+          "placeholder": "请输入备注",
+          "remoteFunc": "func_1572400082000_57618",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1572400082000_57618",
+        "model": "remark",
+        "rules": []
+      },
+      {
+        "type": "grid",
+        "name": "栅格布局",
+        "icon": "icon-grid-",
+        "columns": [
+          {
+            "span": 12,
+            "list": [
+              {
+                "type": "blank",
+                "name": "问题记录",
+                "options": {
+                  "defaultType": "String",
+                  "isShowLabel": true,
+                  "remoteFunc": "func_1572400594000_41015"
+                },
+                "key": "1572400594000_41015",
+                "model": "issueRecord",
+                "rules": []
+              }
+            ]
+          },
+          {
+            "span": 12,
+            "list": []
+          }
+        ],
+        "options": {
+          "gutter": 0,
+          "justify": "start",
+          "align": "top",
+          "remoteFunc": "func_1572400382000_92465",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1572400382000_92465",
+        "model": "",
+        "rules": []
+      },
+      {
+        "type": "blank",
+        "name": "",
+        "options": {
+          "defaultType": "String",
+          "isShowLabel": true,
+          "remoteFunc": "func_1572400514000_63093",
+          "props": {
+            "value": "value",
+            "label": "label"
+          }
+        },
+        "key": "1569485507000_14112",
+        "model": "qualityIssues",
+        "rules": []
+      }
+    ],
+    "config": {
+      "labelWidth": 100,
+      "labelPosition": "right",
+      "size": "small"
+    }
+  },
+  "addMethod": "1",
+  "buttonList": [
+    {
+      "id": 3,
+      "type": "delete",
+      "icon": "iconshanchu1",
+      "fun": "",
+      "name": "删除"
+    },
+    {
+      "id": 2,
+      "type": "edit",
+      "icon": "iconxiugai",
+      "fun": "",
+      "name": "修改"
+    },
+    {
+      "id": 3,
+      "type": "zdy",
+      "icon": "",
+      "fun": "",
+      "name": ""
+    },
+    {
+      "id": 1,
+      "type": "look",
+      "icon": "iconyanjing",
+      "fun": "",
+      "name": "查看"
+    }
+  ],
+  "lookColumns": null
+}

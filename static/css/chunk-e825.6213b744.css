@@ -1,0 +1,31 @@
+.inspectionFileUpload .el-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.inspectionValuationEditDiv input {
+  padding-right: 0px;
+}
+.inspectionValuationEditDiv .blue {
+  background: #a2c5ee !important;
+}
+.inspectionValuationEditDiv .ellipsis span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.inspectionValuationEditDiv .isDiff input {
+  color: red !important;
+}
+.inspectionValuationEditDiv .tableInput {
+  display: inherit !important;
+}
+.inspectionValuationEditDiv .tableInput input {
+    height: 20px !important;
+    line-height: 20px !important;
+}
+

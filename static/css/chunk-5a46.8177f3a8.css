@@ -1,0 +1,54 @@
+.projectOrgDiv {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+.projectOrgDiv .el-tree-node {
+    overflow: hidden;
+}
+.projectOrgDiv .el-tree-node > .el-tree-node__children {
+    overflow: inherit !important;
+}
+.projectOrgDiv .el-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.projectOrgDiv .el-row .leftCard {
+      width: 22%;
+      overflow: hidden;
+      position: relative;
+      -webkit-transition: 0s;
+      transition: 0s;
+}
+.projectOrgDiv .el-row .rightCard {
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2;
+      margin-left: 10px;
+}
+.projectOrgDiv .el-row .el-select .el-input__inner {
+      width: 360px;
+}
+.projectOrgDiv .el-row .el-input,
+    .projectOrgDiv .el-row .el-input__inner {
+      max-width: 400px;
+      min-width: 360px;
+}
+.projectOrgDiv .el-row .vue-treeselect {
+      max-width: 400px;
+      min-width: 360px;
+}
+#dragLine {
+  position: absolute;
+  width: 15px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#dragLine:hover {
+    border-right: 1px dashed #ccc;
+    cursor: e-resize;
+}
+

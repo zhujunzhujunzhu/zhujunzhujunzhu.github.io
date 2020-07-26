@@ -1,0 +1,22 @@
+.custom-tree-node {
+  width: 100%;
+  line-height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 0px;
+}
+.custom-tree-node .iconwenjianjia_kai,
+  .custom-tree-node .iconwenjianjia_guan {
+    color: #e0aa25;
+}
+.custom-tree-node .appendIcon {
+    font-size: 20px;
+    vertical-align: middle;
+}
+.text-overflow {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

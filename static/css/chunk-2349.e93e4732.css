@@ -1,0 +1,34 @@
+.el-tree[data-v-f94ec82e] {
+  overflow: auto;
+}
+
+.drawingReviewDiv .searchClass[data-v-5346301c] {
+  margin: 15px 0px 13px 0px;
+}
+.drawingReviewDiv .formStyle[data-v-5346301c] {
+  width: 160px;
+  margin-right: 15px;
+}
+.drawingReviewDiv h3[data-v-5346301c] {
+  margin: 0;
+  padding: 0;
+}
+.drawingReviewDiv .box-card-wrapper[data-v-5346301c] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.drawingReviewDiv .box-card-wrapper .leftCard[data-v-5346301c] {
+    width: 20%;
+    /*flex: 1;*/
+}
+.drawingReviewDiv .box-card-wrapper .rightCard[data-v-5346301c] {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    margin-left: 10px;
+}
+.drawingReviewDiv .box-card-wrapper .rightCard .el-table .el-table__body-wrapper[data-v-5346301c] {
+      overflow: auto;
+}
+

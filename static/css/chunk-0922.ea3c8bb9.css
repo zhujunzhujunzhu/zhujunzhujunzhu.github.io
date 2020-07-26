@@ -1,0 +1,9 @@
+.fullLineTopDiv {
+  padding: 0 10px;
+}
+.fullLineTopDiv .clickOn {
+    color: #409EFF;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+

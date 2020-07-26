@@ -1,0 +1,125 @@
+#consultStatisticsChart {
+  width: 100%;
+  height: 260px;
+}
+.consultStatisticsDiv .el-date-editor--daterange {
+  width: 300px;
+}
+.consultStatisticsDiv .el-range-separator {
+  z-index: 100;
+}
+.consultStatisticsDiv .searchDiv {
+  padding: 15px 0 5px;
+}
+.consultStatisticsDiv .searchDiv .el-button {
+    position: relative;
+    left: -7px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    background: #1dace6;
+}
+
+#consultQuestionTypeChart {
+  width: 100%;
+  height: 260px;
+}
+.consultQuestionTypeDiv .el-date-editor--daterange {
+  width: 300px;
+}
+.consultQuestionTypeDiv .el-range-separator {
+  z-index: 100;
+}
+.consultQuestionTypeDiv .searchDiv {
+  padding: 15px 0 5px;
+}
+.consultQuestionTypeDiv .searchDiv .el-button {
+    position: relative;
+    left: -7px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    background: #1dace6;
+}
+
+#consultAchievementssChart {
+  width: 100%;
+  margin-left: -20px;
+  height: 260px;
+}
+.consultAchievementssDiv .el-date-editor--daterange {
+  width: 300px;
+}
+.consultAchievementssDiv .el-range-separator {
+  z-index: 100;
+}
+.consultAchievementssDiv .searchDiv {
+  padding: 15px 0 5px;
+}
+.consultAchievementssDiv .searchDiv .dateWrapper .el-button {
+    position: relative;
+    left: -7px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    background: #1dace6;
+}
+.consultAchievementssDiv .searchDiv .el-tabs__item {
+    font-size: 20px;
+}
+.consultAchievementssDiv .searchDiv .is-active {
+    font-weight: 600;
+    color: #1dace6;
+}
+.consultAchievementssDiv .searchDiv .el-tabs__item:hover {
+    color: #1dace6;
+}
+.consultAchievementssDiv .searchDiv .el-tabs__active-bar {
+    height: 3px;
+    background: #1dace6;
+}
+
+.consultHomeDiv {
+  padding: 20px;
+}
+.consultHomeDiv .homeCardHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px #dddddd solid;
+}
+.consultHomeDiv .homeCardHeader img {
+      width: 22px;
+      margin-right: 10px;
+}
+.consultHomeDiv .homeTitle {
+    font-size: 20px;
+    color: #1cade4;
+}
+.consultHomeDiv .homeSmallTitle {
+    font-size: 12px;
+    color: #1cade4;
+}
+.consultHomeDiv .color333 {
+    color: #333;
+}
+.consultHomeDiv .color999 {
+    color: #999;
+}
+.consultHomeDiv .fs-16 {
+    font-size: 16px;
+}
+.consultHomeDiv .fs-20 {
+    font-size: 20px;
+}
+.consultHomeDiv .nodata {
+    margin-top: 100px;
+}
+
